@@ -1,0 +1,86 @@
+2026-05-02 22:10:25 | ExperimentUtils | INFO | experiment_utils.py:180 | [exp1-rapidfire-full-evaluation_4:ExperimentUtils] Reset experiment states - marked ongoing pipelines, contexts, and tasks as failed
+2026-05-02 22:10:25 | ExperimentUtils | INFO | experiment_utils.py:188 | [exp1-rapidfire-full-evaluation_4:ExperimentUtils] Experiment marked as cancelled. Ongoing pipelines, contexts, and tasks have been marked as failed.
+2026-05-02 22:10:25 | ExperimentUtils | INFO | experiment_utils.py:154 | [exp1-rapidfire-full-evaluation_4:ExperimentUtils] Experiment exp1-rapidfire-full-evaluation_4 ended
+2026-05-02 22:10:25 | Experiment | INFO | experiment.py:165 | [exp1-rapidfire-full-evaluation_5:Experiment] The previously running experiment exp1-rapidfire-full-evaluation_4 was forcibly ended. Created a new experiment 'exp1-rapidfire-full-evaluation_5' with Experiment ID: 19 at /home/obychenkov/rapidfireai/rapidfire_experiments/exp1-rapidfire-full-evaluation_5
+2026-05-02 22:10:42 | Experiment | INFO | metric_rfmetric_manager.py:55 | [exp1-rapidfire-full-evaluation_5:Experiment] Initialized MLflowMetricLogger: rf_mlflow
+2026-05-02 22:10:42 | Experiment | INFO | metric_rfmetric_manager.py:119 | [exp1-rapidfire-full-evaluation_5:Experiment] Creating MLflow experiment: exp1-rapidfire-full-evaluation_5
+2026-05-02 22:10:42 | Experiment | INFO | experiment.py:210 | [exp1-rapidfire-full-evaluation_5:Experiment] Initialized MetricLogger experiment: 9
+2026-05-02 22:10:42 | Experiment | INFO | experiment.py:226 | [exp1-rapidfire-full-evaluation_5:Experiment] Using existing dispatcher/api server at 127.0.0.1:8851.
+2026-05-02 22:10:45 | Experiment | WARNING | experiment.py:381 | [exp1-rapidfire-full-evaluation_5:Experiment] No GPUs available. Be sure to use external APIs for inference.
+2026-05-02 22:10:45 | Experiment | INFO | experiment.py:383 | [exp1-rapidfire-full-evaluation_5:Experiment] Running multi-config experiment with 4 shard(s), (0.0 GPUs per actor, 8.0 CPUs per actor, 1 actors)
+2026-05-02 22:10:45 | Experiment | INFO | experiment.py:392 | [exp1-rapidfire-full-evaluation_5:Experiment] Reset states of existing pipelines/contexts/tasks (marked as failed)
+2026-05-02 22:10:45 | Controller | INFO | controller.py:895 | [exp1-rapidfire-full-evaluation_5:Controller] Dataset sharded into 4 shard(s). Shard sizes: [12, 11, 11, 11]
+2026-05-02 22:10:45 | Controller | INFO | controller.py:900 | [exp1-rapidfire-full-evaluation_5:Controller] Received 4 pipeline configuration(s)
+2026-05-02 22:10:45 | Controller | INFO | controller.py:309 | [exp1-rapidfire-full-evaluation_5:Controller] Found 2 unique RAG context(s)
+2026-05-02 22:10:45 | Controller | INFO | controller.py:320 | [exp1-rapidfire-full-evaluation_5:Controller] Will build new context dcd52659...
+2026-05-02 22:10:45 | Controller | INFO | controller.py:320 | [exp1-rapidfire-full-evaluation_5:Controller] Will build new context 9de2ec98...
+2026-05-02 22:10:45 | Controller | INFO | controller.py:346 | [exp1-rapidfire-full-evaluation_5:Controller] Building 2 context(s) in parallel...
+2026-05-02 22:10:45 | Controller | INFO | controller.py:373 | [exp1-rapidfire-full-evaluation_5:Controller] Creating 2 DocProcessingActor(s) for parallel processing
+2026-05-02 22:10:47 | matplotlib.font_manager | INFO | font_manager.py:1639 | generated new fontManager
+2026-05-02 22:10:47 | Controller | INFO | controller.py:461 | [exp1-rapidfire-full-evaluation_5:Controller] Submitted 2 build task(s) in parallel
+2026-05-02 22:11:36 | Controller | INFO | controller.py:482 | [exp1-rapidfire-full-evaluation_5:Controller] Built context 1 (dcd52659...) successfully in 50.92s
+2026-05-02 22:11:36 | Controller | INFO | controller.py:482 | [exp1-rapidfire-full-evaluation_5:Controller] Built context 2 (9de2ec98...) successfully in 50.93s
+2026-05-02 22:11:36 | Controller | INFO | controller.py:523 | [exp1-rapidfire-full-evaluation_5:Controller] Completed parallel context building for 2 context(s)
+2026-05-02 22:11:36 | Controller | INFO | controller.py:920 | [exp1-rapidfire-full-evaluation_5:Controller] Created 1 query processing actors (generic pool)
+2026-05-02 22:11:36 | Experiment | INFO | metric_rfmetric_manager.py:141 | [exp1-rapidfire-full-evaluation_5:Experiment] Created MLflow run: e73a1090d160421ea781f5d0a396e867, 1
+2026-05-02 22:11:36 | Experiment | INFO | metric_rfmetric_manager.py:141 | [exp1-rapidfire-full-evaluation_5:Experiment] Created MLflow run: ee8ea56bf7cc4b33b43c0daf398d8ddd, 2
+2026-05-02 22:11:36 | Experiment | INFO | metric_rfmetric_manager.py:141 | [exp1-rapidfire-full-evaluation_5:Experiment] Created MLflow run: a881caa898974dcd939b290d52cda5be, 3
+2026-05-02 22:11:36 | Experiment | INFO | metric_rfmetric_manager.py:141 | [exp1-rapidfire-full-evaluation_5:Experiment] Created MLflow run: fb52a978fea141228d0247f83e82b925, 4
+2026-05-02 22:11:37 | Controller | INFO | controller.py:931 | [exp1-rapidfire-full-evaluation_5:Controller] Initialized scheduler with 4 pipelines, 1 actors, 4 shards
+2026-05-02 22:11:37 | Controller | INFO | controller.py:1118 | [exp1-rapidfire-full-evaluation_5:Controller] Created experiment-wide rate limiter actor for 4 OpenAI pipeline(s) with per-model limits (api-mistral-small-3.2-2506: 120 RPM, 1000000 TPM)
+2026-05-02 22:11:37 | Controller | INFO | controller.py:1124 | [exp1-rapidfire-full-evaluation_5:Controller] Starting multi-pipeline inference scheduling...
+2026-05-02 22:11:37 | Controller | INFO | controller.py:1422 | [exp1-rapidfire-full-evaluation_5:Controller] Scheduling pipeline 1 (Pipeline 1) on actor 0 for shard 0 (1 batches)
+2026-05-02 22:12:39 | Controller | INFO | controller.py:1299 | [exp1-rapidfire-full-evaluation_5:Controller] Pipeline 1 completed shard 0 (1 batches, 38.62s)
+2026-05-02 22:12:39 | Controller | INFO | controller.py:1422 | [exp1-rapidfire-full-evaluation_5:Controller] Scheduling pipeline 2 (Pipeline 2) on actor 0 for shard 0 (1 batches)
+2026-05-02 22:12:49 | Controller | INFO | controller.py:1299 | [exp1-rapidfire-full-evaluation_5:Controller] Pipeline 2 completed shard 0 (1 batches, 8.03s)
+2026-05-02 22:12:49 | Controller | INFO | controller.py:1422 | [exp1-rapidfire-full-evaluation_5:Controller] Scheduling pipeline 3 (Pipeline 3) on actor 0 for shard 0 (1 batches)
+2026-05-02 22:13:03 | Controller | INFO | controller.py:1299 | [exp1-rapidfire-full-evaluation_5:Controller] Pipeline 3 completed shard 0 (1 batches, 13.04s)
+2026-05-02 22:13:03 | Controller | INFO | controller.py:1422 | [exp1-rapidfire-full-evaluation_5:Controller] Scheduling pipeline 4 (Pipeline 4) on actor 0 for shard 0 (1 batches)
+2026-05-02 22:13:15 | Controller | INFO | controller.py:1299 | [exp1-rapidfire-full-evaluation_5:Controller] Pipeline 4 completed shard 0 (1 batches, 10.04s)
+2026-05-02 22:13:15 | Controller | INFO | controller.py:1422 | [exp1-rapidfire-full-evaluation_5:Controller] Scheduling pipeline 1 (Pipeline 1) on actor 0 for shard 1 (1 batches)
+2026-05-02 22:13:24 | Controller | INFO | controller.py:1299 | [exp1-rapidfire-full-evaluation_5:Controller] Pipeline 1 completed shard 1 (1 batches, 8.03s)
+2026-05-02 22:13:24 | Controller | INFO | controller.py:1422 | [exp1-rapidfire-full-evaluation_5:Controller] Scheduling pipeline 2 (Pipeline 2) on actor 0 for shard 1 (1 batches)
+2026-05-02 22:13:34 | Controller | INFO | controller.py:1299 | [exp1-rapidfire-full-evaluation_5:Controller] Pipeline 2 completed shard 1 (1 batches, 8.02s)
+2026-05-02 22:13:34 | Controller | INFO | controller.py:1422 | [exp1-rapidfire-full-evaluation_5:Controller] Scheduling pipeline 3 (Pipeline 3) on actor 0 for shard 1 (1 batches)
+2026-05-02 22:13:46 | Controller | INFO | controller.py:1299 | [exp1-rapidfire-full-evaluation_5:Controller] Pipeline 3 completed shard 1 (1 batches, 10.04s)
+2026-05-02 22:13:46 | Controller | INFO | controller.py:1422 | [exp1-rapidfire-full-evaluation_5:Controller] Scheduling pipeline 4 (Pipeline 4) on actor 0 for shard 1 (1 batches)
+2026-05-02 22:13:57 | Controller | INFO | controller.py:1299 | [exp1-rapidfire-full-evaluation_5:Controller] Pipeline 4 completed shard 1 (1 batches, 10.04s)
+2026-05-02 22:13:57 | Controller | INFO | controller.py:1422 | [exp1-rapidfire-full-evaluation_5:Controller] Scheduling pipeline 1 (Pipeline 1) on actor 0 for shard 2 (1 batches)
+2026-05-02 22:14:05 | Controller | INFO | controller.py:1299 | [exp1-rapidfire-full-evaluation_5:Controller] Pipeline 1 completed shard 2 (1 batches, 6.52s)
+2026-05-02 22:14:05 | Controller | INFO | controller.py:1422 | [exp1-rapidfire-full-evaluation_5:Controller] Scheduling pipeline 2 (Pipeline 2) on actor 0 for shard 2 (1 batches)
+2026-05-02 22:14:14 | Controller | INFO | controller.py:1299 | [exp1-rapidfire-full-evaluation_5:Controller] Pipeline 2 completed shard 2 (1 batches, 7.03s)
+2026-05-02 22:14:14 | Controller | INFO | controller.py:1422 | [exp1-rapidfire-full-evaluation_5:Controller] Scheduling pipeline 3 (Pipeline 3) on actor 0 for shard 2 (1 batches)
+2026-05-02 22:14:31 | Controller | INFO | controller.py:1299 | [exp1-rapidfire-full-evaluation_5:Controller] Pipeline 3 completed shard 2 (1 batches, 15.05s)
+2026-05-02 22:14:31 | Controller | INFO | controller.py:1422 | [exp1-rapidfire-full-evaluation_5:Controller] Scheduling pipeline 4 (Pipeline 4) on actor 0 for shard 2 (1 batches)
+2026-05-02 22:14:40 | Controller | INFO | controller.py:1299 | [exp1-rapidfire-full-evaluation_5:Controller] Pipeline 4 completed shard 2 (1 batches, 8.03s)
+2026-05-02 22:14:40 | Controller | INFO | controller.py:1422 | [exp1-rapidfire-full-evaluation_5:Controller] Scheduling pipeline 1 (Pipeline 1) on actor 0 for shard 3 (1 batches)
+2026-05-02 22:14:49 | Controller | INFO | controller.py:1192 | [exp1-rapidfire-full-evaluation_5:Controller] Pipeline 1 completed all 4 shards
+2026-05-02 22:14:49 | Controller | INFO | controller.py:1299 | [exp1-rapidfire-full-evaluation_5:Controller] Pipeline 1 completed shard 3 (1 batches, 7.53s)
+2026-05-02 22:14:49 | Controller | INFO | controller.py:1422 | [exp1-rapidfire-full-evaluation_5:Controller] Scheduling pipeline 2 (Pipeline 2) on actor 0 for shard 3 (1 batches)
+2026-05-02 22:14:58 | Controller | INFO | controller.py:1192 | [exp1-rapidfire-full-evaluation_5:Controller] Pipeline 2 completed all 4 shards
+2026-05-02 22:14:58 | Controller | INFO | controller.py:1299 | [exp1-rapidfire-full-evaluation_5:Controller] Pipeline 2 completed shard 3 (1 batches, 7.52s)
+2026-05-02 22:14:58 | Controller | INFO | controller.py:1422 | [exp1-rapidfire-full-evaluation_5:Controller] Scheduling pipeline 3 (Pipeline 3) on actor 0 for shard 3 (1 batches)
+2026-05-02 22:15:10 | Controller | INFO | controller.py:1192 | [exp1-rapidfire-full-evaluation_5:Controller] Pipeline 3 completed all 4 shards
+2026-05-02 22:15:10 | Controller | INFO | controller.py:1299 | [exp1-rapidfire-full-evaluation_5:Controller] Pipeline 3 completed shard 3 (1 batches, 10.54s)
+2026-05-02 22:15:10 | Controller | INFO | controller.py:1422 | [exp1-rapidfire-full-evaluation_5:Controller] Scheduling pipeline 4 (Pipeline 4) on actor 0 for shard 3 (1 batches)
+2026-05-02 22:15:21 | Controller | INFO | controller.py:1192 | [exp1-rapidfire-full-evaluation_5:Controller] Pipeline 4 completed all 4 shards
+2026-05-02 22:15:22 | Controller | INFO | controller.py:1299 | [exp1-rapidfire-full-evaluation_5:Controller] Pipeline 4 completed shard 3 (1 batches, 9.53s)
+2026-05-02 22:15:22 | Controller | INFO | controller.py:1386 | [exp1-rapidfire-full-evaluation_5:Controller] All pipelines completed all shards!
+2026-05-02 22:15:22 | Controller | INFO | controller.py:695 | [exp1-rapidfire-full-evaluation_5:Controller] Computing final metrics for all pipelines...
+2026-05-02 22:15:22 | Experiment | INFO | metric_rfmetric_manager.py:190 | [exp1-rapidfire-full-evaluation_5:Experiment] Ending run: e73a1090d160421ea781f5d0a396e867, 1 in rf_mlflow
+2026-05-02 22:15:22 | Experiment | WARNING | metric_mlflow_manager.py:101 | [exp1-rapidfire-full-evaluation_5:Experiment] Run e73a1090d160421ea781f5d0a396e867 is not the active run, no local context to clear
+2026-05-02 22:15:22 | Controller | INFO | controller.py:853 | [exp1-rapidfire-full-evaluation_5:Controller] Pipeline 1 (Pipeline 1) completed successfully
+2026-05-02 22:15:22 | Experiment | INFO | metric_rfmetric_manager.py:190 | [exp1-rapidfire-full-evaluation_5:Experiment] Ending run: ee8ea56bf7cc4b33b43c0daf398d8ddd, 2 in rf_mlflow
+2026-05-02 22:15:22 | Experiment | WARNING | metric_mlflow_manager.py:101 | [exp1-rapidfire-full-evaluation_5:Experiment] Run ee8ea56bf7cc4b33b43c0daf398d8ddd is not the active run, no local context to clear
+2026-05-02 22:15:22 | Controller | INFO | controller.py:853 | [exp1-rapidfire-full-evaluation_5:Controller] Pipeline 2 (Pipeline 2) completed successfully
+2026-05-02 22:15:22 | Experiment | INFO | metric_rfmetric_manager.py:190 | [exp1-rapidfire-full-evaluation_5:Experiment] Ending run: a881caa898974dcd939b290d52cda5be, 3 in rf_mlflow
+2026-05-02 22:15:22 | Experiment | WARNING | metric_mlflow_manager.py:101 | [exp1-rapidfire-full-evaluation_5:Experiment] Run a881caa898974dcd939b290d52cda5be is not the active run, no local context to clear
+2026-05-02 22:15:22 | Controller | INFO | controller.py:853 | [exp1-rapidfire-full-evaluation_5:Controller] Pipeline 3 (Pipeline 3) completed successfully
+2026-05-02 22:15:22 | Experiment | INFO | metric_rfmetric_manager.py:190 | [exp1-rapidfire-full-evaluation_5:Experiment] Ending run: fb52a978fea141228d0247f83e82b925, 4 in rf_mlflow
+2026-05-02 22:15:22 | Experiment | WARNING | metric_mlflow_manager.py:101 | [exp1-rapidfire-full-evaluation_5:Experiment] Run fb52a978fea141228d0247f83e82b925 is not the active run, no local context to clear
+2026-05-02 22:15:22 | Controller | INFO | controller.py:853 | [exp1-rapidfire-full-evaluation_5:Controller] Pipeline 4 (Pipeline 4) completed successfully
+2026-05-02 22:18:26 | ExperimentUtils | INFO | experiment_utils.py:180 | [exp1-rapidfire-full-evaluation_5:ExperimentUtils] Reset experiment states - marked ongoing pipelines, contexts, and tasks as failed
+2026-05-02 22:18:26 | ExperimentUtils | INFO | experiment_utils.py:188 | [exp1-rapidfire-full-evaluation_5:ExperimentUtils] Experiment marked as cancelled. Ongoing pipelines, contexts, and tasks have been marked as failed.
+2026-05-02 22:18:26 | ExperimentUtils | INFO | experiment_utils.py:154 | [exp1-rapidfire-full-evaluation_5:ExperimentUtils] Experiment exp1-rapidfire-full-evaluation_5 ended
+2026-05-02 22:18:28 | Experiment | INFO | experiment.py:574 | [exp1-rapidfire-full-evaluation_5:Experiment] All actors shut down
+2026-05-02 22:18:28 | Experiment | INFO | experiment.py:575 | [exp1-rapidfire-full-evaluation_5:Experiment] Dispatcher will automatically shut down (daemon thread)

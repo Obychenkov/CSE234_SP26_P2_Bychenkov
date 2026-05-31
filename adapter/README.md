@@ -1,8 +1,8 @@
 ---
-base_model: Qwen/Qwen2.5-0.5B-Instruct
+base_model: Qwen/Qwen2.5-1.5B-Instruct
 library_name: peft
 tags:
-- base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct
+- base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct
 - lora
 - sft
 - transformers

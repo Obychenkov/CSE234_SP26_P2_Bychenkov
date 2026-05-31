@@ -5,7 +5,7 @@ import os
 from schema_linking_utils import extract_first_json_object, make_messages, sanitize_links
 
 
-DEFAULT_MODEL = "Qwen/Qwen2.5-0.5B-Instruct"
+DEFAULT_MODEL = "Qwen/Qwen2.5-1.5B-Instruct"
 
 
 class SchemaLinker:
@@ -15,12 +15,16 @@ class SchemaLinker:
         adapter_path="./adapter",
         schemas_dir="./schemas",
         max_new_tokens=256,
+        schema_mode="candidate",
+        max_candidate_tables=40,
     ):
         import torch
         from transformers import AutoModelForCausalLM, AutoTokenizer
 
         self.schemas_dir = schemas_dir
         self.max_new_tokens = max_new_tokens
+        self.schema_mode = schema_mode
+        self.max_candidate_tables = max_candidate_tables
         self.tokenizer = AutoTokenizer.from_pretrained(model_name)
         if self.tokenizer.pad_token is None:
             self.tokenizer.pad_token = self.tokenizer.eos_token
@@ -42,7 +46,13 @@ class SchemaLinker:
     def predict_one(self, item):
         import torch
 
-        messages = make_messages(item, self.schemas_dir, include_completion=False)["prompt"]
+        messages = make_messages(
+            item,
+            self.schemas_dir,
+            include_completion=False,
+            schema_mode=self.schema_mode,
+            max_candidate_tables=self.max_candidate_tables,
+        )["prompt"]
         prompt = self.tokenizer.apply_chat_template(
             messages,
             tokenize=False,
@@ -72,6 +82,8 @@ def main():
     parser.add_argument("--model_name", default=DEFAULT_MODEL)
     parser.add_argument("--adapter_path", default="./adapter")
     parser.add_argument("--max_new_tokens", type=int, default=256)
+    parser.add_argument("--schema_mode", choices=["full", "candidate", "candidate_fk"], default="candidate")
+    parser.add_argument("--max_candidate_tables", type=int, default=40)
     args = parser.parse_args()
 
     with open(args.input) as f:
@@ -82,6 +94,8 @@ def main():
         adapter_path=args.adapter_path,
         schemas_dir=args.schemas_dir,
         max_new_tokens=args.max_new_tokens,
+        schema_mode=args.schema_mode,
+        max_candidate_tables=args.max_candidate_tables,
     )
 
     preds = []

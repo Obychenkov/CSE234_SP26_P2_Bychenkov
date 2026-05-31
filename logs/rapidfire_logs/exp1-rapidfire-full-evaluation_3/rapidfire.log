@@ -1,0 +1,8 @@
+2026-05-02 21:55:29 | ExperimentUtils | INFO | experiment_utils.py:180 | [exp1-rapidfire-full-evaluation_3:ExperimentUtils] Reset experiment states - marked ongoing pipelines, contexts, and tasks as failed
+2026-05-02 21:55:29 | ExperimentUtils | INFO | experiment_utils.py:188 | [exp1-rapidfire-full-evaluation_3:ExperimentUtils] Experiment marked as cancelled. Ongoing pipelines, contexts, and tasks have been marked as failed.
+2026-05-02 21:55:29 | ExperimentUtils | INFO | experiment_utils.py:154 | [exp1-rapidfire-full-evaluation_3:ExperimentUtils] Experiment exp1-rapidfire-full-evaluation_3 ended
+2026-05-02 21:55:29 | Experiment | INFO | experiment.py:165 | [exp1-rapidfire-full-evaluation_4:Experiment] The previously running experiment exp1-rapidfire-full-evaluation_3 was forcibly ended. Created a new experiment 'exp1-rapidfire-full-evaluation_4' with Experiment ID: 18 at /home/obychenkov/rapidfireai/rapidfire_experiments/exp1-rapidfire-full-evaluation_4
+2026-05-02 21:55:46 | Experiment | INFO | metric_rfmetric_manager.py:55 | [exp1-rapidfire-full-evaluation_4:Experiment] Initialized MLflowMetricLogger: rf_mlflow
+2026-05-02 21:55:46 | Experiment | INFO | metric_rfmetric_manager.py:119 | [exp1-rapidfire-full-evaluation_4:Experiment] Creating MLflow experiment: exp1-rapidfire-full-evaluation_4
+2026-05-02 21:55:47 | Experiment | INFO | experiment.py:210 | [exp1-rapidfire-full-evaluation_4:Experiment] Initialized MetricLogger experiment: 8
+2026-05-02 21:55:47 | Experiment | INFO | experiment.py:226 | [exp1-rapidfire-full-evaluation_4:Experiment] Using existing dispatcher/api server at 127.0.0.1:8851.

@@ -1,0 +1,25 @@
+# Python/runtime cache
+__pycache__/
+*.py[cod]
+
+# Local validation outputs
+preds*.json
+per_q*.csv
+smoke_preds.json
+smoke_per_q.csv
+
+# Non-final experiment artifacts. The final submitted adapter stays in ./adapter/.
+artifacts/
+rapidfire_outputs/
+logs/rapidfire_experiments/
+
+# Training-state files are not needed for loading the final PEFT adapter.
+adapter/optimizer.pt
+adapter/scheduler.pt
+adapter/trainer_state.json
+
+# Notebook autosaves
+.ipynb_checkpoints/
+
+# Local drafting notes
+report_outline.md

@@ -1,0 +1,26 @@
+2026-05-29 18:11:18 | no_active_experiment | p2-qwen25-05b-lora-json-1epoch | WARNING | metric_rfmetric_manager.py:57 | Failed to initialize MLflowMetricLogger: MLflow server not available at http://127.0.0.1:8852. MLflow logging will be disabled. MLflow logging is disabled.
+2026-05-29 18:14:40 | no_active_experiment | p2-qwen25-05b-lora-json-1epoch_1 | WARNING | metric_rfmetric_manager.py:57 | Failed to initialize MLflowMetricLogger: MLflow server not available at http://127.0.0.1:8852. MLflow logging will be disabled. MLflow logging is disabled.
+2026-05-29 18:20:45 | no_active_experiment | p2-qwen25-05b-lora-json-1epoch_2 | WARNING | metric_rfmetric_manager.py:57 | Failed to initialize MLflowMetricLogger: MLflow server not available at http://127.0.0.1:8852. MLflow logging will be disabled. MLflow logging is disabled.
+2026-05-29 18:22:09 | no_active_experiment | p2-qwen25-05b-lora-json-1epoch_3 | INFO | metric_rfmetric_manager.py:55 | Initialized MLflowMetricLogger: rf_mlflow
+2026-05-29 18:22:09 | no_active_experiment | p2-qwen25-05b-lora-json-1epoch_3 | INFO | metric_rfmetric_manager.py:119 | Creating MLflow experiment: p2-qwen25-05b-lora-json-1epoch_3
+2026-05-29 18:27:38 | no_active_experiment | p2-qwen25-05b-lora-json-1epoch_4 | INFO | metric_rfmetric_manager.py:55 | Initialized MLflowMetricLogger: rf_mlflow
+2026-05-29 18:27:38 | no_active_experiment | p2-qwen25-05b-lora-json-1epoch_4 | INFO | metric_rfmetric_manager.py:119 | Creating MLflow experiment: p2-qwen25-05b-lora-json-1epoch_4
+2026-05-29 18:31:15 | no_active_experiment | p2-qwen25-05b-lora-json-1epoch_5 | INFO | metric_rfmetric_manager.py:55 | Initialized MLflowMetricLogger: rf_mlflow
+2026-05-29 18:31:15 | no_active_experiment | p2-qwen25-05b-lora-json-1epoch_5 | INFO | metric_rfmetric_manager.py:119 | Creating MLflow experiment: p2-qwen25-05b-lora-json-1epoch_5
+2026-05-29 20:04:31 | no_active_experiment | exp-2 | INFO | metric_rfmetric_manager.py:55 | Initialized MLflowMetricLogger: rf_mlflow
+2026-05-29 20:04:31 | no_active_experiment | exp-2 | INFO | metric_rfmetric_manager.py:119 | Creating MLflow experiment: exp-2
+2026-05-29 20:19:35 | no_active_experiment | p2-qwen25-05b-lora-candidate30-json-1epoch | INFO | metric_rfmetric_manager.py:55 | Initialized MLflowMetricLogger: rf_mlflow
+2026-05-29 20:19:35 | no_active_experiment | p2-qwen25-05b-lora-candidate30-json-1epoch | INFO | metric_rfmetric_manager.py:119 | Creating MLflow experiment: p2-qwen25-05b-lora-candidate30-json-1epoch
+2026-05-29 20:37:15 | no_active_experiment | p2-qwen25-05b-lora-candidate30-json-3epoch | INFO | metric_rfmetric_manager.py:55 | Initialized MLflowMetricLogger: rf_mlflow
+2026-05-29 20:37:15 | no_active_experiment | p2-qwen25-05b-lora-candidate30-json-3epoch | INFO | metric_rfmetric_manager.py:119 | Creating MLflow experiment: p2-qwen25-05b-lora-candidate30-json-3epoch
+2026-05-29 20:41:58 | no_active_experiment | p2-qwen25-05b-lora-candidate30-json-3epoch_1 | INFO | metric_rfmetric_manager.py:55 | Initialized MLflowMetricLogger: rf_mlflow
+2026-05-29 20:41:58 | no_active_experiment | p2-qwen25-05b-lora-candidate30-json-3epoch_1 | INFO | metric_rfmetric_manager.py:119 | Creating MLflow experiment: p2-qwen25-05b-lora-candidate30-json-3epoch_1
+2026-05-29 21:04:03 | no_active_experiment | p2-qwen25-05b-lora-r32-candidate30-json-3epoch | INFO | metric_rfmetric_manager.py:55 | Initialized MLflowMetricLogger: rf_mlflow
+2026-05-29 21:04:03 | no_active_experiment | p2-qwen25-05b-lora-r32-candidate30-json-3epoch | INFO | metric_rfmetric_manager.py:119 | Creating MLflow experiment: p2-qwen25-05b-lora-r32-candidate30-json-3epoch
+2026-05-29 21:27:03 | no_active_experiment | p2-qwen25-05b-lora-r32-candidate40-json-3epoch | INFO | metric_rfmetric_manager.py:55 | Initialized MLflowMetricLogger: rf_mlflow
+2026-05-29 21:27:03 | no_active_experiment | p2-qwen25-05b-lora-r32-candidate40-json-3epoch | INFO | metric_rfmetric_manager.py:119 | Creating MLflow experiment: p2-qwen25-05b-lora-r32-candidate40-json-3epoch
+2026-05-29 21:51:30 | no_active_experiment | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | INFO | metric_rfmetric_manager.py:55 | Initialized MLflowMetricLogger: rf_mlflow
+2026-05-29 21:51:30 | no_active_experiment | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | INFO | metric_rfmetric_manager.py:119 | Creating MLflow experiment: p2-qwen25-15b-lora-r32-candidate40-json-3epoch
+2026-05-30 20:37:33 | no_active_experiment | p2-qwen25-15b-lora-r32-candidate40-aug-json-3epoch | WARNING | metric_rfmetric_manager.py:57 | Failed to initialize MLflowMetricLogger: MLflow server not available at http://127.0.0.1:8852. MLflow logging will be disabled. MLflow logging is disabled.
+2026-05-30 21:23:29 | no_active_experiment | p2-qwen25-15b-lora-r32-candidate40-aug-fk-json-3epoch | WARNING | metric_rfmetric_manager.py:57 | Failed to initialize MLflowMetricLogger: MLflow server not available at http://127.0.0.1:8852. MLflow logging will be disabled. MLflow logging is disabled.
+2026-05-30 22:03:02 | no_active_experiment | p2-qwen25-15b-lora-r32-candidate40-hardneg-json-3epoch | WARNING | metric_rfmetric_manager.py:57 | Failed to initialize MLflowMetricLogger: MLflow server not available at http://127.0.0.1:8852. MLflow logging will be disabled. MLflow logging is disabled.

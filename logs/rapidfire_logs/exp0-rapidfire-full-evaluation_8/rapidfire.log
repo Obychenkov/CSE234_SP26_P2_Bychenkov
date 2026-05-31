@@ -1,0 +1,63 @@
+2026-05-02 20:42:56 | ExperimentUtils | INFO | experiment_utils.py:180 | [exp0-rapidfire-full-evaluation_8:ExperimentUtils] Reset experiment states - marked ongoing pipelines, contexts, and tasks as failed
+2026-05-02 20:42:56 | ExperimentUtils | INFO | experiment_utils.py:188 | [exp0-rapidfire-full-evaluation_8:ExperimentUtils] Experiment marked as cancelled. Ongoing pipelines, contexts, and tasks have been marked as failed.
+2026-05-02 20:42:56 | ExperimentUtils | INFO | experiment_utils.py:154 | [exp0-rapidfire-full-evaluation_8:ExperimentUtils] Experiment exp0-rapidfire-full-evaluation_8 ended
+2026-05-02 20:42:56 | Experiment | INFO | experiment.py:165 | [exp0-rapidfire-full-evaluation_9:Experiment] The previously running experiment exp0-rapidfire-full-evaluation_8 was forcibly ended. Created a new experiment 'exp0-rapidfire-full-evaluation_9' with Experiment ID: 12 at /home/obychenkov/rapidfireai/rapidfire_experiments/exp0-rapidfire-full-evaluation_9
+2026-05-02 20:43:15 | Experiment | INFO | metric_rfmetric_manager.py:55 | [exp0-rapidfire-full-evaluation_9:Experiment] Initialized MLflowMetricLogger: rf_mlflow
+2026-05-02 20:43:15 | Experiment | INFO | metric_rfmetric_manager.py:119 | [exp0-rapidfire-full-evaluation_9:Experiment] Creating MLflow experiment: exp0-rapidfire-full-evaluation_9
+2026-05-02 20:43:16 | Experiment | INFO | experiment.py:210 | [exp0-rapidfire-full-evaluation_9:Experiment] Initialized MetricLogger experiment: 3
+2026-05-02 20:43:16 | Experiment | INFO | experiment.py:226 | [exp0-rapidfire-full-evaluation_9:Experiment] Using existing dispatcher/api server at 127.0.0.1:8851.
+2026-05-02 20:46:34 | Experiment | WARNING | experiment.py:381 | [exp0-rapidfire-full-evaluation_9:Experiment] No GPUs available. Be sure to use external APIs for inference.
+2026-05-02 20:46:34 | Experiment | INFO | experiment.py:383 | [exp0-rapidfire-full-evaluation_9:Experiment] Running multi-config experiment with 4 shard(s), (0.0 GPUs per actor, 8.0 CPUs per actor, 1 actors)
+2026-05-02 20:46:34 | Experiment | INFO | experiment.py:392 | [exp0-rapidfire-full-evaluation_9:Experiment] Reset states of existing pipelines/contexts/tasks (marked as failed)
+2026-05-02 20:46:34 | Controller | INFO | controller.py:895 | [exp0-rapidfire-full-evaluation_9:Controller] Dataset sharded into 4 shard(s). Shard sizes: [12, 11, 11, 11]
+2026-05-02 20:46:34 | Controller | INFO | controller.py:900 | [exp0-rapidfire-full-evaluation_9:Controller] Received 2 pipeline configuration(s)
+2026-05-02 20:46:34 | Controller | INFO | controller.py:309 | [exp0-rapidfire-full-evaluation_9:Controller] Found 1 unique RAG context(s)
+2026-05-02 20:46:34 | Controller | INFO | controller.py:320 | [exp0-rapidfire-full-evaluation_9:Controller] Will build new context afc1924e...
+2026-05-02 20:46:34 | Controller | INFO | controller.py:346 | [exp0-rapidfire-full-evaluation_9:Controller] Building 1 context(s) in parallel...
+2026-05-02 20:46:34 | Controller | INFO | controller.py:373 | [exp0-rapidfire-full-evaluation_9:Controller] Creating 1 DocProcessingActor(s) for parallel processing
+2026-05-02 20:46:36 | matplotlib.font_manager | INFO | font_manager.py:1639 | generated new fontManager
+2026-05-02 20:46:36 | Controller | INFO | controller.py:461 | [exp0-rapidfire-full-evaluation_9:Controller] Submitted 1 build task(s) in parallel
+2026-05-02 20:47:06 | Controller | INFO | controller.py:482 | [exp0-rapidfire-full-evaluation_9:Controller] Built context 1 (afc1924e...) successfully in 31.06s
+2026-05-02 20:47:06 | Controller | INFO | controller.py:523 | [exp0-rapidfire-full-evaluation_9:Controller] Completed parallel context building for 1 context(s)
+2026-05-02 20:47:06 | Controller | INFO | controller.py:920 | [exp0-rapidfire-full-evaluation_9:Controller] Created 1 query processing actors (generic pool)
+2026-05-02 20:47:06 | Experiment | INFO | metric_rfmetric_manager.py:141 | [exp0-rapidfire-full-evaluation_9:Experiment] Created MLflow run: 845552fb575645ba88dc94e2184abcf8, 1
+2026-05-02 20:47:06 | Experiment | INFO | metric_rfmetric_manager.py:141 | [exp0-rapidfire-full-evaluation_9:Experiment] Created MLflow run: 898749adb97942228af3ccd587dd185c, 2
+2026-05-02 20:47:06 | Controller | INFO | controller.py:931 | [exp0-rapidfire-full-evaluation_9:Controller] Initialized scheduler with 2 pipelines, 1 actors, 4 shards
+2026-05-02 20:47:06 | Controller | INFO | controller.py:1118 | [exp0-rapidfire-full-evaluation_9:Controller] Created experiment-wide rate limiter actor for 2 OpenAI pipeline(s) with per-model limits (api-mistral-small-3.2-2506: 120 RPM, 1000000 TPM)
+2026-05-02 20:47:06 | Controller | INFO | controller.py:1124 | [exp0-rapidfire-full-evaluation_9:Controller] Starting multi-pipeline inference scheduling...
+2026-05-02 20:47:06 | Controller | INFO | controller.py:1422 | [exp0-rapidfire-full-evaluation_9:Controller] Scheduling pipeline 1 (Pipeline 1) on actor 0 for shard 0 (1 batches)
+2026-05-02 20:47:42 | Controller | INFO | controller.py:1299 | [exp0-rapidfire-full-evaluation_9:Controller] Pipeline 1 completed shard 0 (1 batches, 11.05s)
+2026-05-02 20:47:42 | Controller | INFO | controller.py:1422 | [exp0-rapidfire-full-evaluation_9:Controller] Scheduling pipeline 2 (Pipeline 2) on actor 0 for shard 0 (1 batches)
+2026-05-02 20:47:53 | Controller | INFO | controller.py:1299 | [exp0-rapidfire-full-evaluation_9:Controller] Pipeline 2 completed shard 0 (1 batches, 9.05s)
+2026-05-02 20:47:53 | Controller | INFO | controller.py:1422 | [exp0-rapidfire-full-evaluation_9:Controller] Scheduling pipeline 1 (Pipeline 1) on actor 0 for shard 1 (1 batches)
+2026-05-02 20:48:04 | Controller | INFO | controller.py:1299 | [exp0-rapidfire-full-evaluation_9:Controller] Pipeline 1 completed shard 1 (1 batches, 9.04s)
+2026-05-02 20:48:04 | Controller | INFO | controller.py:1422 | [exp0-rapidfire-full-evaluation_9:Controller] Scheduling pipeline 2 (Pipeline 2) on actor 0 for shard 1 (1 batches)
+2026-05-02 20:48:14 | Controller | INFO | controller.py:1299 | [exp0-rapidfire-full-evaluation_9:Controller] Pipeline 2 completed shard 1 (1 batches, 8.54s)
+2026-05-02 20:48:14 | Controller | INFO | controller.py:1422 | [exp0-rapidfire-full-evaluation_9:Controller] Scheduling pipeline 1 (Pipeline 1) on actor 0 for shard 2 (1 batches)
+2026-05-02 20:48:24 | Controller | INFO | controller.py:1299 | [exp0-rapidfire-full-evaluation_9:Controller] Pipeline 1 completed shard 2 (1 batches, 8.04s)
+2026-05-02 20:48:24 | Controller | INFO | controller.py:1422 | [exp0-rapidfire-full-evaluation_9:Controller] Scheduling pipeline 2 (Pipeline 2) on actor 0 for shard 2 (1 batches)
+2026-05-02 20:48:33 | Controller | INFO | controller.py:1299 | [exp0-rapidfire-full-evaluation_9:Controller] Pipeline 2 completed shard 2 (1 batches, 8.04s)
+2026-05-02 20:48:33 | Controller | INFO | controller.py:1422 | [exp0-rapidfire-full-evaluation_9:Controller] Scheduling pipeline 1 (Pipeline 1) on actor 0 for shard 3 (1 batches)
+2026-05-02 20:48:44 | Controller | INFO | controller.py:1192 | [exp0-rapidfire-full-evaluation_9:Controller] Pipeline 1 completed all 4 shards
+2026-05-02 20:48:44 | Controller | INFO | controller.py:1299 | [exp0-rapidfire-full-evaluation_9:Controller] Pipeline 1 completed shard 3 (1 batches, 9.55s)
+2026-05-02 20:48:44 | Controller | INFO | controller.py:1422 | [exp0-rapidfire-full-evaluation_9:Controller] Scheduling pipeline 2 (Pipeline 2) on actor 0 for shard 3 (1 batches)
+2026-05-02 20:48:55 | Controller | INFO | controller.py:1192 | [exp0-rapidfire-full-evaluation_9:Controller] Pipeline 2 completed all 4 shards
+2026-05-02 20:48:55 | Controller | INFO | controller.py:1299 | [exp0-rapidfire-full-evaluation_9:Controller] Pipeline 2 completed shard 3 (1 batches, 9.04s)
+2026-05-02 20:48:55 | Controller | INFO | controller.py:1386 | [exp0-rapidfire-full-evaluation_9:Controller] All pipelines completed all shards!
+2026-05-02 20:48:55 | Controller | INFO | controller.py:695 | [exp0-rapidfire-full-evaluation_9:Controller] Computing final metrics for all pipelines...
+2026-05-02 20:48:55 | Experiment | INFO | metric_rfmetric_manager.py:190 | [exp0-rapidfire-full-evaluation_9:Experiment] Ending run: 845552fb575645ba88dc94e2184abcf8, 1 in rf_mlflow
+2026-05-02 20:48:55 | Experiment | WARNING | metric_mlflow_manager.py:101 | [exp0-rapidfire-full-evaluation_9:Experiment] Run 845552fb575645ba88dc94e2184abcf8 is not the active run, no local context to clear
+2026-05-02 20:48:55 | Controller | INFO | controller.py:853 | [exp0-rapidfire-full-evaluation_9:Controller] Pipeline 1 (Pipeline 1) completed successfully
+2026-05-02 20:48:55 | Experiment | INFO | metric_rfmetric_manager.py:190 | [exp0-rapidfire-full-evaluation_9:Experiment] Ending run: 898749adb97942228af3ccd587dd185c, 2 in rf_mlflow
+2026-05-02 20:48:56 | Experiment | WARNING | metric_mlflow_manager.py:101 | [exp0-rapidfire-full-evaluation_9:Experiment] Run 898749adb97942228af3ccd587dd185c is not the active run, no local context to clear
+2026-05-02 20:48:56 | Controller | INFO | controller.py:853 | [exp0-rapidfire-full-evaluation_9:Controller] Pipeline 2 (Pipeline 2) completed successfully
+2026-05-02 20:55:38 | ExperimentUtils | INFO | experiment_utils.py:180 | [exp0-rapidfire-full-evaluation_9:ExperimentUtils] Reset experiment states - marked ongoing pipelines, contexts, and tasks as failed
+2026-05-02 20:55:38 | ExperimentUtils | INFO | experiment_utils.py:188 | [exp0-rapidfire-full-evaluation_9:ExperimentUtils] Experiment marked as cancelled. Ongoing pipelines, contexts, and tasks have been marked as failed.
+2026-05-02 20:55:38 | ExperimentUtils | INFO | experiment_utils.py:154 | [exp0-rapidfire-full-evaluation_9:ExperimentUtils] Experiment exp0-rapidfire-full-evaluation_9 ended
+2026-05-02 20:55:41 | Experiment | INFO | experiment.py:574 | [exp0-rapidfire-full-evaluation_9:Experiment] All actors shut down
+2026-05-02 20:55:41 | Experiment | INFO | experiment.py:575 | [exp0-rapidfire-full-evaluation_9:Experiment] Dispatcher will automatically shut down (daemon thread)
+2026-05-02 21:27:27 | Experiment | INFO | experiment.py:165 | [exp0-rapidfire-full-evaluation_10:Experiment] An experiment with the same name already exists. Created a new experiment 'exp0-rapidfire-full-evaluation_10' with Experiment ID: 13 at /home/obychenkov/rapidfireai/rapidfire_experiments/exp0-rapidfire-full-evaluation_10
+2026-05-02 21:27:46 | ExperimentUtils | INFO | experiment_utils.py:180 | [exp0-rapidfire-full-evaluation_10:ExperimentUtils] Reset experiment states - marked ongoing pipelines, contexts, and tasks as failed
+2026-05-02 21:27:46 | ExperimentUtils | INFO | experiment_utils.py:188 | [exp0-rapidfire-full-evaluation_10:ExperimentUtils] Experiment marked as cancelled. Ongoing pipelines, contexts, and tasks have been marked as failed.
+2026-05-02 21:27:46 | ExperimentUtils | INFO | experiment_utils.py:154 | [exp0-rapidfire-full-evaluation_10:ExperimentUtils] Experiment exp0-rapidfire-full-evaluation_10 ended
+2026-05-02 21:27:46 | Experiment | INFO | experiment.py:165 | [exp1-rapidfire-full-evaluation:Experiment] The previously running experiment exp0-rapidfire-full-evaluation_10 was forcibly ended. Created a new experiment 'exp1-rapidfire-full-evaluation' with Experiment ID: 14 at /home/obychenkov/rapidfireai/rapidfire_experiments/exp1-rapidfire-full-evaluation

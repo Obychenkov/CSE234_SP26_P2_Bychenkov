@@ -1,0 +1,90 @@
+2026-05-29 21:51:30 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | experiment | INFO | experiment.py:104 | Experiment p2-qwen25-15b-lora-r32-candidate40-json-3epoch created with Experiment ID: 13 and Metric Experiment ID: 30 at /home/obychenkov/rapidfireai/rapidfire_experiments/p2-qwen25-15b-lora-r32-candidate40-json-3epoch
+2026-05-29 21:51:30 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | experiment | INFO | experiment.py:106 | Running RapidFire AI version 0.15.2
+2026-05-29 21:51:31 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | controller | DEBUG | controller.py:67 | Found 1 workers/GPUs.
+2026-05-29 21:51:44 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | controller | INFO | metric_rfmetric_manager.py:55 | Initialized MLflowMetricLogger: rf_mlflow
+2026-05-29 21:51:44 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | controller | DEBUG | controller.py:95 | Controller initialized
+2026-05-29 21:51:44 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | controller | DEBUG | controller.py:594 | Set experiment task to Create Models.
+2026-05-29 21:51:44 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | controller | DEBUG | controller.py:607 | Saved datasets to /home/obychenkov/rapidfireai/rapidfire_experiments/p2-qwen25-15b-lora-r32-candidate40-json-3epoch/datasets.dill
+2026-05-29 21:51:44 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | controller | INFO | controller.py:613 | Set seed to 42
+2026-05-29 21:51:44 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | controller | INFO | metric_rfmetric_manager.py:141 | Created MLflow run: 43c23dddf0634f6cb1d1dbc4a237356b, 1
+2026-05-29 21:51:44 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | controller | DEBUG | controller.py:200 | Populated MetricLogger with model config info for run 1.
+2026-05-29 21:51:44 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | controller | INFO | controller.py:220 | Created 1 runs - 
+{   1: {   'model_kwargs.use_cache': False,
+           'model_name': 'Qwen/Qwen2.5-1.5B-Instruct',
+           'model_type': 'causal_lm',
+           'peft_params.bias': 'none',
+           'peft_params.lora_alpha': 64,
+           'peft_params.lora_dropout': 0.05,
+           'peft_params.r': 32,
+           'peft_params.target_modules': ['q_proj', 'k_proj', 'v_proj', 'o_proj'],
+           'tokenizer': None,
+           'tokenizer_kwargs': None,
+           'trainer_type': 'SFT',
+           'training_args.bf16': True,
+           'training_args.eval_strategy': 'epoch',
+           'training_args.gradient_accumulation_steps': 8,
+           'training_args.gradient_checkpointing': True,
+           'training_args.learning_rate': 0.0002,
+           'training_args.logging_steps': 5,
+           'training_args.lr_scheduler_type': 'linear',
+           'training_args.max_length': 16384,
+           'training_args.num_train_epochs': 3.0,
+           'training_args.packing': False,
+           'training_args.per_device_eval_batch_size': 1,
+           'training_args.per_device_train_batch_size': 1,
+           'training_args.save_strategy': 'epoch'}}
+2026-05-29 21:51:44 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | controller | DEBUG | controller.py:223 | Got 1 runs for Initial.
+2026-05-29 21:51:44 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | controller | DEBUG | controller.py:227 | Completed creating models.
+2026-05-29 21:51:44 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | controller | DEBUG | controller.py:625 | Created models.
+2026-05-29 21:51:44 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | controller | DEBUG | controller.py:631 | Set experiment task to Training and Validation.
+2026-05-29 21:51:44 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | worker_manager | DEBUG | worker_manager.py:115 | Creating 1 worker processes...
+2026-05-29 21:51:44 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | worker_manager | DEBUG | worker_manager.py:125 | Cannot create process group (restricted environment) - will use individual process termination
+2026-05-29 21:51:44 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | worker_manager | DEBUG | worker_manager.py:149 | Started Worker 0 with PID 42927
+2026-05-29 21:51:44 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | worker_manager | INFO | worker_manager.py:156 | Started 1 worker processes successfully
+2026-05-29 21:51:44 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | controller | DEBUG | controller.py:637 | Created 1 workers.
+2026-05-29 21:51:44 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | controller | INFO | controller.py:659 | Starting Training and Validation
+2026-05-29 21:51:44 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | controller | DEBUG | controller.py:886 | Scheduled run 1 on workers (0,) for chunk 0
+2026-05-29 21:51:59 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | worker_0 | DEBUG | worker.py:157 | Worker 0 initialized with PID 42927
+2026-05-29 21:51:59 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | worker_0 | INFO | metric_rfmetric_manager.py:55 | Initialized MLflowMetricLogger: rf_mlflow
+2026-05-29 21:51:59 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | worker_0 | DEBUG | worker.py:192 | Loaded datasets
+2026-05-29 21:51:59 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | worker_0 | DEBUG | worker.py:667 | Received task WorkerTask.TRAIN_VAL for run 1
+2026-05-29 21:51:59 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | worker_0 | DEBUG | worker.py:205 | Received run_fit on worker for run 1 with chunk 0
+2026-05-29 21:53:53 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | worker-0-shm | DEBUG | shm_manager.py:348 | Saved base_model for run Qwen/Qwen2.5-1.5B-Instruct
+2026-05-29 21:55:31 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | worker_0 | DEBUG | worker.py:378 | Beginning training for run 1 on chunk 0
+2026-05-29 22:06:04 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | worker-0-shm | DEBUG | shm_manager.py:445 | Checkpoint update:0 in-place, 7 new
+2026-05-29 22:06:04 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | worker_0 | DEBUG | worker.py:473 | Saved checkpoint to shared memory for run 1 on chunk 0
+2026-05-29 22:06:07 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | controller | DEBUG | controller.py:714 | Completed task: run 1, chunk 0 on workers (0,)
+2026-05-29 22:06:07 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | controller | INFO | controller.py:717 | Run 1 completed steps - 38/114
+2026-05-29 22:06:07 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | controller | INFO | controller.py:773 | Run 1 has completed epoch (1/1 chunks)
+2026-05-29 22:06:07 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | controller | DEBUG | controller.py:886 | Scheduled run 1 on workers (0,) for chunk 0
+2026-05-29 22:06:08 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | worker_0 | DEBUG | worker.py:667 | Received task WorkerTask.TRAIN_VAL for run 1
+2026-05-29 22:06:08 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | worker_0 | DEBUG | worker.py:205 | Received run_fit on worker for run 1 with chunk 0
+2026-05-29 22:07:53 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | worker_0 | DEBUG | worker.py:378 | Beginning training for run 1 on chunk 0
+2026-05-29 22:16:21 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | worker-0-shm | DEBUG | shm_manager.py:445 | Checkpoint update:896 in-place, 0 new
+2026-05-29 22:16:21 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | worker_0 | DEBUG | worker.py:473 | Saved checkpoint to shared memory for run 1 on chunk 0
+2026-05-29 22:16:23 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | controller | DEBUG | controller.py:714 | Completed task: run 1, chunk 0 on workers (0,)
+2026-05-29 22:16:23 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | controller | INFO | controller.py:717 | Run 1 completed steps - 76/114
+2026-05-29 22:16:23 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | controller | INFO | controller.py:773 | Run 1 has completed epoch (1/1 chunks)
+2026-05-29 22:16:23 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | controller | DEBUG | controller.py:886 | Scheduled run 1 on workers (0,) for chunk 0
+2026-05-29 22:16:24 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | worker_0 | DEBUG | worker.py:667 | Received task WorkerTask.TRAIN_VAL for run 1
+2026-05-29 22:16:24 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | worker_0 | DEBUG | worker.py:205 | Received run_fit on worker for run 1 with chunk 0
+2026-05-29 22:18:11 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | worker_0 | DEBUG | worker.py:378 | Beginning training for run 1 on chunk 0
+2026-05-29 22:24:00 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | worker_0 | DEBUG | worker.py:453 | Saved final checkpoint to disk for run 1 on chunk 0
+2026-05-29 22:24:02 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | controller | DEBUG | controller.py:714 | Completed task: run 1, chunk 0 on workers (0,)
+2026-05-29 22:24:02 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | controller | INFO | controller.py:717 | Run 1 completed steps - 114/114
+2026-05-29 22:24:02 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | controller | INFO | controller.py:760 | Run 1 has completed all its epochs - steps 114/114
+2026-05-29 22:24:02 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | controller | INFO | controller.py:848 | Scheduler indicates all runs have completed all chunks
+2026-05-29 22:24:02 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | controller | DEBUG | controller.py:904 | Set experiment task to Idle.
+2026-05-29 22:24:02 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | worker_manager | DEBUG | worker_manager.py:163 | WorkerManager shutdown initiated...
+2026-05-29 22:24:02 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | worker_manager | DEBUG | worker_manager.py:167 | Signaling graceful shutdown...
+2026-05-29 22:24:03 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | worker_0 | DEBUG | worker.py:712 | Worker 0 shutdown requested
+2026-05-29 22:24:03 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | worker_0 | INFO | worker_manager.py:50 | Worker 0 process exiting
+2026-05-29 22:24:03 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | worker_0 | DEBUG | worker.py:712 | Worker 0 shutdown requested
+2026-05-29 22:24:05 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | worker_manager | DEBUG | worker_manager.py:186 | All workers shutdown gracefully
+2026-05-29 22:24:05 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | worker_manager | DEBUG | worker_manager.py:163 | WorkerManager shutdown initiated...
+2026-05-29 22:24:05 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | worker_manager | DEBUG | worker_manager.py:167 | Signaling graceful shutdown...
+2026-05-29 22:24:05 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | worker_manager | DEBUG | worker_manager.py:186 | All workers shutdown gracefully
+2026-05-29 22:24:06 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | DEBUG | experiment_utils.py:271 | Reset experiment states and set current experiment task to idle
+2026-05-29 22:24:06 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | INFO | metric_rfmetric_manager.py:55 | Initialized MLflowMetricLogger: rf_mlflow
+2026-05-29 22:24:06 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | INFO | metric_mlflow_manager.py:133 | No active MLflow run to clear
+2026-05-29 22:24:06 | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | p2-qwen25-15b-lora-r32-candidate40-json-3epoch | INFO | experiment_utils.py:240 | Experiment p2-qwen25-15b-lora-r32-candidate40-json-3epoch ended

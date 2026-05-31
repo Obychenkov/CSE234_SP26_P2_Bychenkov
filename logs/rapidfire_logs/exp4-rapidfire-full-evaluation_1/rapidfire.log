@@ -1,0 +1,687 @@
+2026-05-05 18:52:56 | Experiment | INFO | experiment.py:165 | [exp4-rapidfire-full-evaluation_1:Experiment] An experiment with the same name already exists. Created a new experiment 'exp4-rapidfire-full-evaluation_1' with Experiment ID: 27 at /home/obychenkov/rapidfireai/rapidfire_experiments/exp4-rapidfire-full-evaluation_1
+2026-05-05 18:53:21 | Experiment | INFO | metric_rfmetric_manager.py:55 | [exp4-rapidfire-full-evaluation_1:Experiment] Initialized MLflowMetricLogger: rf_mlflow
+2026-05-05 18:53:21 | Experiment | INFO | metric_rfmetric_manager.py:119 | [exp4-rapidfire-full-evaluation_1:Experiment] Creating MLflow experiment: exp4-rapidfire-full-evaluation_1
+2026-05-05 18:53:21 | Experiment | INFO | experiment.py:210 | [exp4-rapidfire-full-evaluation_1:Experiment] Initialized MetricLogger experiment: 16
+2026-05-05 18:53:21 | Experiment | INFO | experiment.py:226 | [exp4-rapidfire-full-evaluation_1:Experiment] Using existing dispatcher/api server at 127.0.0.1:8851.
+2026-05-05 18:53:50 | Experiment | WARNING | experiment.py:381 | [exp4-rapidfire-full-evaluation_1:Experiment] No GPUs available. Be sure to use external APIs for inference.
+2026-05-05 18:53:50 | Experiment | INFO | experiment.py:383 | [exp4-rapidfire-full-evaluation_1:Experiment] Running multi-config experiment with 4 shard(s), (0.0 GPUs per actor, 8.0 CPUs per actor, 1 actors)
+2026-05-05 18:53:50 | Experiment | INFO | experiment.py:392 | [exp4-rapidfire-full-evaluation_1:Experiment] Reset states of existing pipelines/contexts/tasks (marked as failed)
+2026-05-05 18:53:51 | Controller | INFO | controller.py:895 | [exp4-rapidfire-full-evaluation_1:Controller] Dataset sharded into 4 shard(s). Shard sizes: [12, 11, 11, 11]
+2026-05-05 18:53:51 | Controller | INFO | controller.py:900 | [exp4-rapidfire-full-evaluation_1:Controller] Received 8 pipeline configuration(s)
+2026-05-05 18:53:51 | Controller | INFO | controller.py:309 | [exp4-rapidfire-full-evaluation_1:Controller] Found 2 unique RAG context(s)
+2026-05-05 18:53:51 | Controller | INFO | controller.py:320 | [exp4-rapidfire-full-evaluation_1:Controller] Will build new context 744c9839...
+2026-05-05 18:53:51 | Controller | INFO | controller.py:320 | [exp4-rapidfire-full-evaluation_1:Controller] Will build new context fff03b74...
+2026-05-05 18:53:51 | Controller | INFO | controller.py:346 | [exp4-rapidfire-full-evaluation_1:Controller] Building 2 context(s) in parallel...
+2026-05-05 18:53:51 | Controller | INFO | controller.py:373 | [exp4-rapidfire-full-evaluation_1:Controller] Creating 2 DocProcessingActor(s) for parallel processing
+2026-05-05 18:53:53 | matplotlib.font_manager | INFO | font_manager.py:1639 | generated new fontManager
+2026-05-05 18:53:54 | Controller | INFO | controller.py:461 | [exp4-rapidfire-full-evaluation_1:Controller] Submitted 2 build task(s) in parallel
+2026-05-05 18:54:24 | DocProcessingActor | INFO | doc_actor.py:59 | [exp4-rapidfire-full-evaluation_1:DocProcessingActor] DocProcessingActor initialized
+2026-05-05 18:54:24 | DocProcessingActor | INFO | doc_actor.py:59 | [exp4-rapidfire-full-evaluation_1:DocProcessingActor] DocProcessingActor initialized
+2026-05-05 18:54:27 | DocProcessingActor | INFO | doc_actor.py:96 | [exp4-rapidfire-full-evaluation_1:DocProcessingActor] DocProcessingActor: Starting context initialization...
+2026-05-05 18:54:27 | DocProcessingActor | INFO | doc_actor.py:107 | [exp4-rapidfire-full-evaluation_1:DocProcessingActor] Building document index...
+2026-05-05 18:54:27 | DocProcessingActor | INFO | doc_actor.py:96 | [exp4-rapidfire-full-evaluation_1:DocProcessingActor] DocProcessingActor: Starting context initialization...
+2026-05-05 18:54:27 | DocProcessingActor | INFO | doc_actor.py:107 | [exp4-rapidfire-full-evaluation_1:DocProcessingActor] Building document index...
+2026-05-05 18:54:28 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L6-v2, initializing a new CrossEncoder model.
+2026-05-05 18:54:28 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L6-v2, initializing a new CrossEncoder model.
+2026-05-05 18:54:35 | DocProcessingActor | INFO | doc_actor.py:109 | [exp4-rapidfire-full-evaluation_1:DocProcessingActor] Document index built successfully
+2026-05-05 18:54:35 | DocProcessingActor | INFO | doc_actor.py:134 | [exp4-rapidfire-full-evaluation_1:DocProcessingActor] Serializing FAISS index for cross-actor sharing...
+2026-05-05 18:54:35 | DocProcessingActor | INFO | doc_actor.py:144 | [exp4-rapidfire-full-evaluation_1:DocProcessingActor] FAISS index serialized: 1458732 bytes
+2026-05-05 18:54:35 | DocProcessingActor | INFO | doc_actor.py:189 | [exp4-rapidfire-full-evaluation_1:DocProcessingActor] DocProcessingActor: Context components ready for sharing
+2026-05-05 18:54:35 | DocProcessingActor | INFO | doc_actor.py:109 | [exp4-rapidfire-full-evaluation_1:DocProcessingActor] Document index built successfully
+2026-05-05 18:54:35 | DocProcessingActor | INFO | doc_actor.py:134 | [exp4-rapidfire-full-evaluation_1:DocProcessingActor] Serializing FAISS index for cross-actor sharing...
+2026-05-05 18:54:35 | DocProcessingActor | INFO | doc_actor.py:144 | [exp4-rapidfire-full-evaluation_1:DocProcessingActor] FAISS index serialized: 1666616 bytes
+2026-05-05 18:54:35 | DocProcessingActor | INFO | doc_actor.py:189 | [exp4-rapidfire-full-evaluation_1:DocProcessingActor] DocProcessingActor: Context components ready for sharing
+2026-05-05 18:54:35 | Controller | INFO | controller.py:482 | [exp4-rapidfire-full-evaluation_1:Controller] Built context 1 (744c9839...) successfully in 43.98s
+2026-05-05 18:54:35 | Controller | INFO | controller.py:482 | [exp4-rapidfire-full-evaluation_1:Controller] Built context 2 (fff03b74...) successfully in 44.00s
+2026-05-05 18:54:35 | Controller | INFO | controller.py:523 | [exp4-rapidfire-full-evaluation_1:Controller] Completed parallel context building for 2 context(s)
+2026-05-05 18:54:35 | Controller | INFO | controller.py:920 | [exp4-rapidfire-full-evaluation_1:Controller] Created 1 query processing actors (generic pool)
+2026-05-05 18:54:35 | Experiment | INFO | metric_rfmetric_manager.py:141 | [exp4-rapidfire-full-evaluation_1:Experiment] Created MLflow run: 993cac5a93d347329790ee60ca110a70, 1
+2026-05-05 18:54:35 | Experiment | INFO | metric_rfmetric_manager.py:141 | [exp4-rapidfire-full-evaluation_1:Experiment] Created MLflow run: fe08b8b32c644bde89200e3e3f782284, 2
+2026-05-05 18:54:35 | Experiment | INFO | metric_rfmetric_manager.py:141 | [exp4-rapidfire-full-evaluation_1:Experiment] Created MLflow run: 5494c2ecfd76466bbb3841a7d533819b, 3
+2026-05-05 18:54:35 | Experiment | INFO | metric_rfmetric_manager.py:141 | [exp4-rapidfire-full-evaluation_1:Experiment] Created MLflow run: cda65e327fbb4e85aec8216e16ba6559, 4
+2026-05-05 18:54:35 | Experiment | INFO | metric_rfmetric_manager.py:141 | [exp4-rapidfire-full-evaluation_1:Experiment] Created MLflow run: 328b354a7d5a421fa138183e213542c9, 5
+2026-05-05 18:54:36 | Experiment | INFO | metric_rfmetric_manager.py:141 | [exp4-rapidfire-full-evaluation_1:Experiment] Created MLflow run: 6f0f52a3955b41599345a2dacf5a9c96, 6
+2026-05-05 18:54:36 | Experiment | INFO | metric_rfmetric_manager.py:141 | [exp4-rapidfire-full-evaluation_1:Experiment] Created MLflow run: 24aa13d14f324b76949aa078d072543c, 7
+2026-05-05 18:54:36 | Experiment | INFO | metric_rfmetric_manager.py:141 | [exp4-rapidfire-full-evaluation_1:Experiment] Created MLflow run: b98da7ee57db44bdaa0eac553bc64850, 8
+2026-05-05 18:54:36 | Controller | INFO | controller.py:931 | [exp4-rapidfire-full-evaluation_1:Controller] Initialized scheduler with 8 pipelines, 1 actors, 4 shards
+2026-05-05 18:54:36 | Controller | INFO | controller.py:1118 | [exp4-rapidfire-full-evaluation_1:Controller] Created experiment-wide rate limiter actor for 8 OpenAI pipeline(s) with per-model limits (api-mistral-small-3.2-2506: 120 RPM, 1000000 TPM)
+2026-05-05 18:54:36 | Controller | INFO | controller.py:1124 | [exp4-rapidfire-full-evaluation_1:Controller] Starting multi-pipeline inference scheduling...
+2026-05-05 18:54:36 | Controller | INFO | controller.py:1422 | [exp4-rapidfire-full-evaluation_1:Controller] Scheduling pipeline 1 (Pipeline 1) on actor 0 for shard 0 (1 batches)
+2026-05-05 18:55:08 | QueryProcessingActor-0 | INFO | query_actor.py:165 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Initializing new inference engine (config hash: 9ca7e9cf)
+2026-05-05 18:55:08 | QueryProcessingActor-0 | INFO | query_actor.py:198 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated embedding function: OpenAIEmbeddings
+2026-05-05 18:55:08 | QueryProcessingActor-0 | INFO | query_actor.py:211 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-05 18:55:08 | QueryProcessingActor-0 | INFO | query_actor.py:215 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2026-05-05 18:55:08 | QueryProcessingActor-0 | INFO | query_actor.py:230 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2026-05-05 18:55:08 | QueryProcessingActor-0 | INFO | query_actor.py:260 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated retriever with search_type=similarity
+2026-05-05 18:55:08 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L6-v2, initializing a new CrossEncoder model.
+2026-05-05 18:55:09 | QueryProcessingActor-0 | INFO | query_actor.py:277 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated RAG spec with retrieval mode
+2026-05-05 18:55:22 | Controller | INFO | controller.py:1299 | [exp4-rapidfire-full-evaluation_1:Controller] Pipeline 1 completed shard 0 (1 batches, 12.05s)
+2026-05-05 18:55:22 | Controller | INFO | controller.py:1422 | [exp4-rapidfire-full-evaluation_1:Controller] Scheduling pipeline 2 (Pipeline 2) on actor 0 for shard 0 (1 batches)
+2026-05-05 18:55:22 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Reusing existing inference engine (config hash: 9ca7e9cf)
+2026-05-05 18:55:22 | QueryProcessingActor-0 | INFO | query_actor.py:198 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated embedding function: OpenAIEmbeddings
+2026-05-05 18:55:22 | QueryProcessingActor-0 | INFO | query_actor.py:211 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-05 18:55:22 | QueryProcessingActor-0 | INFO | query_actor.py:215 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2026-05-05 18:55:22 | QueryProcessingActor-0 | INFO | query_actor.py:230 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2026-05-05 18:55:22 | QueryProcessingActor-0 | INFO | query_actor.py:260 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated retriever with search_type=similarity
+2026-05-05 18:55:22 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L12-v2, initializing a new CrossEncoder model.
+2026-05-05 18:55:26 | QueryProcessingActor-0 | INFO | query_actor.py:277 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated RAG spec with retrieval mode
+2026-05-05 18:55:39 | Controller | INFO | controller.py:1299 | [exp4-rapidfire-full-evaluation_1:Controller] Pipeline 2 completed shard 0 (1 batches, 13.06s)
+2026-05-05 18:55:39 | Controller | INFO | controller.py:1422 | [exp4-rapidfire-full-evaluation_1:Controller] Scheduling pipeline 3 (Pipeline 3) on actor 0 for shard 0 (1 batches)
+2026-05-05 18:55:39 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Reusing existing inference engine (config hash: 9ca7e9cf)
+2026-05-05 18:55:39 | QueryProcessingActor-0 | INFO | query_actor.py:198 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated embedding function: OpenAIEmbeddings
+2026-05-05 18:55:39 | QueryProcessingActor-0 | INFO | query_actor.py:211 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-05 18:55:39 | QueryProcessingActor-0 | INFO | query_actor.py:215 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2026-05-05 18:55:39 | QueryProcessingActor-0 | INFO | query_actor.py:230 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2026-05-05 18:55:39 | QueryProcessingActor-0 | INFO | query_actor.py:260 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated retriever with search_type=mmr
+2026-05-05 18:55:39 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L6-v2, initializing a new CrossEncoder model.
+2026-05-05 18:55:41 | QueryProcessingActor-0 | INFO | query_actor.py:277 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated RAG spec with retrieval mode
+2026-05-05 18:55:51 | Controller | INFO | controller.py:1299 | [exp4-rapidfire-full-evaluation_1:Controller] Pipeline 3 completed shard 0 (1 batches, 10.05s)
+2026-05-05 18:55:51 | Controller | INFO | controller.py:1422 | [exp4-rapidfire-full-evaluation_1:Controller] Scheduling pipeline 4 (Pipeline 4) on actor 0 for shard 0 (1 batches)
+2026-05-05 18:55:51 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Reusing existing inference engine (config hash: 9ca7e9cf)
+2026-05-05 18:55:51 | QueryProcessingActor-0 | INFO | query_actor.py:198 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated embedding function: OpenAIEmbeddings
+2026-05-05 18:55:51 | QueryProcessingActor-0 | INFO | query_actor.py:211 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-05 18:55:51 | QueryProcessingActor-0 | INFO | query_actor.py:215 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2026-05-05 18:55:51 | QueryProcessingActor-0 | INFO | query_actor.py:230 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2026-05-05 18:55:51 | QueryProcessingActor-0 | INFO | query_actor.py:260 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated retriever with search_type=mmr
+2026-05-05 18:55:51 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L12-v2, initializing a new CrossEncoder model.
+2026-05-05 18:55:53 | QueryProcessingActor-0 | INFO | query_actor.py:277 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated RAG spec with retrieval mode
+2026-05-05 18:56:06 | Controller | INFO | controller.py:1299 | [exp4-rapidfire-full-evaluation_1:Controller] Pipeline 4 completed shard 0 (1 batches, 13.57s)
+2026-05-05 18:56:07 | Controller | INFO | controller.py:1422 | [exp4-rapidfire-full-evaluation_1:Controller] Scheduling pipeline 5 (Pipeline 5) on actor 0 for shard 0 (1 batches)
+2026-05-05 18:56:07 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Reusing existing inference engine (config hash: 9ca7e9cf)
+2026-05-05 18:56:07 | QueryProcessingActor-0 | INFO | query_actor.py:198 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated embedding function: OpenAIEmbeddings
+2026-05-05 18:56:07 | QueryProcessingActor-0 | INFO | query_actor.py:211 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-05 18:56:07 | QueryProcessingActor-0 | INFO | query_actor.py:215 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2026-05-05 18:56:07 | QueryProcessingActor-0 | INFO | query_actor.py:230 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2026-05-05 18:56:07 | QueryProcessingActor-0 | INFO | query_actor.py:260 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated retriever with search_type=similarity
+2026-05-05 18:56:07 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L6-v2, initializing a new CrossEncoder model.
+2026-05-05 18:56:08 | QueryProcessingActor-0 | INFO | query_actor.py:277 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated RAG spec with retrieval mode
+2026-05-05 18:56:20 | Controller | INFO | controller.py:1299 | [exp4-rapidfire-full-evaluation_1:Controller] Pipeline 5 completed shard 0 (1 batches, 11.56s)
+2026-05-05 18:56:20 | Controller | INFO | controller.py:1422 | [exp4-rapidfire-full-evaluation_1:Controller] Scheduling pipeline 6 (Pipeline 6) on actor 0 for shard 0 (1 batches)
+2026-05-05 18:56:20 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Reusing existing inference engine (config hash: 9ca7e9cf)
+2026-05-05 18:56:20 | QueryProcessingActor-0 | INFO | query_actor.py:198 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated embedding function: OpenAIEmbeddings
+2026-05-05 18:56:20 | QueryProcessingActor-0 | INFO | query_actor.py:211 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-05 18:56:20 | QueryProcessingActor-0 | INFO | query_actor.py:215 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2026-05-05 18:56:20 | QueryProcessingActor-0 | INFO | query_actor.py:230 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2026-05-05 18:56:20 | QueryProcessingActor-0 | INFO | query_actor.py:260 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated retriever with search_type=similarity
+2026-05-05 18:56:20 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L12-v2, initializing a new CrossEncoder model.
+2026-05-05 18:56:22 | QueryProcessingActor-0 | INFO | query_actor.py:277 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated RAG spec with retrieval mode
+2026-05-05 18:56:38 | Controller | INFO | controller.py:1299 | [exp4-rapidfire-full-evaluation_1:Controller] Pipeline 6 completed shard 0 (1 batches, 15.59s)
+2026-05-05 18:56:38 | Controller | INFO | controller.py:1422 | [exp4-rapidfire-full-evaluation_1:Controller] Scheduling pipeline 7 (Pipeline 7) on actor 0 for shard 0 (1 batches)
+2026-05-05 18:56:38 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Reusing existing inference engine (config hash: 9ca7e9cf)
+2026-05-05 18:56:38 | QueryProcessingActor-0 | INFO | query_actor.py:198 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated embedding function: OpenAIEmbeddings
+2026-05-05 18:56:38 | QueryProcessingActor-0 | INFO | query_actor.py:211 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-05 18:56:38 | QueryProcessingActor-0 | INFO | query_actor.py:215 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2026-05-05 18:56:38 | QueryProcessingActor-0 | INFO | query_actor.py:230 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2026-05-05 18:56:38 | QueryProcessingActor-0 | INFO | query_actor.py:260 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated retriever with search_type=mmr
+2026-05-05 18:56:38 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L6-v2, initializing a new CrossEncoder model.
+2026-05-05 18:56:39 | QueryProcessingActor-0 | INFO | query_actor.py:277 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated RAG spec with retrieval mode
+2026-05-05 18:56:51 | Controller | INFO | controller.py:1299 | [exp4-rapidfire-full-evaluation_1:Controller] Pipeline 7 completed shard 0 (1 batches, 11.65s)
+2026-05-05 18:56:51 | Controller | INFO | controller.py:1422 | [exp4-rapidfire-full-evaluation_1:Controller] Scheduling pipeline 8 (Pipeline 8) on actor 0 for shard 0 (1 batches)
+2026-05-05 18:56:51 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Reusing existing inference engine (config hash: 9ca7e9cf)
+2026-05-05 18:56:51 | QueryProcessingActor-0 | INFO | query_actor.py:198 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated embedding function: OpenAIEmbeddings
+2026-05-05 18:56:51 | QueryProcessingActor-0 | INFO | query_actor.py:211 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-05 18:56:51 | QueryProcessingActor-0 | INFO | query_actor.py:215 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2026-05-05 18:56:51 | QueryProcessingActor-0 | INFO | query_actor.py:230 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2026-05-05 18:56:51 | QueryProcessingActor-0 | INFO | query_actor.py:260 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated retriever with search_type=mmr
+2026-05-05 18:56:51 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L12-v2, initializing a new CrossEncoder model.
+2026-05-05 18:56:53 | QueryProcessingActor-0 | INFO | query_actor.py:277 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated RAG spec with retrieval mode
+2026-05-05 18:57:09 | Controller | INFO | controller.py:1299 | [exp4-rapidfire-full-evaluation_1:Controller] Pipeline 8 completed shard 0 (1 batches, 15.86s)
+2026-05-05 18:57:09 | Controller | INFO | controller.py:1422 | [exp4-rapidfire-full-evaluation_1:Controller] Scheduling pipeline 1 (Pipeline 1) on actor 0 for shard 1 (1 batches)
+2026-05-05 18:57:09 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Reusing existing inference engine (config hash: 9ca7e9cf)
+2026-05-05 18:57:09 | QueryProcessingActor-0 | INFO | query_actor.py:198 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated embedding function: OpenAIEmbeddings
+2026-05-05 18:57:09 | QueryProcessingActor-0 | INFO | query_actor.py:211 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-05 18:57:09 | QueryProcessingActor-0 | INFO | query_actor.py:215 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2026-05-05 18:57:09 | QueryProcessingActor-0 | INFO | query_actor.py:230 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2026-05-05 18:57:09 | QueryProcessingActor-0 | INFO | query_actor.py:260 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated retriever with search_type=similarity
+2026-05-05 18:57:09 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L6-v2, initializing a new CrossEncoder model.
+2026-05-05 18:57:10 | QueryProcessingActor-0 | INFO | query_actor.py:277 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated RAG spec with retrieval mode
+2026-05-05 18:57:21 | Controller | INFO | controller.py:1299 | [exp4-rapidfire-full-evaluation_1:Controller] Pipeline 1 completed shard 1 (1 batches, 10.05s)
+2026-05-05 18:57:21 | Controller | INFO | controller.py:1422 | [exp4-rapidfire-full-evaluation_1:Controller] Scheduling pipeline 2 (Pipeline 2) on actor 0 for shard 1 (1 batches)
+2026-05-05 18:57:21 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Reusing existing inference engine (config hash: 9ca7e9cf)
+2026-05-05 18:57:21 | QueryProcessingActor-0 | INFO | query_actor.py:198 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated embedding function: OpenAIEmbeddings
+2026-05-05 18:57:21 | QueryProcessingActor-0 | INFO | query_actor.py:211 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-05 18:57:21 | QueryProcessingActor-0 | INFO | query_actor.py:215 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2026-05-05 18:57:21 | QueryProcessingActor-0 | INFO | query_actor.py:230 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2026-05-05 18:57:21 | QueryProcessingActor-0 | INFO | query_actor.py:260 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated retriever with search_type=similarity
+2026-05-05 18:57:21 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L12-v2, initializing a new CrossEncoder model.
+2026-05-05 18:57:22 | QueryProcessingActor-0 | INFO | query_actor.py:277 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated RAG spec with retrieval mode
+2026-05-05 18:57:35 | Controller | INFO | controller.py:1299 | [exp4-rapidfire-full-evaluation_1:Controller] Pipeline 2 completed shard 1 (1 batches, 13.06s)
+2026-05-05 18:57:35 | Controller | INFO | controller.py:1422 | [exp4-rapidfire-full-evaluation_1:Controller] Scheduling pipeline 3 (Pipeline 3) on actor 0 for shard 1 (1 batches)
+2026-05-05 18:57:35 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Reusing existing inference engine (config hash: 9ca7e9cf)
+2026-05-05 18:57:36 | QueryProcessingActor-0 | INFO | query_actor.py:198 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated embedding function: OpenAIEmbeddings
+2026-05-05 18:57:36 | QueryProcessingActor-0 | INFO | query_actor.py:211 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-05 18:57:36 | QueryProcessingActor-0 | INFO | query_actor.py:215 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2026-05-05 18:57:36 | QueryProcessingActor-0 | INFO | query_actor.py:230 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2026-05-05 18:57:36 | QueryProcessingActor-0 | INFO | query_actor.py:260 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated retriever with search_type=mmr
+2026-05-05 18:57:36 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L6-v2, initializing a new CrossEncoder model.
+2026-05-05 18:57:37 | QueryProcessingActor-0 | INFO | query_actor.py:277 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated RAG spec with retrieval mode
+2026-05-05 18:57:47 | Controller | INFO | controller.py:1299 | [exp4-rapidfire-full-evaluation_1:Controller] Pipeline 3 completed shard 1 (1 batches, 9.54s)
+2026-05-05 18:57:47 | Controller | INFO | controller.py:1422 | [exp4-rapidfire-full-evaluation_1:Controller] Scheduling pipeline 4 (Pipeline 4) on actor 0 for shard 1 (1 batches)
+2026-05-05 18:57:47 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Reusing existing inference engine (config hash: 9ca7e9cf)
+2026-05-05 18:57:47 | QueryProcessingActor-0 | INFO | query_actor.py:198 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated embedding function: OpenAIEmbeddings
+2026-05-05 18:57:47 | QueryProcessingActor-0 | INFO | query_actor.py:211 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-05 18:57:47 | QueryProcessingActor-0 | INFO | query_actor.py:215 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2026-05-05 18:57:47 | QueryProcessingActor-0 | INFO | query_actor.py:230 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2026-05-05 18:57:47 | QueryProcessingActor-0 | INFO | query_actor.py:260 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated retriever with search_type=mmr
+2026-05-05 18:57:47 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L12-v2, initializing a new CrossEncoder model.
+2026-05-05 18:57:48 | QueryProcessingActor-0 | INFO | query_actor.py:277 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated RAG spec with retrieval mode
+2026-05-05 18:58:01 | Controller | INFO | controller.py:1299 | [exp4-rapidfire-full-evaluation_1:Controller] Pipeline 4 completed shard 1 (1 batches, 12.56s)
+2026-05-05 18:58:01 | Controller | INFO | controller.py:1422 | [exp4-rapidfire-full-evaluation_1:Controller] Scheduling pipeline 5 (Pipeline 5) on actor 0 for shard 1 (1 batches)
+2026-05-05 18:58:01 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Reusing existing inference engine (config hash: 9ca7e9cf)
+2026-05-05 18:58:01 | QueryProcessingActor-0 | INFO | query_actor.py:198 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated embedding function: OpenAIEmbeddings
+2026-05-05 18:58:01 | QueryProcessingActor-0 | INFO | query_actor.py:211 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-05 18:58:01 | QueryProcessingActor-0 | INFO | query_actor.py:215 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2026-05-05 18:58:01 | QueryProcessingActor-0 | INFO | query_actor.py:230 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2026-05-05 18:58:01 | QueryProcessingActor-0 | INFO | query_actor.py:260 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated retriever with search_type=similarity
+2026-05-05 18:58:01 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L6-v2, initializing a new CrossEncoder model.
+2026-05-05 18:58:03 | QueryProcessingActor-0 | INFO | query_actor.py:277 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated RAG spec with retrieval mode
+2026-05-05 18:58:13 | Controller | INFO | controller.py:1299 | [exp4-rapidfire-full-evaluation_1:Controller] Pipeline 5 completed shard 1 (1 batches, 10.55s)
+2026-05-05 18:58:13 | Controller | INFO | controller.py:1422 | [exp4-rapidfire-full-evaluation_1:Controller] Scheduling pipeline 6 (Pipeline 6) on actor 0 for shard 1 (1 batches)
+2026-05-05 18:58:13 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Reusing existing inference engine (config hash: 9ca7e9cf)
+2026-05-05 18:58:13 | QueryProcessingActor-0 | INFO | query_actor.py:198 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated embedding function: OpenAIEmbeddings
+2026-05-05 18:58:13 | QueryProcessingActor-0 | INFO | query_actor.py:211 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-05 18:58:13 | QueryProcessingActor-0 | INFO | query_actor.py:215 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2026-05-05 18:58:13 | QueryProcessingActor-0 | INFO | query_actor.py:230 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2026-05-05 18:58:13 | QueryProcessingActor-0 | INFO | query_actor.py:260 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated retriever with search_type=similarity
+2026-05-05 18:58:13 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L12-v2, initializing a new CrossEncoder model.
+2026-05-05 18:58:15 | QueryProcessingActor-0 | INFO | query_actor.py:277 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated RAG spec with retrieval mode
+2026-05-05 18:58:29 | Controller | INFO | controller.py:1299 | [exp4-rapidfire-full-evaluation_1:Controller] Pipeline 6 completed shard 1 (1 batches, 14.06s)
+2026-05-05 18:58:29 | Controller | INFO | controller.py:1422 | [exp4-rapidfire-full-evaluation_1:Controller] Scheduling pipeline 7 (Pipeline 7) on actor 0 for shard 1 (1 batches)
+2026-05-05 18:58:29 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Reusing existing inference engine (config hash: 9ca7e9cf)
+2026-05-05 18:58:29 | QueryProcessingActor-0 | INFO | query_actor.py:198 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated embedding function: OpenAIEmbeddings
+2026-05-05 18:58:29 | QueryProcessingActor-0 | INFO | query_actor.py:211 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-05 18:58:29 | QueryProcessingActor-0 | INFO | query_actor.py:215 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2026-05-05 18:58:29 | QueryProcessingActor-0 | INFO | query_actor.py:230 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2026-05-05 18:58:29 | QueryProcessingActor-0 | INFO | query_actor.py:260 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated retriever with search_type=mmr
+2026-05-05 18:58:29 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L6-v2, initializing a new CrossEncoder model.
+2026-05-05 18:58:31 | QueryProcessingActor-0 | INFO | query_actor.py:277 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated RAG spec with retrieval mode
+2026-05-05 18:58:41 | Controller | INFO | controller.py:1299 | [exp4-rapidfire-full-evaluation_1:Controller] Pipeline 7 completed shard 1 (1 batches, 10.55s)
+2026-05-05 18:58:41 | Controller | INFO | controller.py:1422 | [exp4-rapidfire-full-evaluation_1:Controller] Scheduling pipeline 8 (Pipeline 8) on actor 0 for shard 1 (1 batches)
+2026-05-05 18:58:41 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Reusing existing inference engine (config hash: 9ca7e9cf)
+2026-05-05 18:58:42 | QueryProcessingActor-0 | INFO | query_actor.py:198 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated embedding function: OpenAIEmbeddings
+2026-05-05 18:58:42 | QueryProcessingActor-0 | INFO | query_actor.py:211 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-05 18:58:42 | QueryProcessingActor-0 | INFO | query_actor.py:215 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2026-05-05 18:58:42 | QueryProcessingActor-0 | INFO | query_actor.py:230 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2026-05-05 18:58:42 | QueryProcessingActor-0 | INFO | query_actor.py:260 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated retriever with search_type=mmr
+2026-05-05 18:58:42 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L12-v2, initializing a new CrossEncoder model.
+2026-05-05 18:58:43 | QueryProcessingActor-0 | INFO | query_actor.py:277 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated RAG spec with retrieval mode
+2026-05-05 18:58:58 | Controller | INFO | controller.py:1299 | [exp4-rapidfire-full-evaluation_1:Controller] Pipeline 8 completed shard 1 (1 batches, 14.56s)
+2026-05-05 18:58:58 | Controller | INFO | controller.py:1422 | [exp4-rapidfire-full-evaluation_1:Controller] Scheduling pipeline 1 (Pipeline 1) on actor 0 for shard 2 (1 batches)
+2026-05-05 18:58:58 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Reusing existing inference engine (config hash: 9ca7e9cf)
+2026-05-05 18:58:58 | QueryProcessingActor-0 | INFO | query_actor.py:198 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated embedding function: OpenAIEmbeddings
+2026-05-05 18:58:58 | QueryProcessingActor-0 | INFO | query_actor.py:211 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-05 18:58:58 | QueryProcessingActor-0 | INFO | query_actor.py:215 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2026-05-05 18:58:58 | QueryProcessingActor-0 | INFO | query_actor.py:230 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2026-05-05 18:58:58 | QueryProcessingActor-0 | INFO | query_actor.py:260 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated retriever with search_type=similarity
+2026-05-05 18:58:58 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L6-v2, initializing a new CrossEncoder model.
+2026-05-05 18:59:00 | QueryProcessingActor-0 | INFO | query_actor.py:277 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated RAG spec with retrieval mode
+2026-05-05 18:59:10 | Controller | INFO | controller.py:1299 | [exp4-rapidfire-full-evaluation_1:Controller] Pipeline 1 completed shard 2 (1 batches, 9.55s)
+2026-05-05 18:59:10 | Controller | INFO | controller.py:1422 | [exp4-rapidfire-full-evaluation_1:Controller] Scheduling pipeline 2 (Pipeline 2) on actor 0 for shard 2 (1 batches)
+2026-05-05 18:59:10 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Reusing existing inference engine (config hash: 9ca7e9cf)
+2026-05-05 18:59:10 | QueryProcessingActor-0 | INFO | query_actor.py:198 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated embedding function: OpenAIEmbeddings
+2026-05-05 18:59:10 | QueryProcessingActor-0 | INFO | query_actor.py:211 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-05 18:59:10 | QueryProcessingActor-0 | INFO | query_actor.py:215 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2026-05-05 18:59:10 | QueryProcessingActor-0 | INFO | query_actor.py:230 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2026-05-05 18:59:10 | QueryProcessingActor-0 | INFO | query_actor.py:260 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated retriever with search_type=similarity
+2026-05-05 18:59:10 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L12-v2, initializing a new CrossEncoder model.
+2026-05-05 18:59:11 | QueryProcessingActor-0 | INFO | query_actor.py:277 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated RAG spec with retrieval mode
+2026-05-05 18:59:25 | Controller | INFO | controller.py:1299 | [exp4-rapidfire-full-evaluation_1:Controller] Pipeline 2 completed shard 2 (1 batches, 13.06s)
+2026-05-05 18:59:25 | Controller | INFO | controller.py:1422 | [exp4-rapidfire-full-evaluation_1:Controller] Scheduling pipeline 3 (Pipeline 3) on actor 0 for shard 2 (1 batches)
+2026-05-05 18:59:25 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Reusing existing inference engine (config hash: 9ca7e9cf)
+2026-05-05 18:59:25 | QueryProcessingActor-0 | INFO | query_actor.py:198 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated embedding function: OpenAIEmbeddings
+2026-05-05 18:59:25 | QueryProcessingActor-0 | INFO | query_actor.py:211 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-05 18:59:25 | QueryProcessingActor-0 | INFO | query_actor.py:215 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2026-05-05 18:59:25 | QueryProcessingActor-0 | INFO | query_actor.py:230 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2026-05-05 18:59:25 | QueryProcessingActor-0 | INFO | query_actor.py:260 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated retriever with search_type=mmr
+2026-05-05 18:59:25 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L6-v2, initializing a new CrossEncoder model.
+2026-05-05 18:59:26 | QueryProcessingActor-0 | INFO | query_actor.py:277 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated RAG spec with retrieval mode
+2026-05-05 18:59:36 | Controller | INFO | controller.py:1299 | [exp4-rapidfire-full-evaluation_1:Controller] Pipeline 3 completed shard 2 (1 batches, 9.57s)
+2026-05-05 18:59:36 | Controller | INFO | controller.py:1422 | [exp4-rapidfire-full-evaluation_1:Controller] Scheduling pipeline 4 (Pipeline 4) on actor 0 for shard 2 (1 batches)
+2026-05-05 18:59:36 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Reusing existing inference engine (config hash: 9ca7e9cf)
+2026-05-05 18:59:36 | QueryProcessingActor-0 | INFO | query_actor.py:198 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated embedding function: OpenAIEmbeddings
+2026-05-05 18:59:36 | QueryProcessingActor-0 | INFO | query_actor.py:211 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-05 18:59:36 | QueryProcessingActor-0 | INFO | query_actor.py:215 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2026-05-05 18:59:36 | QueryProcessingActor-0 | INFO | query_actor.py:230 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2026-05-05 18:59:36 | QueryProcessingActor-0 | INFO | query_actor.py:260 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated retriever with search_type=mmr
+2026-05-05 18:59:36 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L12-v2, initializing a new CrossEncoder model.
+2026-05-05 18:59:38 | QueryProcessingActor-0 | INFO | query_actor.py:277 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated RAG spec with retrieval mode
+2026-05-05 18:59:51 | Controller | INFO | controller.py:1299 | [exp4-rapidfire-full-evaluation_1:Controller] Pipeline 4 completed shard 2 (1 batches, 13.14s)
+2026-05-05 18:59:51 | Controller | INFO | controller.py:1422 | [exp4-rapidfire-full-evaluation_1:Controller] Scheduling pipeline 5 (Pipeline 5) on actor 0 for shard 2 (1 batches)
+2026-05-05 18:59:51 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Reusing existing inference engine (config hash: 9ca7e9cf)
+2026-05-05 18:59:51 | QueryProcessingActor-0 | INFO | query_actor.py:198 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated embedding function: OpenAIEmbeddings
+2026-05-05 18:59:51 | QueryProcessingActor-0 | INFO | query_actor.py:211 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-05 18:59:51 | QueryProcessingActor-0 | INFO | query_actor.py:215 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2026-05-05 18:59:51 | QueryProcessingActor-0 | INFO | query_actor.py:230 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2026-05-05 18:59:51 | QueryProcessingActor-0 | INFO | query_actor.py:260 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated retriever with search_type=similarity
+2026-05-05 18:59:51 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L6-v2, initializing a new CrossEncoder model.
+2026-05-05 18:59:52 | QueryProcessingActor-0 | INFO | query_actor.py:277 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated RAG spec with retrieval mode
+2026-05-05 19:00:04 | Controller | INFO | controller.py:1299 | [exp4-rapidfire-full-evaluation_1:Controller] Pipeline 5 completed shard 2 (1 batches, 11.05s)
+2026-05-05 19:00:04 | Controller | INFO | controller.py:1422 | [exp4-rapidfire-full-evaluation_1:Controller] Scheduling pipeline 6 (Pipeline 6) on actor 0 for shard 2 (1 batches)
+2026-05-05 19:00:04 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Reusing existing inference engine (config hash: 9ca7e9cf)
+2026-05-05 19:00:04 | QueryProcessingActor-0 | INFO | query_actor.py:198 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated embedding function: OpenAIEmbeddings
+2026-05-05 19:00:04 | QueryProcessingActor-0 | INFO | query_actor.py:211 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-05 19:00:04 | QueryProcessingActor-0 | INFO | query_actor.py:215 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2026-05-05 19:00:04 | QueryProcessingActor-0 | INFO | query_actor.py:230 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2026-05-05 19:00:04 | QueryProcessingActor-0 | INFO | query_actor.py:260 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated retriever with search_type=similarity
+2026-05-05 19:00:04 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L12-v2, initializing a new CrossEncoder model.
+2026-05-05 19:00:05 | QueryProcessingActor-0 | INFO | query_actor.py:277 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated RAG spec with retrieval mode
+2026-05-05 19:00:19 | Controller | INFO | controller.py:1299 | [exp4-rapidfire-full-evaluation_1:Controller] Pipeline 6 completed shard 2 (1 batches, 13.06s)
+2026-05-05 19:00:19 | Controller | INFO | controller.py:1422 | [exp4-rapidfire-full-evaluation_1:Controller] Scheduling pipeline 7 (Pipeline 7) on actor 0 for shard 2 (1 batches)
+2026-05-05 19:00:19 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Reusing existing inference engine (config hash: 9ca7e9cf)
+2026-05-05 19:00:19 | QueryProcessingActor-0 | INFO | query_actor.py:198 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated embedding function: OpenAIEmbeddings
+2026-05-05 19:00:19 | QueryProcessingActor-0 | INFO | query_actor.py:211 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-05 19:00:19 | QueryProcessingActor-0 | INFO | query_actor.py:215 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2026-05-05 19:00:19 | QueryProcessingActor-0 | INFO | query_actor.py:230 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2026-05-05 19:00:19 | QueryProcessingActor-0 | INFO | query_actor.py:260 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated retriever with search_type=mmr
+2026-05-05 19:00:19 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L6-v2, initializing a new CrossEncoder model.
+2026-05-05 19:00:20 | QueryProcessingActor-0 | INFO | query_actor.py:277 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated RAG spec with retrieval mode
+2026-05-05 19:00:30 | Controller | INFO | controller.py:1299 | [exp4-rapidfire-full-evaluation_1:Controller] Pipeline 7 completed shard 2 (1 batches, 10.05s)
+2026-05-05 19:00:30 | Controller | INFO | controller.py:1422 | [exp4-rapidfire-full-evaluation_1:Controller] Scheduling pipeline 8 (Pipeline 8) on actor 0 for shard 2 (1 batches)
+2026-05-05 19:00:30 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Reusing existing inference engine (config hash: 9ca7e9cf)
+2026-05-05 19:00:30 | QueryProcessingActor-0 | INFO | query_actor.py:198 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated embedding function: OpenAIEmbeddings
+2026-05-05 19:00:30 | QueryProcessingActor-0 | INFO | query_actor.py:211 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-05 19:00:30 | QueryProcessingActor-0 | INFO | query_actor.py:215 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2026-05-05 19:00:30 | QueryProcessingActor-0 | INFO | query_actor.py:230 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2026-05-05 19:00:30 | QueryProcessingActor-0 | INFO | query_actor.py:260 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated retriever with search_type=mmr
+2026-05-05 19:00:31 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L12-v2, initializing a new CrossEncoder model.
+2026-05-05 19:00:32 | QueryProcessingActor-0 | INFO | query_actor.py:277 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated RAG spec with retrieval mode
+2026-05-05 19:00:45 | Controller | INFO | controller.py:1299 | [exp4-rapidfire-full-evaluation_1:Controller] Pipeline 8 completed shard 2 (1 batches, 12.56s)
+2026-05-05 19:00:45 | Controller | INFO | controller.py:1422 | [exp4-rapidfire-full-evaluation_1:Controller] Scheduling pipeline 1 (Pipeline 1) on actor 0 for shard 3 (1 batches)
+2026-05-05 19:00:45 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Reusing existing inference engine (config hash: 9ca7e9cf)
+2026-05-05 19:00:45 | QueryProcessingActor-0 | INFO | query_actor.py:198 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated embedding function: OpenAIEmbeddings
+2026-05-05 19:00:45 | QueryProcessingActor-0 | INFO | query_actor.py:211 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-05 19:00:45 | QueryProcessingActor-0 | INFO | query_actor.py:215 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2026-05-05 19:00:45 | QueryProcessingActor-0 | INFO | query_actor.py:230 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2026-05-05 19:00:45 | QueryProcessingActor-0 | INFO | query_actor.py:260 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated retriever with search_type=similarity
+2026-05-05 19:00:45 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L6-v2, initializing a new CrossEncoder model.
+2026-05-05 19:00:46 | QueryProcessingActor-0 | INFO | query_actor.py:277 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated RAG spec with retrieval mode
+2026-05-05 19:00:57 | Controller | INFO | controller.py:1192 | [exp4-rapidfire-full-evaluation_1:Controller] Pipeline 1 completed all 4 shards
+2026-05-05 19:00:57 | Controller | INFO | controller.py:1299 | [exp4-rapidfire-full-evaluation_1:Controller] Pipeline 1 completed shard 3 (1 batches, 10.05s)
+2026-05-05 19:00:57 | Controller | INFO | controller.py:1422 | [exp4-rapidfire-full-evaluation_1:Controller] Scheduling pipeline 2 (Pipeline 2) on actor 0 for shard 3 (1 batches)
+2026-05-05 19:00:57 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Reusing existing inference engine (config hash: 9ca7e9cf)
+2026-05-05 19:00:57 | QueryProcessingActor-0 | INFO | query_actor.py:198 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated embedding function: OpenAIEmbeddings
+2026-05-05 19:00:57 | QueryProcessingActor-0 | INFO | query_actor.py:211 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-05 19:00:57 | QueryProcessingActor-0 | INFO | query_actor.py:215 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2026-05-05 19:00:57 | QueryProcessingActor-0 | INFO | query_actor.py:230 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2026-05-05 19:00:57 | QueryProcessingActor-0 | INFO | query_actor.py:260 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated retriever with search_type=similarity
+2026-05-05 19:00:57 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L12-v2, initializing a new CrossEncoder model.
+2026-05-05 19:00:58 | QueryProcessingActor-0 | INFO | query_actor.py:277 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated RAG spec with retrieval mode
+2026-05-05 19:01:11 | Controller | INFO | controller.py:1192 | [exp4-rapidfire-full-evaluation_1:Controller] Pipeline 2 completed all 4 shards
+2026-05-05 19:01:11 | Controller | INFO | controller.py:1299 | [exp4-rapidfire-full-evaluation_1:Controller] Pipeline 2 completed shard 3 (1 batches, 12.57s)
+2026-05-05 19:01:11 | Controller | INFO | controller.py:1422 | [exp4-rapidfire-full-evaluation_1:Controller] Scheduling pipeline 3 (Pipeline 3) on actor 0 for shard 3 (1 batches)
+2026-05-05 19:01:11 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Reusing existing inference engine (config hash: 9ca7e9cf)
+2026-05-05 19:01:11 | QueryProcessingActor-0 | INFO | query_actor.py:198 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated embedding function: OpenAIEmbeddings
+2026-05-05 19:01:11 | QueryProcessingActor-0 | INFO | query_actor.py:211 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-05 19:01:11 | QueryProcessingActor-0 | INFO | query_actor.py:215 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2026-05-05 19:01:11 | QueryProcessingActor-0 | INFO | query_actor.py:230 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2026-05-05 19:01:11 | QueryProcessingActor-0 | INFO | query_actor.py:260 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated retriever with search_type=mmr
+2026-05-05 19:01:11 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L6-v2, initializing a new CrossEncoder model.
+2026-05-05 19:01:13 | QueryProcessingActor-0 | INFO | query_actor.py:277 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated RAG spec with retrieval mode
+2026-05-05 19:01:22 | Controller | INFO | controller.py:1192 | [exp4-rapidfire-full-evaluation_1:Controller] Pipeline 3 completed all 4 shards
+2026-05-05 19:01:23 | Controller | INFO | controller.py:1299 | [exp4-rapidfire-full-evaluation_1:Controller] Pipeline 3 completed shard 3 (1 batches, 9.56s)
+2026-05-05 19:01:23 | Controller | INFO | controller.py:1422 | [exp4-rapidfire-full-evaluation_1:Controller] Scheduling pipeline 4 (Pipeline 4) on actor 0 for shard 3 (1 batches)
+2026-05-05 19:01:23 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Reusing existing inference engine (config hash: 9ca7e9cf)
+2026-05-05 19:01:23 | QueryProcessingActor-0 | INFO | query_actor.py:198 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated embedding function: OpenAIEmbeddings
+2026-05-05 19:01:23 | QueryProcessingActor-0 | INFO | query_actor.py:211 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-05 19:01:23 | QueryProcessingActor-0 | INFO | query_actor.py:215 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2026-05-05 19:01:23 | QueryProcessingActor-0 | INFO | query_actor.py:230 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2026-05-05 19:01:23 | QueryProcessingActor-0 | INFO | query_actor.py:260 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated retriever with search_type=mmr
+2026-05-05 19:01:23 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L12-v2, initializing a new CrossEncoder model.
+2026-05-05 19:01:24 | QueryProcessingActor-0 | INFO | query_actor.py:277 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated RAG spec with retrieval mode
+2026-05-05 19:01:43 | Controller | INFO | controller.py:1192 | [exp4-rapidfire-full-evaluation_1:Controller] Pipeline 4 completed all 4 shards
+2026-05-05 19:01:43 | Controller | INFO | controller.py:1299 | [exp4-rapidfire-full-evaluation_1:Controller] Pipeline 4 completed shard 3 (1 batches, 18.56s)
+2026-05-05 19:01:43 | Controller | INFO | controller.py:1422 | [exp4-rapidfire-full-evaluation_1:Controller] Scheduling pipeline 5 (Pipeline 5) on actor 0 for shard 3 (1 batches)
+2026-05-05 19:01:43 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Reusing existing inference engine (config hash: 9ca7e9cf)
+2026-05-05 19:01:43 | QueryProcessingActor-0 | INFO | query_actor.py:198 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated embedding function: OpenAIEmbeddings
+2026-05-05 19:01:43 | QueryProcessingActor-0 | INFO | query_actor.py:211 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-05 19:01:43 | QueryProcessingActor-0 | INFO | query_actor.py:215 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2026-05-05 19:01:43 | QueryProcessingActor-0 | INFO | query_actor.py:230 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2026-05-05 19:01:43 | QueryProcessingActor-0 | INFO | query_actor.py:260 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated retriever with search_type=similarity
+2026-05-05 19:01:43 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L6-v2, initializing a new CrossEncoder model.
+2026-05-05 19:01:44 | QueryProcessingActor-0 | INFO | query_actor.py:277 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated RAG spec with retrieval mode
+2026-05-05 19:01:55 | Controller | INFO | controller.py:1192 | [exp4-rapidfire-full-evaluation_1:Controller] Pipeline 5 completed all 4 shards
+2026-05-05 19:01:55 | Controller | INFO | controller.py:1299 | [exp4-rapidfire-full-evaluation_1:Controller] Pipeline 5 completed shard 3 (1 batches, 10.56s)
+2026-05-05 19:01:55 | Controller | INFO | controller.py:1422 | [exp4-rapidfire-full-evaluation_1:Controller] Scheduling pipeline 6 (Pipeline 6) on actor 0 for shard 3 (1 batches)
+2026-05-05 19:01:55 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Reusing existing inference engine (config hash: 9ca7e9cf)
+2026-05-05 19:01:55 | QueryProcessingActor-0 | INFO | query_actor.py:198 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated embedding function: OpenAIEmbeddings
+2026-05-05 19:01:55 | QueryProcessingActor-0 | INFO | query_actor.py:211 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-05 19:01:55 | QueryProcessingActor-0 | INFO | query_actor.py:215 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2026-05-05 19:01:55 | QueryProcessingActor-0 | INFO | query_actor.py:230 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2026-05-05 19:01:55 | QueryProcessingActor-0 | INFO | query_actor.py:260 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated retriever with search_type=similarity
+2026-05-05 19:01:55 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L12-v2, initializing a new CrossEncoder model.
+2026-05-05 19:01:57 | QueryProcessingActor-0 | INFO | query_actor.py:277 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated RAG spec with retrieval mode
+2026-05-05 19:02:11 | Controller | INFO | controller.py:1192 | [exp4-rapidfire-full-evaluation_1:Controller] Pipeline 6 completed all 4 shards
+2026-05-05 19:02:11 | Controller | INFO | controller.py:1299 | [exp4-rapidfire-full-evaluation_1:Controller] Pipeline 6 completed shard 3 (1 batches, 14.06s)
+2026-05-05 19:02:11 | Controller | INFO | controller.py:1422 | [exp4-rapidfire-full-evaluation_1:Controller] Scheduling pipeline 7 (Pipeline 7) on actor 0 for shard 3 (1 batches)
+2026-05-05 19:02:11 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Reusing existing inference engine (config hash: 9ca7e9cf)
+2026-05-05 19:02:11 | QueryProcessingActor-0 | INFO | query_actor.py:198 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated embedding function: OpenAIEmbeddings
+2026-05-05 19:02:11 | QueryProcessingActor-0 | INFO | query_actor.py:211 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-05 19:02:11 | QueryProcessingActor-0 | INFO | query_actor.py:215 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2026-05-05 19:02:11 | QueryProcessingActor-0 | INFO | query_actor.py:230 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2026-05-05 19:02:11 | QueryProcessingActor-0 | INFO | query_actor.py:260 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated retriever with search_type=mmr
+2026-05-05 19:02:11 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L6-v2, initializing a new CrossEncoder model.
+2026-05-05 19:02:13 | QueryProcessingActor-0 | INFO | query_actor.py:277 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated RAG spec with retrieval mode
+2026-05-05 19:02:24 | Controller | INFO | controller.py:1192 | [exp4-rapidfire-full-evaluation_1:Controller] Pipeline 7 completed all 4 shards
+2026-05-05 19:02:24 | Controller | INFO | controller.py:1299 | [exp4-rapidfire-full-evaluation_1:Controller] Pipeline 7 completed shard 3 (1 batches, 11.55s)
+2026-05-05 19:02:24 | Controller | INFO | controller.py:1422 | [exp4-rapidfire-full-evaluation_1:Controller] Scheduling pipeline 8 (Pipeline 8) on actor 0 for shard 3 (1 batches)
+2026-05-05 19:02:24 | QueryProcessingActor-0 | INFO | query_actor.py:169 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Reusing existing inference engine (config hash: 9ca7e9cf)
+2026-05-05 19:02:24 | QueryProcessingActor-0 | INFO | query_actor.py:198 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated embedding function: OpenAIEmbeddings
+2026-05-05 19:02:24 | QueryProcessingActor-0 | INFO | query_actor.py:211 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Using CPU-based FAISS for retrieval (avoids GPU memory conflicts)
+2026-05-05 19:02:24 | QueryProcessingActor-0 | INFO | query_actor.py:215 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Deserializing FAISS index for this actor...
+2026-05-05 19:02:24 | QueryProcessingActor-0 | INFO | query_actor.py:230 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Created independent FAISS vector store for this actor
+2026-05-05 19:02:24 | QueryProcessingActor-0 | INFO | query_actor.py:260 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated retriever with search_type=mmr
+2026-05-05 19:02:25 | sentence_transformers.base.model | INFO | model.py:962 | No modules.json found for cross-encoder/ms-marco-MiniLM-L12-v2, initializing a new CrossEncoder model.
+2026-05-05 19:02:26 | QueryProcessingActor-0 | INFO | query_actor.py:277 | [exp4-rapidfire-full-evaluation_1:QueryProcessingActor-0] Recreated RAG spec with retrieval mode
+2026-05-05 19:02:43 | Controller | INFO | controller.py:1192 | [exp4-rapidfire-full-evaluation_1:Controller] Pipeline 8 completed all 4 shards
+2026-05-05 19:02:43 | Controller | INFO | controller.py:1299 | [exp4-rapidfire-full-evaluation_1:Controller] Pipeline 8 completed shard 3 (1 batches, 17.07s)
+2026-05-05 19:02:43 | Controller | INFO | controller.py:1386 | [exp4-rapidfire-full-evaluation_1:Controller] All pipelines completed all shards!
+2026-05-05 19:02:43 | Controller | INFO | controller.py:695 | [exp4-rapidfire-full-evaluation_1:Controller] Computing final metrics for all pipelines...
+2026-05-05 19:02:44 | Experiment | INFO | metric_rfmetric_manager.py:190 | [exp4-rapidfire-full-evaluation_1:Experiment] Ending run: 993cac5a93d347329790ee60ca110a70, 1 in rf_mlflow
+2026-05-05 19:02:44 | Experiment | WARNING | metric_mlflow_manager.py:101 | [exp4-rapidfire-full-evaluation_1:Experiment] Run 993cac5a93d347329790ee60ca110a70 is not the active run, no local context to clear
+2026-05-05 19:02:44 | Controller | INFO | controller.py:853 | [exp4-rapidfire-full-evaluation_1:Controller] Pipeline 1 (Pipeline 1) completed successfully
+2026-05-05 19:02:44 | Experiment | INFO | metric_rfmetric_manager.py:190 | [exp4-rapidfire-full-evaluation_1:Experiment] Ending run: fe08b8b32c644bde89200e3e3f782284, 2 in rf_mlflow
+2026-05-05 19:02:44 | Experiment | WARNING | metric_mlflow_manager.py:101 | [exp4-rapidfire-full-evaluation_1:Experiment] Run fe08b8b32c644bde89200e3e3f782284 is not the active run, no local context to clear
+2026-05-05 19:02:44 | Controller | INFO | controller.py:853 | [exp4-rapidfire-full-evaluation_1:Controller] Pipeline 2 (Pipeline 2) completed successfully
+2026-05-05 19:02:45 | Experiment | INFO | metric_rfmetric_manager.py:190 | [exp4-rapidfire-full-evaluation_1:Experiment] Ending run: 5494c2ecfd76466bbb3841a7d533819b, 3 in rf_mlflow
+2026-05-05 19:02:45 | Experiment | WARNING | metric_mlflow_manager.py:101 | [exp4-rapidfire-full-evaluation_1:Experiment] Run 5494c2ecfd76466bbb3841a7d533819b is not the active run, no local context to clear
+2026-05-05 19:02:45 | Controller | INFO | controller.py:853 | [exp4-rapidfire-full-evaluation_1:Controller] Pipeline 3 (Pipeline 3) completed successfully
+2026-05-05 19:02:45 | Experiment | INFO | metric_rfmetric_manager.py:190 | [exp4-rapidfire-full-evaluation_1:Experiment] Ending run: cda65e327fbb4e85aec8216e16ba6559, 4 in rf_mlflow
+2026-05-05 19:02:45 | Experiment | WARNING | metric_mlflow_manager.py:101 | [exp4-rapidfire-full-evaluation_1:Experiment] Run cda65e327fbb4e85aec8216e16ba6559 is not the active run, no local context to clear
+2026-05-05 19:02:45 | Controller | INFO | controller.py:853 | [exp4-rapidfire-full-evaluation_1:Controller] Pipeline 4 (Pipeline 4) completed successfully
+2026-05-05 19:02:45 | Experiment | INFO | metric_rfmetric_manager.py:190 | [exp4-rapidfire-full-evaluation_1:Experiment] Ending run: 328b354a7d5a421fa138183e213542c9, 5 in rf_mlflow
+2026-05-05 19:02:45 | Experiment | WARNING | metric_mlflow_manager.py:101 | [exp4-rapidfire-full-evaluation_1:Experiment] Run 328b354a7d5a421fa138183e213542c9 is not the active run, no local context to clear
+2026-05-05 19:02:45 | Controller | INFO | controller.py:853 | [exp4-rapidfire-full-evaluation_1:Controller] Pipeline 5 (Pipeline 5) completed successfully
+2026-05-05 19:02:45 | Experiment | INFO | metric_rfmetric_manager.py:190 | [exp4-rapidfire-full-evaluation_1:Experiment] Ending run: 6f0f52a3955b41599345a2dacf5a9c96, 6 in rf_mlflow
+2026-05-05 19:02:45 | Experiment | WARNING | metric_mlflow_manager.py:101 | [exp4-rapidfire-full-evaluation_1:Experiment] Run 6f0f52a3955b41599345a2dacf5a9c96 is not the active run, no local context to clear
+2026-05-05 19:02:45 | Controller | INFO | controller.py:853 | [exp4-rapidfire-full-evaluation_1:Controller] Pipeline 6 (Pipeline 6) completed successfully
+2026-05-05 19:02:46 | Experiment | INFO | metric_rfmetric_manager.py:190 | [exp4-rapidfire-full-evaluation_1:Experiment] Ending run: 24aa13d14f324b76949aa078d072543c, 7 in rf_mlflow
+2026-05-05 19:02:46 | Experiment | WARNING | metric_mlflow_manager.py:101 | [exp4-rapidfire-full-evaluation_1:Experiment] Run 24aa13d14f324b76949aa078d072543c is not the active run, no local context to clear
+2026-05-05 19:02:46 | Controller | INFO | controller.py:853 | [exp4-rapidfire-full-evaluation_1:Controller] Pipeline 7 (Pipeline 7) completed successfully
+2026-05-05 19:02:46 | Experiment | INFO | metric_rfmetric_manager.py:190 | [exp4-rapidfire-full-evaluation_1:Experiment] Ending run: b98da7ee57db44bdaa0eac553bc64850, 8 in rf_mlflow
+2026-05-05 19:02:46 | Experiment | WARNING | metric_mlflow_manager.py:101 | [exp4-rapidfire-full-evaluation_1:Experiment] Run b98da7ee57db44bdaa0eac553bc64850 is not the active run, no local context to clear
+2026-05-05 19:02:46 | Controller | INFO | controller.py:853 | [exp4-rapidfire-full-evaluation_1:Controller] Pipeline 8 (Pipeline 8) completed successfully
+2026-05-05 19:13:24 | ExperimentUtils | INFO | experiment_utils.py:180 | [exp4-rapidfire-full-evaluation_1:ExperimentUtils] Reset experiment states - marked ongoing pipelines, contexts, and tasks as failed
+2026-05-05 19:13:24 | ExperimentUtils | INFO | experiment_utils.py:188 | [exp4-rapidfire-full-evaluation_1:ExperimentUtils] Experiment marked as cancelled. Ongoing pipelines, contexts, and tasks have been marked as failed.
+2026-05-05 19:13:24 | ExperimentUtils | INFO | experiment_utils.py:154 | [exp4-rapidfire-full-evaluation_1:ExperimentUtils] Experiment exp4-rapidfire-full-evaluation_1 ended
+2026-05-05 19:13:24 | Experiment | INFO | experiment.py:165 | [exp5-rapidfire-full-evaluation:Experiment] The previously running experiment exp4-rapidfire-full-evaluation_1 was forcibly ended. Created a new experiment 'exp5-rapidfire-full-evaluation' with Experiment ID: 28 at /home/obychenkov/rapidfireai/rapidfire_experiments/exp5-rapidfire-full-evaluation
+2026-05-05 19:13:24 | Experiment | INFO | metric_rfmetric_manager.py:55 | [exp5-rapidfire-full-evaluation:Experiment] Initialized MLflowMetricLogger: rf_mlflow
+2026-05-05 19:13:24 | Experiment | INFO | metric_rfmetric_manager.py:119 | [exp5-rapidfire-full-evaluation:Experiment] Creating MLflow experiment: exp5-rapidfire-full-evaluation
+2026-05-05 19:13:25 | Experiment | INFO | experiment.py:210 | [exp5-rapidfire-full-evaluation:Experiment] Initialized MetricLogger experiment: 17
+2026-05-05 19:13:25 | Experiment | INFO | experiment.py:226 | [exp5-rapidfire-full-evaluation:Experiment] Using existing dispatcher/api server at 127.0.0.1:8851.
+2026-05-05 19:13:35 | Experiment | WARNING | experiment.py:381 | [exp5-rapidfire-full-evaluation:Experiment] No GPUs available. Be sure to use external APIs for inference.
+2026-05-05 19:13:35 | Experiment | INFO | experiment.py:383 | [exp5-rapidfire-full-evaluation:Experiment] Running multi-config experiment with 4 shard(s), (0.0 GPUs per actor, 8.0 CPUs per actor, 1 actors)
+2026-05-05 19:13:35 | Experiment | INFO | experiment.py:392 | [exp5-rapidfire-full-evaluation:Experiment] Reset states of existing pipelines/contexts/tasks (marked as failed)
+2026-05-05 19:13:36 | Controller | INFO | controller.py:895 | [exp5-rapidfire-full-evaluation:Controller] Dataset sharded into 4 shard(s). Shard sizes: [12, 11, 11, 11]
+2026-05-05 19:13:36 | Controller | INFO | controller.py:900 | [exp5-rapidfire-full-evaluation:Controller] Received 6 pipeline configuration(s)
+2026-05-05 19:13:36 | Controller | INFO | controller.py:309 | [exp5-rapidfire-full-evaluation:Controller] Found 3 unique RAG context(s)
+2026-05-05 19:13:36 | Controller | INFO | controller.py:320 | [exp5-rapidfire-full-evaluation:Controller] Will build new context 22e56982...
+2026-05-05 19:13:36 | Controller | INFO | controller.py:320 | [exp5-rapidfire-full-evaluation:Controller] Will build new context b99814a7...
+2026-05-05 19:13:36 | Controller | INFO | controller.py:320 | [exp5-rapidfire-full-evaluation:Controller] Will build new context f6f2c889...
+2026-05-05 19:13:36 | Controller | INFO | controller.py:346 | [exp5-rapidfire-full-evaluation:Controller] Building 3 context(s) in parallel...
+2026-05-05 19:13:36 | Controller | INFO | controller.py:373 | [exp5-rapidfire-full-evaluation:Controller] Creating 3 DocProcessingActor(s) for parallel processing
+2026-05-05 19:13:36 | Controller | INFO | controller.py:461 | [exp5-rapidfire-full-evaluation:Controller] Submitted 3 build task(s) in parallel
+2026-05-05 19:14:20 | Controller | INFO | controller.py:482 | [exp5-rapidfire-full-evaluation:Controller] Built context 1 (22e56982...) successfully in 43.86s
+2026-05-05 19:14:20 | Controller | INFO | controller.py:482 | [exp5-rapidfire-full-evaluation:Controller] Built context 2 (b99814a7...) successfully in 43.93s
+2026-05-05 19:14:20 | Controller | INFO | controller.py:482 | [exp5-rapidfire-full-evaluation:Controller] Built context 3 (f6f2c889...) successfully in 43.95s
+2026-05-05 19:14:20 | Controller | INFO | controller.py:523 | [exp5-rapidfire-full-evaluation:Controller] Completed parallel context building for 3 context(s)
+2026-05-05 19:14:20 | Controller | INFO | controller.py:920 | [exp5-rapidfire-full-evaluation:Controller] Created 1 query processing actors (generic pool)
+2026-05-05 19:14:20 | Experiment | INFO | metric_rfmetric_manager.py:141 | [exp5-rapidfire-full-evaluation:Experiment] Created MLflow run: 979ed89489014af780d56a7d8b0e7996, 1
+2026-05-05 19:14:20 | Experiment | INFO | metric_rfmetric_manager.py:141 | [exp5-rapidfire-full-evaluation:Experiment] Created MLflow run: d96fb1ee1c0d4ab9aac8a7a07ce7e14a, 2
+2026-05-05 19:14:20 | Experiment | INFO | metric_rfmetric_manager.py:141 | [exp5-rapidfire-full-evaluation:Experiment] Created MLflow run: 6903aa9dc3ee4cd3ba127b50edc74a0a, 3
+2026-05-05 19:14:20 | Experiment | INFO | metric_rfmetric_manager.py:141 | [exp5-rapidfire-full-evaluation:Experiment] Created MLflow run: b3a860c9987d4a66804e695fdf02004e, 4
+2026-05-05 19:14:20 | Experiment | INFO | metric_rfmetric_manager.py:141 | [exp5-rapidfire-full-evaluation:Experiment] Created MLflow run: 1fdb54274f5448a5afc57d7e1399f79e, 5
+2026-05-05 19:14:20 | Experiment | INFO | metric_rfmetric_manager.py:141 | [exp5-rapidfire-full-evaluation:Experiment] Created MLflow run: b8c2be8aab5446de8aa0642800bd6724, 6
+2026-05-05 19:14:21 | Controller | INFO | controller.py:931 | [exp5-rapidfire-full-evaluation:Controller] Initialized scheduler with 6 pipelines, 1 actors, 4 shards
+2026-05-05 19:14:21 | Controller | INFO | controller.py:1118 | [exp5-rapidfire-full-evaluation:Controller] Created experiment-wide rate limiter actor for 6 OpenAI pipeline(s) with per-model limits (api-mistral-small-3.2-2506: 120 RPM, 1000000 TPM)
+2026-05-05 19:14:21 | Controller | INFO | controller.py:1124 | [exp5-rapidfire-full-evaluation:Controller] Starting multi-pipeline inference scheduling...
+2026-05-05 19:14:21 | Controller | INFO | controller.py:1422 | [exp5-rapidfire-full-evaluation:Controller] Scheduling pipeline 1 (Pipeline 1) on actor 0 for shard 0 (1 batches)
+2026-05-05 19:15:09 | Controller | INFO | controller.py:1299 | [exp5-rapidfire-full-evaluation:Controller] Pipeline 1 completed shard 0 (1 batches, 12.05s)
+2026-05-05 19:15:09 | Controller | INFO | controller.py:1422 | [exp5-rapidfire-full-evaluation:Controller] Scheduling pipeline 2 (Pipeline 2) on actor 0 for shard 0 (1 batches)
+2026-05-05 19:15:21 | Controller | INFO | controller.py:1299 | [exp5-rapidfire-full-evaluation:Controller] Pipeline 2 completed shard 0 (1 batches, 10.55s)
+2026-05-05 19:15:21 | Controller | INFO | controller.py:1422 | [exp5-rapidfire-full-evaluation:Controller] Scheduling pipeline 3 (Pipeline 3) on actor 0 for shard 0 (1 batches)
+2026-05-05 19:15:33 | Controller | INFO | controller.py:1299 | [exp5-rapidfire-full-evaluation:Controller] Pipeline 3 completed shard 0 (1 batches, 10.05s)
+2026-05-05 19:15:33 | Controller | INFO | controller.py:1422 | [exp5-rapidfire-full-evaluation:Controller] Scheduling pipeline 4 (Pipeline 4) on actor 0 for shard 0 (1 batches)
+2026-05-05 19:15:46 | Controller | INFO | controller.py:1299 | [exp5-rapidfire-full-evaluation:Controller] Pipeline 4 completed shard 0 (1 batches, 11.24s)
+2026-05-05 19:15:46 | Controller | INFO | controller.py:1422 | [exp5-rapidfire-full-evaluation:Controller] Scheduling pipeline 5 (Pipeline 5) on actor 0 for shard 0 (1 batches)
+2026-05-05 19:15:59 | Controller | INFO | controller.py:1299 | [exp5-rapidfire-full-evaluation:Controller] Pipeline 5 completed shard 0 (1 batches, 11.11s)
+2026-05-05 19:15:59 | Controller | INFO | controller.py:1422 | [exp5-rapidfire-full-evaluation:Controller] Scheduling pipeline 6 (Pipeline 6) on actor 0 for shard 0 (1 batches)
+2026-05-05 19:16:14 | Controller | INFO | controller.py:1299 | [exp5-rapidfire-full-evaluation:Controller] Pipeline 6 completed shard 0 (1 batches, 12.55s)
+2026-05-05 19:16:14 | Controller | INFO | controller.py:1422 | [exp5-rapidfire-full-evaluation:Controller] Scheduling pipeline 1 (Pipeline 1) on actor 0 for shard 1 (1 batches)
+2026-05-05 19:16:24 | Controller | INFO | controller.py:1299 | [exp5-rapidfire-full-evaluation:Controller] Pipeline 1 completed shard 1 (1 batches, 9.04s)
+2026-05-05 19:16:24 | Controller | INFO | controller.py:1422 | [exp5-rapidfire-full-evaluation:Controller] Scheduling pipeline 2 (Pipeline 2) on actor 0 for shard 1 (1 batches)
+2026-05-05 19:16:36 | Controller | INFO | controller.py:1299 | [exp5-rapidfire-full-evaluation:Controller] Pipeline 2 completed shard 1 (1 batches, 9.61s)
+2026-05-05 19:16:36 | Controller | INFO | controller.py:1422 | [exp5-rapidfire-full-evaluation:Controller] Scheduling pipeline 3 (Pipeline 3) on actor 0 for shard 1 (1 batches)
+2026-05-05 19:16:47 | Controller | INFO | controller.py:1299 | [exp5-rapidfire-full-evaluation:Controller] Pipeline 3 completed shard 1 (1 batches, 9.07s)
+2026-05-05 19:16:47 | Controller | INFO | controller.py:1422 | [exp5-rapidfire-full-evaluation:Controller] Scheduling pipeline 4 (Pipeline 4) on actor 0 for shard 1 (1 batches)
+2026-05-05 19:16:59 | Controller | INFO | controller.py:1299 | [exp5-rapidfire-full-evaluation:Controller] Pipeline 4 completed shard 1 (1 batches, 10.55s)
+2026-05-05 19:16:59 | Controller | INFO | controller.py:1422 | [exp5-rapidfire-full-evaluation:Controller] Scheduling pipeline 5 (Pipeline 5) on actor 0 for shard 1 (1 batches)
+2026-05-05 19:17:12 | Controller | INFO | controller.py:1299 | [exp5-rapidfire-full-evaluation:Controller] Pipeline 5 completed shard 1 (1 batches, 11.07s)
+2026-05-05 19:17:12 | Controller | INFO | controller.py:1422 | [exp5-rapidfire-full-evaluation:Controller] Scheduling pipeline 6 (Pipeline 6) on actor 0 for shard 1 (1 batches)
+2026-05-05 19:17:25 | Controller | INFO | controller.py:1299 | [exp5-rapidfire-full-evaluation:Controller] Pipeline 6 completed shard 1 (1 batches, 11.57s)
+2026-05-05 19:17:25 | Controller | INFO | controller.py:1422 | [exp5-rapidfire-full-evaluation:Controller] Scheduling pipeline 1 (Pipeline 1) on actor 0 for shard 2 (1 batches)
+2026-05-05 19:17:36 | Controller | INFO | controller.py:1299 | [exp5-rapidfire-full-evaluation:Controller] Pipeline 1 completed shard 2 (1 batches, 9.04s)
+2026-05-05 19:17:36 | Controller | INFO | controller.py:1422 | [exp5-rapidfire-full-evaluation:Controller] Scheduling pipeline 2 (Pipeline 2) on actor 0 for shard 2 (1 batches)
+2026-05-05 19:17:48 | Controller | INFO | controller.py:1299 | [exp5-rapidfire-full-evaluation:Controller] Pipeline 2 completed shard 2 (1 batches, 9.54s)
+2026-05-05 19:17:48 | Controller | INFO | controller.py:1422 | [exp5-rapidfire-full-evaluation:Controller] Scheduling pipeline 3 (Pipeline 3) on actor 0 for shard 2 (1 batches)
+2026-05-05 19:17:59 | Controller | INFO | controller.py:1299 | [exp5-rapidfire-full-evaluation:Controller] Pipeline 3 completed shard 2 (1 batches, 9.54s)
+2026-05-05 19:17:59 | Controller | INFO | controller.py:1422 | [exp5-rapidfire-full-evaluation:Controller] Scheduling pipeline 4 (Pipeline 4) on actor 0 for shard 2 (1 batches)
+2026-05-05 19:18:11 | Controller | INFO | controller.py:1299 | [exp5-rapidfire-full-evaluation:Controller] Pipeline 4 completed shard 2 (1 batches, 10.05s)
+2026-05-05 19:18:11 | Controller | INFO | controller.py:1422 | [exp5-rapidfire-full-evaluation:Controller] Scheduling pipeline 5 (Pipeline 5) on actor 0 for shard 2 (1 batches)
+2026-05-05 19:18:24 | Controller | INFO | controller.py:1299 | [exp5-rapidfire-full-evaluation:Controller] Pipeline 5 completed shard 2 (1 batches, 11.58s)
+2026-05-05 19:18:24 | Controller | INFO | controller.py:1422 | [exp5-rapidfire-full-evaluation:Controller] Scheduling pipeline 6 (Pipeline 6) on actor 0 for shard 2 (1 batches)
+2026-05-05 19:18:36 | Controller | INFO | controller.py:1299 | [exp5-rapidfire-full-evaluation:Controller] Pipeline 6 completed shard 2 (1 batches, 10.05s)
+2026-05-05 19:18:36 | Controller | INFO | controller.py:1422 | [exp5-rapidfire-full-evaluation:Controller] Scheduling pipeline 1 (Pipeline 1) on actor 0 for shard 3 (1 batches)
+2026-05-05 19:18:46 | Controller | INFO | controller.py:1192 | [exp5-rapidfire-full-evaluation:Controller] Pipeline 1 completed all 4 shards
+2026-05-05 19:18:47 | Controller | INFO | controller.py:1299 | [exp5-rapidfire-full-evaluation:Controller] Pipeline 1 completed shard 3 (1 batches, 8.54s)
+2026-05-05 19:18:47 | Controller | INFO | controller.py:1422 | [exp5-rapidfire-full-evaluation:Controller] Scheduling pipeline 2 (Pipeline 2) on actor 0 for shard 3 (1 batches)
+2026-05-05 19:18:58 | Controller | INFO | controller.py:1192 | [exp5-rapidfire-full-evaluation:Controller] Pipeline 2 completed all 4 shards
+2026-05-05 19:18:58 | Controller | INFO | controller.py:1299 | [exp5-rapidfire-full-evaluation:Controller] Pipeline 2 completed shard 3 (1 batches, 10.06s)
+2026-05-05 19:18:58 | Controller | INFO | controller.py:1422 | [exp5-rapidfire-full-evaluation:Controller] Scheduling pipeline 3 (Pipeline 3) on actor 0 for shard 3 (1 batches)
+2026-05-05 19:19:09 | Controller | INFO | controller.py:1192 | [exp5-rapidfire-full-evaluation:Controller] Pipeline 3 completed all 4 shards
+2026-05-05 19:19:10 | Controller | INFO | controller.py:1299 | [exp5-rapidfire-full-evaluation:Controller] Pipeline 3 completed shard 3 (1 batches, 9.54s)
+2026-05-05 19:19:10 | Controller | INFO | controller.py:1422 | [exp5-rapidfire-full-evaluation:Controller] Scheduling pipeline 4 (Pipeline 4) on actor 0 for shard 3 (1 batches)
+2026-05-05 19:19:22 | Controller | INFO | controller.py:1192 | [exp5-rapidfire-full-evaluation:Controller] Pipeline 4 completed all 4 shards
+2026-05-05 19:19:22 | Controller | INFO | controller.py:1299 | [exp5-rapidfire-full-evaluation:Controller] Pipeline 4 completed shard 3 (1 batches, 10.59s)
+2026-05-05 19:19:22 | Controller | INFO | controller.py:1422 | [exp5-rapidfire-full-evaluation:Controller] Scheduling pipeline 5 (Pipeline 5) on actor 0 for shard 3 (1 batches)
+2026-05-05 19:19:35 | Controller | INFO | controller.py:1192 | [exp5-rapidfire-full-evaluation:Controller] Pipeline 5 completed all 4 shards
+2026-05-05 19:19:35 | Controller | INFO | controller.py:1299 | [exp5-rapidfire-full-evaluation:Controller] Pipeline 5 completed shard 3 (1 batches, 11.55s)
+2026-05-05 19:19:35 | Controller | INFO | controller.py:1422 | [exp5-rapidfire-full-evaluation:Controller] Scheduling pipeline 6 (Pipeline 6) on actor 0 for shard 3 (1 batches)
+2026-05-05 19:19:49 | Controller | INFO | controller.py:1192 | [exp5-rapidfire-full-evaluation:Controller] Pipeline 6 completed all 4 shards
+2026-05-05 19:19:50 | Controller | INFO | controller.py:1299 | [exp5-rapidfire-full-evaluation:Controller] Pipeline 6 completed shard 3 (1 batches, 12.56s)
+2026-05-05 19:19:50 | Controller | INFO | controller.py:1386 | [exp5-rapidfire-full-evaluation:Controller] All pipelines completed all shards!
+2026-05-05 19:19:50 | Controller | INFO | controller.py:695 | [exp5-rapidfire-full-evaluation:Controller] Computing final metrics for all pipelines...
+2026-05-05 19:19:50 | Experiment | INFO | metric_rfmetric_manager.py:190 | [exp5-rapidfire-full-evaluation:Experiment] Ending run: 979ed89489014af780d56a7d8b0e7996, 1 in rf_mlflow
+2026-05-05 19:19:50 | Experiment | WARNING | metric_mlflow_manager.py:101 | [exp5-rapidfire-full-evaluation:Experiment] Run 979ed89489014af780d56a7d8b0e7996 is not the active run, no local context to clear
+2026-05-05 19:19:50 | Controller | INFO | controller.py:853 | [exp5-rapidfire-full-evaluation:Controller] Pipeline 1 (Pipeline 1) completed successfully
+2026-05-05 19:19:50 | Experiment | INFO | metric_rfmetric_manager.py:190 | [exp5-rapidfire-full-evaluation:Experiment] Ending run: d96fb1ee1c0d4ab9aac8a7a07ce7e14a, 2 in rf_mlflow
+2026-05-05 19:19:50 | Experiment | WARNING | metric_mlflow_manager.py:101 | [exp5-rapidfire-full-evaluation:Experiment] Run d96fb1ee1c0d4ab9aac8a7a07ce7e14a is not the active run, no local context to clear
+2026-05-05 19:19:50 | Controller | INFO | controller.py:853 | [exp5-rapidfire-full-evaluation:Controller] Pipeline 2 (Pipeline 2) completed successfully
+2026-05-05 19:19:50 | Experiment | INFO | metric_rfmetric_manager.py:190 | [exp5-rapidfire-full-evaluation:Experiment] Ending run: 6903aa9dc3ee4cd3ba127b50edc74a0a, 3 in rf_mlflow
+2026-05-05 19:19:50 | Experiment | WARNING | metric_mlflow_manager.py:101 | [exp5-rapidfire-full-evaluation:Experiment] Run 6903aa9dc3ee4cd3ba127b50edc74a0a is not the active run, no local context to clear
+2026-05-05 19:19:50 | Controller | INFO | controller.py:853 | [exp5-rapidfire-full-evaluation:Controller] Pipeline 3 (Pipeline 3) completed successfully
+2026-05-05 19:19:51 | Experiment | INFO | metric_rfmetric_manager.py:190 | [exp5-rapidfire-full-evaluation:Experiment] Ending run: b3a860c9987d4a66804e695fdf02004e, 4 in rf_mlflow
+2026-05-05 19:19:51 | Experiment | WARNING | metric_mlflow_manager.py:101 | [exp5-rapidfire-full-evaluation:Experiment] Run b3a860c9987d4a66804e695fdf02004e is not the active run, no local context to clear
+2026-05-05 19:19:51 | Controller | INFO | controller.py:853 | [exp5-rapidfire-full-evaluation:Controller] Pipeline 4 (Pipeline 4) completed successfully
+2026-05-05 19:19:51 | Experiment | INFO | metric_rfmetric_manager.py:190 | [exp5-rapidfire-full-evaluation:Experiment] Ending run: 1fdb54274f5448a5afc57d7e1399f79e, 5 in rf_mlflow
+2026-05-05 19:19:51 | Experiment | WARNING | metric_mlflow_manager.py:101 | [exp5-rapidfire-full-evaluation:Experiment] Run 1fdb54274f5448a5afc57d7e1399f79e is not the active run, no local context to clear
+2026-05-05 19:19:51 | Controller | INFO | controller.py:853 | [exp5-rapidfire-full-evaluation:Controller] Pipeline 5 (Pipeline 5) completed successfully
+2026-05-05 19:19:51 | Experiment | INFO | metric_rfmetric_manager.py:190 | [exp5-rapidfire-full-evaluation:Experiment] Ending run: b8c2be8aab5446de8aa0642800bd6724, 6 in rf_mlflow
+2026-05-05 19:19:51 | Experiment | WARNING | metric_mlflow_manager.py:101 | [exp5-rapidfire-full-evaluation:Experiment] Run b8c2be8aab5446de8aa0642800bd6724 is not the active run, no local context to clear
+2026-05-05 19:19:51 | Controller | INFO | controller.py:853 | [exp5-rapidfire-full-evaluation:Controller] Pipeline 6 (Pipeline 6) completed successfully
+2026-05-05 19:24:54 | ExperimentUtils | INFO | experiment_utils.py:180 | [exp5-rapidfire-full-evaluation:ExperimentUtils] Reset experiment states - marked ongoing pipelines, contexts, and tasks as failed
+2026-05-05 19:24:54 | ExperimentUtils | INFO | experiment_utils.py:188 | [exp5-rapidfire-full-evaluation:ExperimentUtils] Experiment marked as cancelled. Ongoing pipelines, contexts, and tasks have been marked as failed.
+2026-05-05 19:24:55 | ExperimentUtils | INFO | experiment_utils.py:154 | [exp5-rapidfire-full-evaluation:ExperimentUtils] Experiment exp5-rapidfire-full-evaluation ended
+2026-05-05 19:24:55 | Experiment | INFO | experiment.py:165 | [exp6-rapidfire-full-evaluation:Experiment] The previously running experiment exp5-rapidfire-full-evaluation was forcibly ended. Created a new experiment 'exp6-rapidfire-full-evaluation' with Experiment ID: 29 at /home/obychenkov/rapidfireai/rapidfire_experiments/exp6-rapidfire-full-evaluation
+2026-05-05 19:24:55 | Experiment | INFO | metric_rfmetric_manager.py:55 | [exp6-rapidfire-full-evaluation:Experiment] Initialized MLflowMetricLogger: rf_mlflow
+2026-05-05 19:24:55 | Experiment | INFO | metric_rfmetric_manager.py:119 | [exp6-rapidfire-full-evaluation:Experiment] Creating MLflow experiment: exp6-rapidfire-full-evaluation
+2026-05-05 19:24:55 | Experiment | INFO | experiment.py:210 | [exp6-rapidfire-full-evaluation:Experiment] Initialized MetricLogger experiment: 18
+2026-05-05 19:24:55 | Experiment | INFO | experiment.py:226 | [exp6-rapidfire-full-evaluation:Experiment] Using existing dispatcher/api server at 127.0.0.1:8851.
+2026-05-05 19:25:02 | Experiment | WARNING | experiment.py:381 | [exp6-rapidfire-full-evaluation:Experiment] No GPUs available. Be sure to use external APIs for inference.
+2026-05-05 19:25:02 | Experiment | INFO | experiment.py:383 | [exp6-rapidfire-full-evaluation:Experiment] Running multi-config experiment with 4 shard(s), (0.0 GPUs per actor, 8.0 CPUs per actor, 1 actors)
+2026-05-05 19:25:02 | Experiment | INFO | experiment.py:392 | [exp6-rapidfire-full-evaluation:Experiment] Reset states of existing pipelines/contexts/tasks (marked as failed)
+2026-05-05 19:25:02 | Controller | INFO | controller.py:895 | [exp6-rapidfire-full-evaluation:Controller] Dataset sharded into 4 shard(s). Shard sizes: [12, 11, 11, 11]
+2026-05-05 19:25:02 | Controller | INFO | controller.py:900 | [exp6-rapidfire-full-evaluation:Controller] Received 6 pipeline configuration(s)
+2026-05-05 19:25:02 | Controller | INFO | controller.py:309 | [exp6-rapidfire-full-evaluation:Controller] Found 3 unique RAG context(s)
+2026-05-05 19:25:02 | Controller | INFO | controller.py:320 | [exp6-rapidfire-full-evaluation:Controller] Will build new context 0cdc6594...
+2026-05-05 19:25:02 | Controller | INFO | controller.py:320 | [exp6-rapidfire-full-evaluation:Controller] Will build new context f3eeb654...
+2026-05-05 19:25:02 | Controller | INFO | controller.py:320 | [exp6-rapidfire-full-evaluation:Controller] Will build new context 40d9c832...
+2026-05-05 19:25:02 | Controller | INFO | controller.py:346 | [exp6-rapidfire-full-evaluation:Controller] Building 3 context(s) in parallel...
+2026-05-05 19:25:02 | Controller | INFO | controller.py:373 | [exp6-rapidfire-full-evaluation:Controller] Creating 3 DocProcessingActor(s) for parallel processing
+2026-05-05 19:25:02 | Controller | INFO | controller.py:461 | [exp6-rapidfire-full-evaluation:Controller] Submitted 3 build task(s) in parallel
+2026-05-05 19:25:46 | Controller | INFO | controller.py:482 | [exp6-rapidfire-full-evaluation:Controller] Built context 1 (0cdc6594...) successfully in 43.52s
+2026-05-05 19:25:46 | Controller | INFO | controller.py:482 | [exp6-rapidfire-full-evaluation:Controller] Built context 2 (f3eeb654...) successfully in 43.54s
+2026-05-05 19:25:46 | Controller | INFO | controller.py:482 | [exp6-rapidfire-full-evaluation:Controller] Built context 3 (40d9c832...) successfully in 43.56s
+2026-05-05 19:25:46 | Controller | INFO | controller.py:523 | [exp6-rapidfire-full-evaluation:Controller] Completed parallel context building for 3 context(s)
+2026-05-05 19:25:46 | Controller | INFO | controller.py:920 | [exp6-rapidfire-full-evaluation:Controller] Created 1 query processing actors (generic pool)
+2026-05-05 19:25:46 | Experiment | INFO | metric_rfmetric_manager.py:141 | [exp6-rapidfire-full-evaluation:Experiment] Created MLflow run: 0cc1bbdcc9e04025a69daa93afae37b5, 1
+2026-05-05 19:25:46 | Experiment | INFO | metric_rfmetric_manager.py:141 | [exp6-rapidfire-full-evaluation:Experiment] Created MLflow run: c916d403d952489794291d204b368480, 2
+2026-05-05 19:25:46 | Experiment | INFO | metric_rfmetric_manager.py:141 | [exp6-rapidfire-full-evaluation:Experiment] Created MLflow run: 98daf0f8df1845e7bd52caf8ed258bc4, 3
+2026-05-05 19:25:46 | Experiment | INFO | metric_rfmetric_manager.py:141 | [exp6-rapidfire-full-evaluation:Experiment] Created MLflow run: a3ae150df55848f4bc6957047c6bbe85, 4
+2026-05-05 19:25:46 | Experiment | INFO | metric_rfmetric_manager.py:141 | [exp6-rapidfire-full-evaluation:Experiment] Created MLflow run: 82c042e090384d47b1c2517fd638e0d9, 5
+2026-05-05 19:25:46 | Experiment | INFO | metric_rfmetric_manager.py:141 | [exp6-rapidfire-full-evaluation:Experiment] Created MLflow run: 2dd1663f99d4453eb6be11cfe70f0fd5, 6
+2026-05-05 19:25:46 | Controller | INFO | controller.py:931 | [exp6-rapidfire-full-evaluation:Controller] Initialized scheduler with 6 pipelines, 1 actors, 4 shards
+2026-05-05 19:25:46 | Controller | INFO | controller.py:1118 | [exp6-rapidfire-full-evaluation:Controller] Created experiment-wide rate limiter actor for 6 OpenAI pipeline(s) with per-model limits (api-mistral-small-3.2-2506: 120 RPM, 1000000 TPM)
+2026-05-05 19:25:46 | Controller | INFO | controller.py:1124 | [exp6-rapidfire-full-evaluation:Controller] Starting multi-pipeline inference scheduling...
+2026-05-05 19:25:47 | Controller | INFO | controller.py:1422 | [exp6-rapidfire-full-evaluation:Controller] Scheduling pipeline 1 (Pipeline 1) on actor 0 for shard 0 (1 batches)
+2026-05-05 19:27:19 | Controller | INFO | controller.py:1299 | [exp6-rapidfire-full-evaluation:Controller] Pipeline 1 completed shard 0 (1 batches, 56.75s)
+2026-05-05 19:27:19 | Controller | INFO | controller.py:1422 | [exp6-rapidfire-full-evaluation:Controller] Scheduling pipeline 2 (Pipeline 2) on actor 0 for shard 0 (1 batches)
+2026-05-05 19:27:35 | Controller | INFO | controller.py:1299 | [exp6-rapidfire-full-evaluation:Controller] Pipeline 2 completed shard 0 (1 batches, 14.05s)
+2026-05-05 19:27:35 | Controller | INFO | controller.py:1422 | [exp6-rapidfire-full-evaluation:Controller] Scheduling pipeline 3 (Pipeline 3) on actor 0 for shard 0 (1 batches)
+2026-05-05 19:27:44 | Controller | INFO | controller.py:1299 | [exp6-rapidfire-full-evaluation:Controller] Pipeline 3 completed shard 0 (1 batches, 8.04s)
+2026-05-05 19:27:44 | Controller | INFO | controller.py:1422 | [exp6-rapidfire-full-evaluation:Controller] Scheduling pipeline 4 (Pipeline 4) on actor 0 for shard 0 (1 batches)
+2026-05-05 19:27:55 | Controller | INFO | controller.py:1299 | [exp6-rapidfire-full-evaluation:Controller] Pipeline 4 completed shard 0 (1 batches, 8.54s)
+2026-05-05 19:27:55 | Controller | INFO | controller.py:1422 | [exp6-rapidfire-full-evaluation:Controller] Scheduling pipeline 5 (Pipeline 5) on actor 0 for shard 0 (1 batches)
+2026-05-05 19:28:05 | Controller | INFO | controller.py:1299 | [exp6-rapidfire-full-evaluation:Controller] Pipeline 5 completed shard 0 (1 batches, 8.54s)
+2026-05-05 19:28:05 | Controller | INFO | controller.py:1422 | [exp6-rapidfire-full-evaluation:Controller] Scheduling pipeline 6 (Pipeline 6) on actor 0 for shard 0 (1 batches)
+2026-05-05 19:28:16 | Controller | INFO | controller.py:1299 | [exp6-rapidfire-full-evaluation:Controller] Pipeline 6 completed shard 0 (1 batches, 9.54s)
+2026-05-05 19:28:16 | Controller | INFO | controller.py:1422 | [exp6-rapidfire-full-evaluation:Controller] Scheduling pipeline 1 (Pipeline 1) on actor 0 for shard 1 (1 batches)
+2026-05-05 19:28:25 | Controller | INFO | controller.py:1299 | [exp6-rapidfire-full-evaluation:Controller] Pipeline 1 completed shard 1 (1 batches, 7.03s)
+2026-05-05 19:28:25 | Controller | INFO | controller.py:1422 | [exp6-rapidfire-full-evaluation:Controller] Scheduling pipeline 2 (Pipeline 2) on actor 0 for shard 1 (1 batches)
+2026-05-05 19:28:34 | Controller | INFO | controller.py:1299 | [exp6-rapidfire-full-evaluation:Controller] Pipeline 2 completed shard 1 (1 batches, 7.54s)
+2026-05-05 19:28:34 | Controller | INFO | controller.py:1422 | [exp6-rapidfire-full-evaluation:Controller] Scheduling pipeline 3 (Pipeline 3) on actor 0 for shard 1 (1 batches)
+2026-05-05 19:28:43 | Controller | INFO | controller.py:1299 | [exp6-rapidfire-full-evaluation:Controller] Pipeline 3 completed shard 1 (1 batches, 7.03s)
+2026-05-05 19:28:43 | Controller | INFO | controller.py:1422 | [exp6-rapidfire-full-evaluation:Controller] Scheduling pipeline 4 (Pipeline 4) on actor 0 for shard 1 (1 batches)
+2026-05-05 19:28:54 | Controller | INFO | controller.py:1299 | [exp6-rapidfire-full-evaluation:Controller] Pipeline 4 completed shard 1 (1 batches, 9.54s)
+2026-05-05 19:28:54 | Controller | INFO | controller.py:1422 | [exp6-rapidfire-full-evaluation:Controller] Scheduling pipeline 5 (Pipeline 5) on actor 0 for shard 1 (1 batches)
+2026-05-05 19:29:05 | Controller | INFO | controller.py:1299 | [exp6-rapidfire-full-evaluation:Controller] Pipeline 5 completed shard 1 (1 batches, 9.06s)
+2026-05-05 19:29:05 | Controller | INFO | controller.py:1422 | [exp6-rapidfire-full-evaluation:Controller] Scheduling pipeline 6 (Pipeline 6) on actor 0 for shard 1 (1 batches)
+2026-05-05 19:29:16 | Controller | INFO | controller.py:1299 | [exp6-rapidfire-full-evaluation:Controller] Pipeline 6 completed shard 1 (1 batches, 9.04s)
+2026-05-05 19:29:16 | Controller | INFO | controller.py:1422 | [exp6-rapidfire-full-evaluation:Controller] Scheduling pipeline 1 (Pipeline 1) on actor 0 for shard 2 (1 batches)
+2026-05-05 19:29:24 | Controller | INFO | controller.py:1299 | [exp6-rapidfire-full-evaluation:Controller] Pipeline 1 completed shard 2 (1 batches, 7.03s)
+2026-05-05 19:29:24 | Controller | INFO | controller.py:1422 | [exp6-rapidfire-full-evaluation:Controller] Scheduling pipeline 2 (Pipeline 2) on actor 0 for shard 2 (1 batches)
+2026-05-05 19:29:35 | Controller | INFO | controller.py:1299 | [exp6-rapidfire-full-evaluation:Controller] Pipeline 2 completed shard 2 (1 batches, 9.04s)
+2026-05-05 19:29:35 | Controller | INFO | controller.py:1422 | [exp6-rapidfire-full-evaluation:Controller] Scheduling pipeline 3 (Pipeline 3) on actor 0 for shard 2 (1 batches)
+2026-05-05 19:29:44 | Controller | INFO | controller.py:1299 | [exp6-rapidfire-full-evaluation:Controller] Pipeline 3 completed shard 2 (1 batches, 7.53s)
+2026-05-05 19:29:44 | Controller | INFO | controller.py:1422 | [exp6-rapidfire-full-evaluation:Controller] Scheduling pipeline 4 (Pipeline 4) on actor 0 for shard 2 (1 batches)
+2026-05-05 19:29:54 | Controller | INFO | controller.py:1299 | [exp6-rapidfire-full-evaluation:Controller] Pipeline 4 completed shard 2 (1 batches, 8.05s)
+2026-05-05 19:29:54 | Controller | INFO | controller.py:1422 | [exp6-rapidfire-full-evaluation:Controller] Scheduling pipeline 5 (Pipeline 5) on actor 0 for shard 2 (1 batches)
+2026-05-05 19:30:03 | Controller | INFO | controller.py:1299 | [exp6-rapidfire-full-evaluation:Controller] Pipeline 5 completed shard 2 (1 batches, 7.03s)
+2026-05-05 19:30:03 | Controller | INFO | controller.py:1422 | [exp6-rapidfire-full-evaluation:Controller] Scheduling pipeline 6 (Pipeline 6) on actor 0 for shard 2 (1 batches)
+2026-05-05 19:30:14 | Controller | INFO | controller.py:1299 | [exp6-rapidfire-full-evaluation:Controller] Pipeline 6 completed shard 2 (1 batches, 9.04s)
+2026-05-05 19:30:14 | Controller | INFO | controller.py:1422 | [exp6-rapidfire-full-evaluation:Controller] Scheduling pipeline 1 (Pipeline 1) on actor 0 for shard 3 (1 batches)
+2026-05-05 19:30:23 | Controller | INFO | controller.py:1192 | [exp6-rapidfire-full-evaluation:Controller] Pipeline 1 completed all 4 shards
+2026-05-05 19:30:23 | Controller | INFO | controller.py:1299 | [exp6-rapidfire-full-evaluation:Controller] Pipeline 1 completed shard 3 (1 batches, 8.04s)
+2026-05-05 19:30:23 | Controller | INFO | controller.py:1422 | [exp6-rapidfire-full-evaluation:Controller] Scheduling pipeline 2 (Pipeline 2) on actor 0 for shard 3 (1 batches)
+2026-05-05 19:30:34 | Controller | INFO | controller.py:1192 | [exp6-rapidfire-full-evaluation:Controller] Pipeline 2 completed all 4 shards
+2026-05-05 19:30:34 | Controller | INFO | controller.py:1299 | [exp6-rapidfire-full-evaluation:Controller] Pipeline 2 completed shard 3 (1 batches, 9.04s)
+2026-05-05 19:30:34 | Controller | INFO | controller.py:1422 | [exp6-rapidfire-full-evaluation:Controller] Scheduling pipeline 3 (Pipeline 3) on actor 0 for shard 3 (1 batches)
+2026-05-05 19:30:48 | Controller | INFO | controller.py:1192 | [exp6-rapidfire-full-evaluation:Controller] Pipeline 3 completed all 4 shards
+2026-05-05 19:30:48 | Controller | INFO | controller.py:1299 | [exp6-rapidfire-full-evaluation:Controller] Pipeline 3 completed shard 3 (1 batches, 12.05s)
+2026-05-05 19:30:48 | Controller | INFO | controller.py:1422 | [exp6-rapidfire-full-evaluation:Controller] Scheduling pipeline 4 (Pipeline 4) on actor 0 for shard 3 (1 batches)
+2026-05-05 19:31:02 | Controller | INFO | controller.py:1192 | [exp6-rapidfire-full-evaluation:Controller] Pipeline 4 completed all 4 shards
+2026-05-05 19:31:02 | Controller | INFO | controller.py:1299 | [exp6-rapidfire-full-evaluation:Controller] Pipeline 4 completed shard 3 (1 batches, 12.04s)
+2026-05-05 19:31:02 | Controller | INFO | controller.py:1422 | [exp6-rapidfire-full-evaluation:Controller] Scheduling pipeline 5 (Pipeline 5) on actor 0 for shard 3 (1 batches)
+2026-05-05 19:31:12 | Controller | INFO | controller.py:1192 | [exp6-rapidfire-full-evaluation:Controller] Pipeline 5 completed all 4 shards
+2026-05-05 19:31:12 | Controller | INFO | controller.py:1299 | [exp6-rapidfire-full-evaluation:Controller] Pipeline 5 completed shard 3 (1 batches, 8.53s)
+2026-05-05 19:31:12 | Controller | INFO | controller.py:1422 | [exp6-rapidfire-full-evaluation:Controller] Scheduling pipeline 6 (Pipeline 6) on actor 0 for shard 3 (1 batches)
+2026-05-05 19:31:23 | Controller | INFO | controller.py:1192 | [exp6-rapidfire-full-evaluation:Controller] Pipeline 6 completed all 4 shards
+2026-05-05 19:31:23 | Controller | INFO | controller.py:1299 | [exp6-rapidfire-full-evaluation:Controller] Pipeline 6 completed shard 3 (1 batches, 9.54s)
+2026-05-05 19:31:23 | Controller | INFO | controller.py:1386 | [exp6-rapidfire-full-evaluation:Controller] All pipelines completed all shards!
+2026-05-05 19:31:23 | Controller | INFO | controller.py:695 | [exp6-rapidfire-full-evaluation:Controller] Computing final metrics for all pipelines...
+2026-05-05 19:31:24 | Experiment | INFO | metric_rfmetric_manager.py:190 | [exp6-rapidfire-full-evaluation:Experiment] Ending run: 0cc1bbdcc9e04025a69daa93afae37b5, 1 in rf_mlflow
+2026-05-05 19:31:24 | Experiment | WARNING | metric_mlflow_manager.py:101 | [exp6-rapidfire-full-evaluation:Experiment] Run 0cc1bbdcc9e04025a69daa93afae37b5 is not the active run, no local context to clear
+2026-05-05 19:31:24 | Controller | INFO | controller.py:853 | [exp6-rapidfire-full-evaluation:Controller] Pipeline 1 (Pipeline 1) completed successfully
+2026-05-05 19:31:24 | Experiment | INFO | metric_rfmetric_manager.py:190 | [exp6-rapidfire-full-evaluation:Experiment] Ending run: c916d403d952489794291d204b368480, 2 in rf_mlflow
+2026-05-05 19:31:24 | Experiment | WARNING | metric_mlflow_manager.py:101 | [exp6-rapidfire-full-evaluation:Experiment] Run c916d403d952489794291d204b368480 is not the active run, no local context to clear
+2026-05-05 19:31:24 | Controller | INFO | controller.py:853 | [exp6-rapidfire-full-evaluation:Controller] Pipeline 2 (Pipeline 2) completed successfully
+2026-05-05 19:31:24 | Experiment | INFO | metric_rfmetric_manager.py:190 | [exp6-rapidfire-full-evaluation:Experiment] Ending run: 98daf0f8df1845e7bd52caf8ed258bc4, 3 in rf_mlflow
+2026-05-05 19:31:24 | Experiment | WARNING | metric_mlflow_manager.py:101 | [exp6-rapidfire-full-evaluation:Experiment] Run 98daf0f8df1845e7bd52caf8ed258bc4 is not the active run, no local context to clear
+2026-05-05 19:31:24 | Controller | INFO | controller.py:853 | [exp6-rapidfire-full-evaluation:Controller] Pipeline 3 (Pipeline 3) completed successfully
+2026-05-05 19:31:24 | Experiment | INFO | metric_rfmetric_manager.py:190 | [exp6-rapidfire-full-evaluation:Experiment] Ending run: a3ae150df55848f4bc6957047c6bbe85, 4 in rf_mlflow
+2026-05-05 19:31:24 | Experiment | WARNING | metric_mlflow_manager.py:101 | [exp6-rapidfire-full-evaluation:Experiment] Run a3ae150df55848f4bc6957047c6bbe85 is not the active run, no local context to clear
+2026-05-05 19:31:24 | Controller | INFO | controller.py:853 | [exp6-rapidfire-full-evaluation:Controller] Pipeline 4 (Pipeline 4) completed successfully
+2026-05-05 19:31:25 | Experiment | INFO | metric_rfmetric_manager.py:190 | [exp6-rapidfire-full-evaluation:Experiment] Ending run: 82c042e090384d47b1c2517fd638e0d9, 5 in rf_mlflow
+2026-05-05 19:31:25 | Experiment | WARNING | metric_mlflow_manager.py:101 | [exp6-rapidfire-full-evaluation:Experiment] Run 82c042e090384d47b1c2517fd638e0d9 is not the active run, no local context to clear
+2026-05-05 19:31:25 | Controller | INFO | controller.py:853 | [exp6-rapidfire-full-evaluation:Controller] Pipeline 5 (Pipeline 5) completed successfully
+2026-05-05 19:31:25 | Experiment | INFO | metric_rfmetric_manager.py:190 | [exp6-rapidfire-full-evaluation:Experiment] Ending run: 2dd1663f99d4453eb6be11cfe70f0fd5, 6 in rf_mlflow
+2026-05-05 19:31:25 | Experiment | WARNING | metric_mlflow_manager.py:101 | [exp6-rapidfire-full-evaluation:Experiment] Run 2dd1663f99d4453eb6be11cfe70f0fd5 is not the active run, no local context to clear
+2026-05-05 19:31:25 | Controller | INFO | controller.py:853 | [exp6-rapidfire-full-evaluation:Controller] Pipeline 6 (Pipeline 6) completed successfully
+2026-05-05 19:50:28 | ExperimentUtils | INFO | experiment_utils.py:180 | [exp6-rapidfire-full-evaluation:ExperimentUtils] Reset experiment states - marked ongoing pipelines, contexts, and tasks as failed
+2026-05-05 19:50:28 | ExperimentUtils | INFO | experiment_utils.py:188 | [exp6-rapidfire-full-evaluation:ExperimentUtils] Experiment marked as cancelled. Ongoing pipelines, contexts, and tasks have been marked as failed.
+2026-05-05 19:50:28 | ExperimentUtils | INFO | experiment_utils.py:154 | [exp6-rapidfire-full-evaluation:ExperimentUtils] Experiment exp6-rapidfire-full-evaluation ended
+2026-05-05 19:50:28 | Experiment | INFO | experiment.py:165 | [exp7-rapidfire-full-evaluation:Experiment] The previously running experiment exp6-rapidfire-full-evaluation was forcibly ended. Created a new experiment 'exp7-rapidfire-full-evaluation' with Experiment ID: 30 at /home/obychenkov/rapidfireai/rapidfire_experiments/exp7-rapidfire-full-evaluation
+2026-05-05 19:50:28 | Experiment | INFO | metric_rfmetric_manager.py:55 | [exp7-rapidfire-full-evaluation:Experiment] Initialized MLflowMetricLogger: rf_mlflow
+2026-05-05 19:50:28 | Experiment | INFO | metric_rfmetric_manager.py:119 | [exp7-rapidfire-full-evaluation:Experiment] Creating MLflow experiment: exp7-rapidfire-full-evaluation
+2026-05-05 19:50:28 | Experiment | INFO | experiment.py:210 | [exp7-rapidfire-full-evaluation:Experiment] Initialized MetricLogger experiment: 19
+2026-05-05 19:50:28 | Experiment | INFO | experiment.py:226 | [exp7-rapidfire-full-evaluation:Experiment] Using existing dispatcher/api server at 127.0.0.1:8851.
+2026-05-05 19:50:34 | Experiment | WARNING | experiment.py:381 | [exp7-rapidfire-full-evaluation:Experiment] No GPUs available. Be sure to use external APIs for inference.
+2026-05-05 19:50:34 | Experiment | INFO | experiment.py:383 | [exp7-rapidfire-full-evaluation:Experiment] Running multi-config experiment with 4 shard(s), (0.0 GPUs per actor, 8.0 CPUs per actor, 1 actors)
+2026-05-05 19:50:34 | Experiment | INFO | experiment.py:392 | [exp7-rapidfire-full-evaluation:Experiment] Reset states of existing pipelines/contexts/tasks (marked as failed)
+2026-05-05 19:50:34 | Controller | INFO | controller.py:895 | [exp7-rapidfire-full-evaluation:Controller] Dataset sharded into 4 shard(s). Shard sizes: [12, 11, 11, 11]
+2026-05-05 19:50:34 | Controller | INFO | controller.py:900 | [exp7-rapidfire-full-evaluation:Controller] Received 3 pipeline configuration(s)
+2026-05-05 19:50:34 | Controller | INFO | controller.py:309 | [exp7-rapidfire-full-evaluation:Controller] Found 3 unique RAG context(s)
+2026-05-05 19:50:34 | Controller | INFO | controller.py:320 | [exp7-rapidfire-full-evaluation:Controller] Will build new context 5492f75a...
+2026-05-05 19:50:34 | Controller | INFO | controller.py:320 | [exp7-rapidfire-full-evaluation:Controller] Will build new context 36487b7e...
+2026-05-05 19:50:34 | Controller | INFO | controller.py:320 | [exp7-rapidfire-full-evaluation:Controller] Will build new context 5c30b598...
+2026-05-05 19:50:34 | Controller | INFO | controller.py:346 | [exp7-rapidfire-full-evaluation:Controller] Building 3 context(s) in parallel...
+2026-05-05 19:50:34 | Controller | INFO | controller.py:373 | [exp7-rapidfire-full-evaluation:Controller] Creating 3 DocProcessingActor(s) for parallel processing
+2026-05-05 19:50:34 | Controller | INFO | controller.py:461 | [exp7-rapidfire-full-evaluation:Controller] Submitted 3 build task(s) in parallel
+2026-05-05 19:51:14 | Controller | INFO | controller.py:482 | [exp7-rapidfire-full-evaluation:Controller] Built context 1 (5492f75a...) successfully in 39.62s
+2026-05-05 19:51:52 | Controller | INFO | controller.py:482 | [exp7-rapidfire-full-evaluation:Controller] Built context 2 (36487b7e...) successfully in 77.45s
+2026-05-05 19:52:27 | Controller | INFO | controller.py:482 | [exp7-rapidfire-full-evaluation:Controller] Built context 3 (5c30b598...) successfully in 113.12s
+2026-05-05 19:52:27 | Controller | INFO | controller.py:523 | [exp7-rapidfire-full-evaluation:Controller] Completed parallel context building for 3 context(s)
+2026-05-05 19:52:27 | Controller | INFO | controller.py:920 | [exp7-rapidfire-full-evaluation:Controller] Created 1 query processing actors (generic pool)
+2026-05-05 19:52:27 | Experiment | INFO | metric_rfmetric_manager.py:141 | [exp7-rapidfire-full-evaluation:Experiment] Created MLflow run: 8f52e7ec279a4cedb1a39670f028ae3f, 1
+2026-05-05 19:52:28 | Experiment | INFO | metric_rfmetric_manager.py:141 | [exp7-rapidfire-full-evaluation:Experiment] Created MLflow run: ea6acbff1fdf46db8f32743a5e1d4d7b, 2
+2026-05-05 19:52:28 | Experiment | INFO | metric_rfmetric_manager.py:141 | [exp7-rapidfire-full-evaluation:Experiment] Created MLflow run: 2857f1b815924b01a236f3d1c3af9381, 3
+2026-05-05 19:52:28 | Controller | INFO | controller.py:931 | [exp7-rapidfire-full-evaluation:Controller] Initialized scheduler with 3 pipelines, 1 actors, 4 shards
+2026-05-05 19:52:28 | Controller | INFO | controller.py:1118 | [exp7-rapidfire-full-evaluation:Controller] Created experiment-wide rate limiter actor for 3 OpenAI pipeline(s) with per-model limits (api-mistral-small-3.2-2506: 120 RPM, 1000000 TPM)
+2026-05-05 19:52:28 | Controller | INFO | controller.py:1124 | [exp7-rapidfire-full-evaluation:Controller] Starting multi-pipeline inference scheduling...
+2026-05-05 19:52:28 | Controller | INFO | controller.py:1422 | [exp7-rapidfire-full-evaluation:Controller] Scheduling pipeline 1 (Pipeline 1) on actor 0 for shard 0 (1 batches)
+2026-05-05 19:53:14 | Controller | INFO | controller.py:1299 | [exp7-rapidfire-full-evaluation:Controller] Pipeline 1 completed shard 0 (1 batches, 11.56s)
+2026-05-05 19:53:14 | Controller | INFO | controller.py:1422 | [exp7-rapidfire-full-evaluation:Controller] Scheduling pipeline 2 (Pipeline 2) on actor 0 for shard 0 (1 batches)
+2026-05-05 19:53:27 | Controller | INFO | controller.py:1299 | [exp7-rapidfire-full-evaluation:Controller] Pipeline 2 completed shard 0 (1 batches, 9.12s)
+2026-05-05 19:53:27 | Controller | INFO | controller.py:1422 | [exp7-rapidfire-full-evaluation:Controller] Scheduling pipeline 3 (Pipeline 3) on actor 0 for shard 0 (1 batches)
+2026-05-05 19:53:41 | Controller | INFO | controller.py:1299 | [exp7-rapidfire-full-evaluation:Controller] Pipeline 3 completed shard 0 (1 batches, 10.10s)
+2026-05-05 19:53:41 | Controller | INFO | controller.py:1422 | [exp7-rapidfire-full-evaluation:Controller] Scheduling pipeline 1 (Pipeline 1) on actor 0 for shard 1 (1 batches)
+2026-05-05 19:53:50 | Controller | INFO | controller.py:1299 | [exp7-rapidfire-full-evaluation:Controller] Pipeline 1 completed shard 1 (1 batches, 7.53s)
+2026-05-05 19:53:50 | Controller | INFO | controller.py:1422 | [exp7-rapidfire-full-evaluation:Controller] Scheduling pipeline 2 (Pipeline 2) on actor 0 for shard 1 (1 batches)
+2026-05-05 19:54:02 | Controller | INFO | controller.py:1299 | [exp7-rapidfire-full-evaluation:Controller] Pipeline 2 completed shard 1 (1 batches, 8.08s)
+2026-05-05 19:54:02 | Controller | INFO | controller.py:1422 | [exp7-rapidfire-full-evaluation:Controller] Scheduling pipeline 3 (Pipeline 3) on actor 0 for shard 1 (1 batches)
+2026-05-05 19:54:17 | Controller | INFO | controller.py:1299 | [exp7-rapidfire-full-evaluation:Controller] Pipeline 3 completed shard 1 (1 batches, 10.80s)
+2026-05-05 19:54:17 | Controller | INFO | controller.py:1422 | [exp7-rapidfire-full-evaluation:Controller] Scheduling pipeline 1 (Pipeline 1) on actor 0 for shard 2 (1 batches)
+2026-05-05 19:54:27 | Controller | INFO | controller.py:1299 | [exp7-rapidfire-full-evaluation:Controller] Pipeline 1 completed shard 2 (1 batches, 8.54s)
+2026-05-05 19:54:27 | Controller | INFO | controller.py:1422 | [exp7-rapidfire-full-evaluation:Controller] Scheduling pipeline 2 (Pipeline 2) on actor 0 for shard 2 (1 batches)
+2026-05-05 19:54:40 | Controller | INFO | controller.py:1299 | [exp7-rapidfire-full-evaluation:Controller] Pipeline 2 completed shard 2 (1 batches, 9.12s)
+2026-05-05 19:54:40 | Controller | INFO | controller.py:1422 | [exp7-rapidfire-full-evaluation:Controller] Scheduling pipeline 3 (Pipeline 3) on actor 0 for shard 2 (1 batches)
+2026-05-05 19:54:59 | Controller | INFO | controller.py:1299 | [exp7-rapidfire-full-evaluation:Controller] Pipeline 3 completed shard 2 (1 batches, 14.63s)
+2026-05-05 19:54:59 | Controller | INFO | controller.py:1422 | [exp7-rapidfire-full-evaluation:Controller] Scheduling pipeline 1 (Pipeline 1) on actor 0 for shard 3 (1 batches)
+2026-05-05 19:55:09 | Controller | INFO | controller.py:1192 | [exp7-rapidfire-full-evaluation:Controller] Pipeline 1 completed all 4 shards
+2026-05-05 19:55:09 | Controller | INFO | controller.py:1299 | [exp7-rapidfire-full-evaluation:Controller] Pipeline 1 completed shard 3 (1 batches, 8.04s)
+2026-05-05 19:55:09 | Controller | INFO | controller.py:1422 | [exp7-rapidfire-full-evaluation:Controller] Scheduling pipeline 2 (Pipeline 2) on actor 0 for shard 3 (1 batches)
+2026-05-05 19:55:21 | Controller | INFO | controller.py:1192 | [exp7-rapidfire-full-evaluation:Controller] Pipeline 2 completed all 4 shards
+2026-05-05 19:55:21 | Controller | INFO | controller.py:1299 | [exp7-rapidfire-full-evaluation:Controller] Pipeline 2 completed shard 3 (1 batches, 8.55s)
+2026-05-05 19:55:21 | Controller | INFO | controller.py:1422 | [exp7-rapidfire-full-evaluation:Controller] Scheduling pipeline 3 (Pipeline 3) on actor 0 for shard 3 (1 batches)
+2026-05-05 19:55:35 | Controller | INFO | controller.py:1192 | [exp7-rapidfire-full-evaluation:Controller] Pipeline 3 completed all 4 shards
+2026-05-05 19:55:35 | Controller | INFO | controller.py:1299 | [exp7-rapidfire-full-evaluation:Controller] Pipeline 3 completed shard 3 (1 batches, 10.10s)
+2026-05-05 19:55:35 | Controller | INFO | controller.py:1386 | [exp7-rapidfire-full-evaluation:Controller] All pipelines completed all shards!
+2026-05-05 19:55:35 | Controller | INFO | controller.py:695 | [exp7-rapidfire-full-evaluation:Controller] Computing final metrics for all pipelines...
+2026-05-05 19:55:35 | Experiment | INFO | metric_rfmetric_manager.py:190 | [exp7-rapidfire-full-evaluation:Experiment] Ending run: 8f52e7ec279a4cedb1a39670f028ae3f, 1 in rf_mlflow
+2026-05-05 19:55:36 | Experiment | WARNING | metric_mlflow_manager.py:101 | [exp7-rapidfire-full-evaluation:Experiment] Run 8f52e7ec279a4cedb1a39670f028ae3f is not the active run, no local context to clear
+2026-05-05 19:55:36 | Controller | INFO | controller.py:853 | [exp7-rapidfire-full-evaluation:Controller] Pipeline 1 (Pipeline 1) completed successfully
+2026-05-05 19:55:36 | Experiment | INFO | metric_rfmetric_manager.py:190 | [exp7-rapidfire-full-evaluation:Experiment] Ending run: ea6acbff1fdf46db8f32743a5e1d4d7b, 2 in rf_mlflow
+2026-05-05 19:55:36 | Experiment | WARNING | metric_mlflow_manager.py:101 | [exp7-rapidfire-full-evaluation:Experiment] Run ea6acbff1fdf46db8f32743a5e1d4d7b is not the active run, no local context to clear
+2026-05-05 19:55:36 | Controller | INFO | controller.py:853 | [exp7-rapidfire-full-evaluation:Controller] Pipeline 2 (Pipeline 2) completed successfully
+2026-05-05 19:55:36 | Experiment | INFO | metric_rfmetric_manager.py:190 | [exp7-rapidfire-full-evaluation:Experiment] Ending run: 2857f1b815924b01a236f3d1c3af9381, 3 in rf_mlflow
+2026-05-05 19:55:36 | Experiment | WARNING | metric_mlflow_manager.py:101 | [exp7-rapidfire-full-evaluation:Experiment] Run 2857f1b815924b01a236f3d1c3af9381 is not the active run, no local context to clear
+2026-05-05 19:55:36 | Controller | INFO | controller.py:853 | [exp7-rapidfire-full-evaluation:Controller] Pipeline 3 (Pipeline 3) completed successfully

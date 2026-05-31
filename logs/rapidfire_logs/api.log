@@ -1,0 +1,12 @@
+[2026-05-29 19:51:11 -0700] [20775] [INFO] Starting gunicorn 25.3.0
+[2026-05-29 19:51:11 -0700] [20775] [INFO] Listening at: http://127.0.0.1:8851 (20775)
+[2026-05-29 19:51:11 -0700] [20775] [INFO] Using worker: sync
+[2026-05-29 19:51:11 -0700] [21066] [INFO] Booting worker with pid: 21066
+[2026-05-29 19:51:11 -0700] [20775] [INFO] Control socket listening at /home/obychenkov/.gunicorn/gunicorn.ctl
+[2026-05-29 22:33:45 -0700] [20775] [INFO] Handling signal: int
+[2026-05-29 22:33:46 -0700] [21066] [INFO] Worker exiting (pid: 21066)
+Initializing database tables...
+Database tables initialized successfully
+[2026-05-29 22:33:47 -0700] [20775] [INFO] Shutting down: Master
+Initializing database tables...
+Database tables initialized successfully

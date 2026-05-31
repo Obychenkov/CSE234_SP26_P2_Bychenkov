@@ -1,0 +1,13 @@
+2026-05-05 18:50:43 | ExperimentUtils | INFO | experiment_utils.py:180 | [exp4-rapidfire-full-evaluation:ExperimentUtils] Reset experiment states - marked ongoing pipelines, contexts, and tasks as failed
+2026-05-05 18:50:43 | ExperimentUtils | INFO | experiment_utils.py:188 | [exp4-rapidfire-full-evaluation:ExperimentUtils] Experiment marked as cancelled. Ongoing pipelines, contexts, and tasks have been marked as failed.
+2026-05-05 18:50:43 | ExperimentUtils | INFO | experiment_utils.py:154 | [exp4-rapidfire-full-evaluation:ExperimentUtils] Experiment exp4-rapidfire-full-evaluation ended
+2026-05-05 18:50:43 | Experiment | INFO | experiment.py:165 | [copilot-evals-check:Experiment] The previously running experiment exp4-rapidfire-full-evaluation was forcibly ended. Created a new experiment 'copilot-evals-check' with Experiment ID: 26 at /home/obychenkov/rapidfireai/rapidfire_experiments/copilot-evals-check
+2026-05-05 18:51:10 | Experiment | INFO | metric_rfmetric_manager.py:55 | [copilot-evals-check:Experiment] Initialized MLflowMetricLogger: rf_mlflow
+2026-05-05 18:51:10 | Experiment | INFO | metric_rfmetric_manager.py:119 | [copilot-evals-check:Experiment] Creating MLflow experiment: copilot-evals-check
+2026-05-05 18:51:10 | Experiment | INFO | experiment.py:210 | [copilot-evals-check:Experiment] Initialized MetricLogger experiment: 15
+2026-05-05 18:51:10 | Experiment | INFO | experiment.py:226 | [copilot-evals-check:Experiment] Using existing dispatcher/api server at 127.0.0.1:8851.
+2026-05-05 18:51:10 | ExperimentUtils | INFO | experiment_utils.py:180 | [copilot-evals-check:ExperimentUtils] Reset experiment states - marked ongoing pipelines, contexts, and tasks as failed
+2026-05-05 18:51:10 | ExperimentUtils | INFO | experiment_utils.py:188 | [copilot-evals-check:ExperimentUtils] Experiment marked as cancelled. Ongoing pipelines, contexts, and tasks have been marked as failed.
+2026-05-05 18:51:10 | ExperimentUtils | INFO | experiment_utils.py:154 | [copilot-evals-check:ExperimentUtils] Experiment copilot-evals-check ended
+2026-05-05 18:51:13 | Experiment | INFO | experiment.py:574 | [copilot-evals-check:Experiment] All actors shut down
+2026-05-05 18:51:13 | Experiment | INFO | experiment.py:575 | [copilot-evals-check:Experiment] Dispatcher will automatically shut down (daemon thread)

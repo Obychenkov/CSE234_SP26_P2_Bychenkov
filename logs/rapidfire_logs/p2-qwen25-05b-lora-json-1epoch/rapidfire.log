@@ -1,0 +1,5 @@
+2026-05-29 18:11:18 | p2-qwen25-05b-lora-json-1epoch | experiment | INFO | experiment.py:104 | Experiment p2-qwen25-05b-lora-json-1epoch created with Experiment ID: 1 and Metric Experiment ID: p2-qwen25-05b-lora-json-1epoch at /home/obychenkov/rapidfireai/rapidfire_experiments/p2-qwen25-05b-lora-json-1epoch
+2026-05-29 18:11:18 | p2-qwen25-05b-lora-json-1epoch | experiment | INFO | experiment.py:106 | Running RapidFire AI version 0.15.2
+2026-05-29 18:11:18 | p2-qwen25-05b-lora-json-1epoch | p2-qwen25-05b-lora-json-1epoch | DEBUG | experiment_utils.py:271 | Reset experiment states and set current experiment task to idle
+2026-05-29 18:11:18 | p2-qwen25-05b-lora-json-1epoch | p2-qwen25-05b-lora-json-1epoch | WARNING | metric_rfmetric_manager.py:57 | Failed to initialize MLflowMetricLogger: MLflow server not available at http://127.0.0.1:8852. MLflow logging will be disabled. MLflow logging is disabled.
+2026-05-29 18:11:18 | p2-qwen25-05b-lora-json-1epoch | p2-qwen25-05b-lora-json-1epoch | INFO | experiment_utils.py:240 | Experiment p2-qwen25-05b-lora-json-1epoch ended

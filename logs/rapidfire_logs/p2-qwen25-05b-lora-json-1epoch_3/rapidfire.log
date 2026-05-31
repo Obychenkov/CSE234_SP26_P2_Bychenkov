@@ -1,0 +1,197 @@
+2026-05-29 18:22:09 | p2-qwen25-05b-lora-json-1epoch_3 | experiment | INFO | experiment.py:104 | The previously running experiment p2-qwen25-05b-lora-json-1epoch_2 was forcibly ended. Created a new experiment 'p2-qwen25-05b-lora-json-1epoch_3' with Experiment ID: 4 and Metric Experiment ID: 21 at /home/obychenkov/rapidfireai/rapidfire_experiments/p2-qwen25-05b-lora-json-1epoch_3
+2026-05-29 18:22:09 | p2-qwen25-05b-lora-json-1epoch_3 | experiment | INFO | experiment.py:106 | Running RapidFire AI version 0.15.2
+2026-05-29 18:22:19 | p2-qwen25-05b-lora-json-1epoch_3 | controller | DEBUG | controller.py:67 | Found 1 workers/GPUs.
+2026-05-29 18:22:19 | p2-qwen25-05b-lora-json-1epoch_3 | controller | INFO | metric_rfmetric_manager.py:55 | Initialized MLflowMetricLogger: rf_mlflow
+2026-05-29 18:22:19 | p2-qwen25-05b-lora-json-1epoch_3 | controller | DEBUG | controller.py:95 | Controller initialized
+2026-05-29 18:22:19 | p2-qwen25-05b-lora-json-1epoch_3 | controller | DEBUG | controller.py:594 | Set experiment task to Create Models.
+2026-05-29 18:22:19 | p2-qwen25-05b-lora-json-1epoch_3 | controller | DEBUG | controller.py:607 | Saved datasets to /home/obychenkov/rapidfireai/rapidfire_experiments/p2-qwen25-05b-lora-json-1epoch_3/datasets.dill
+2026-05-29 18:22:19 | p2-qwen25-05b-lora-json-1epoch_3 | controller | INFO | controller.py:613 | Set seed to 42
+2026-05-29 18:22:19 | p2-qwen25-05b-lora-json-1epoch_3 | controller | INFO | metric_rfmetric_manager.py:141 | Created MLflow run: 54b126df97d64fb0a130121f4298f448, 1
+2026-05-29 18:22:20 | p2-qwen25-05b-lora-json-1epoch_3 | controller | DEBUG | controller.py:200 | Populated MetricLogger with model config info for run 1.
+2026-05-29 18:22:20 | p2-qwen25-05b-lora-json-1epoch_3 | controller | INFO | controller.py:220 | Created 1 runs - 
+{   1: {   'additional_kwargs.generation_config.do_sample': False,
+           'additional_kwargs.generation_config.max_new_tokens': 256,
+           'additional_kwargs.generation_config.temperature': None,
+           'additional_kwargs.generation_config.top_p': None,
+           'model_kwargs.use_cache': False,
+           'model_name': 'Qwen/Qwen2.5-0.5B-Instruct',
+           'model_type': 'causal_lm',
+           'peft_params.bias': 'none',
+           'peft_params.lora_alpha': 32,
+           'peft_params.lora_dropout': 0.05,
+           'peft_params.r': 16,
+           'peft_params.target_modules': ['q_proj', 'k_proj', 'v_proj', 'o_proj'],
+           'tokenizer': None,
+           'tokenizer_kwargs': None,
+           'trainer_type': 'SFT',
+           'training_args.bf16': True,
+           'training_args.eval_strategy': 'epoch',
+           'training_args.gradient_accumulation_steps': 8,
+           'training_args.gradient_checkpointing': True,
+           'training_args.learning_rate': 0.0002,
+           'training_args.logging_steps': 5,
+           'training_args.lr_scheduler_type': 'linear',
+           'training_args.max_length': 16384,
+           'training_args.num_train_epochs': 1,
+           'training_args.packing': False,
+           'training_args.per_device_eval_batch_size': 1,
+           'training_args.per_device_train_batch_size': 1,
+           'training_args.save_strategy': 'epoch'}}
+2026-05-29 18:22:20 | p2-qwen25-05b-lora-json-1epoch_3 | controller | DEBUG | controller.py:223 | Got 1 runs for Initial.
+2026-05-29 18:22:20 | p2-qwen25-05b-lora-json-1epoch_3 | controller | DEBUG | controller.py:227 | Completed creating models.
+2026-05-29 18:22:20 | p2-qwen25-05b-lora-json-1epoch_3 | controller | DEBUG | controller.py:625 | Created models.
+2026-05-29 18:22:20 | p2-qwen25-05b-lora-json-1epoch_3 | controller | DEBUG | controller.py:631 | Set experiment task to Training and Validation.
+2026-05-29 18:22:20 | p2-qwen25-05b-lora-json-1epoch_3 | worker_manager | DEBUG | worker_manager.py:115 | Creating 1 worker processes...
+2026-05-29 18:22:20 | p2-qwen25-05b-lora-json-1epoch_3 | worker_manager | DEBUG | worker_manager.py:121 | Starting worker processes in process group 10855
+2026-05-29 18:22:20 | p2-qwen25-05b-lora-json-1epoch_3 | worker_manager | DEBUG | worker_manager.py:149 | Started Worker 0 with PID 13308
+2026-05-29 18:22:20 | p2-qwen25-05b-lora-json-1epoch_3 | worker_manager | INFO | worker_manager.py:156 | Started 1 worker processes successfully
+2026-05-29 18:22:20 | p2-qwen25-05b-lora-json-1epoch_3 | controller | DEBUG | controller.py:637 | Created 1 workers.
+2026-05-29 18:22:20 | p2-qwen25-05b-lora-json-1epoch_3 | controller | INFO | controller.py:659 | Starting Training and Validation
+2026-05-29 18:22:20 | p2-qwen25-05b-lora-json-1epoch_3 | controller | DEBUG | controller.py:886 | Scheduled run 1 on workers (0,) for chunk 0
+2026-05-29 18:22:34 | p2-qwen25-05b-lora-json-1epoch_3 | worker_0 | DEBUG | worker.py:157 | Worker 0 initialized with PID 13308
+2026-05-29 18:22:34 | p2-qwen25-05b-lora-json-1epoch_3 | worker_0 | INFO | metric_rfmetric_manager.py:55 | Initialized MLflowMetricLogger: rf_mlflow
+2026-05-29 18:22:34 | p2-qwen25-05b-lora-json-1epoch_3 | worker_0 | DEBUG | worker.py:192 | Loaded datasets
+2026-05-29 18:22:34 | p2-qwen25-05b-lora-json-1epoch_3 | worker_0 | DEBUG | worker.py:667 | Received task WorkerTask.TRAIN_VAL for run 1
+2026-05-29 18:22:34 | p2-qwen25-05b-lora-json-1epoch_3 | worker_0 | DEBUG | worker.py:205 | Received run_fit on worker for run 1 with chunk 0
+2026-05-29 18:24:10 | p2-qwen25-05b-lora-json-1epoch_3 | worker-0-shm | DEBUG | shm_manager.py:348 | Saved base_model for run Qwen/Qwen2.5-0.5B-Instruct
+2026-05-29 18:24:10 | p2-qwen25-05b-lora-json-1epoch_3 | worker_0 | ERROR | worker.py:524 | Error during training for run 1: name 'make_messages' is not defined
+2026-05-29 18:24:11 | p2-qwen25-05b-lora-json-1epoch_3 | worker_0 | ERROR | worker.py:683 | Error while running run_fit for run 1 and chunk 0: name 'make_messages' is not defined
+Traceback (most recent call last):
+
+  File "<string>", line 1, in <module>
+  File "/opt/conda/envs/cse234/lib/python3.12/multiprocessing/spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               │     │   └ 3
+               │     └ 141
+               └ <function _main at 0x7f729a48ae80>
+  File "/opt/conda/envs/cse234/lib/python3.12/multiprocessing/spawn.py", line 135, in _main
+    return self._bootstrap(parent_sentinel)
+           │    │          └ 3
+           │    └ <function BaseProcess._bootstrap at 0x7f729a5751c0>
+           └ <Process name='Process-4' parent=10855 started>
+  File "/opt/conda/envs/cse234/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+    │    └ <function BaseProcess.run at 0x7f729a574720>
+    └ <Process name='Process-4' parent=10855 started>
+  File "/opt/conda/envs/cse234/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Process name='Process-4' parent=10855 started>
+    │    │        │    └ (0, <DictProxy object, typeid 'dict' at 0x7f7028f04170>, <AcquirerProxy object, typeid 'Lock' at 0x7f70054b7680>, <Event at 0...
+    │    │        └ <Process name='Process-4' parent=10855 started>
+    │    └ <function worker_process_target at 0x7f7249b727a0>
+    └ <Process name='Process-4' parent=10855 started>
+  File "/opt/conda/envs/cse234/lib/python3.12/site-packages/rapidfireai/fit/utils/worker_manager.py", line 44, in worker_process_target
+    worker.serve_forever()
+    │      └ <function Worker.serve_forever at 0x7f7005381a80>
+    └ <rapidfireai.fit.backend.worker.Worker object at 0x7f729a46f560>
+> File "/opt/conda/envs/cse234/lib/python3.12/site-packages/rapidfireai/fit/backend/worker.py", line 676, in serve_forever
+    self.run_fit(
+    │    └ <function Worker.run_fit at 0x7f70053819e0>
+    └ <rapidfireai.fit.backend.worker.Worker object at 0x7f729a46f560>
+  File "/opt/conda/envs/cse234/lib/python3.12/site-packages/rapidfireai/fit/backend/worker.py", line 354, in run_fit
+    trainer_instance, base_model_name = create_trainer_instance(
+                                        └ <function create_trainer_instance at 0x7f702db8bc40>
+  File "/opt/conda/envs/cse234/lib/python3.12/site-packages/rapidfireai/fit/ml/trainer.py", line 425, in create_trainer_instance
+    _prepare_trainer_kwargs(
+    └ <function _prepare_trainer_kwargs at 0x7f702b29b920>
+  File "/opt/conda/envs/cse234/lib/python3.12/site-packages/rapidfireai/fit/ml/trainer.py", line 662, in _prepare_trainer_kwargs
+    train_dataset = train_dataset.map(
+                    │             └ <function Dataset.map at 0x7f703083b560>
+                    └ Dataset({
+                          features: ['question_id', 'db_id', 'question', 'gold_sql', 'schema_links'],
+                          num_rows: 301
+                      })
+  File "/opt/conda/envs/cse234/lib/python3.12/site-packages/datasets/arrow_dataset.py", line 575, in wrapper
+    out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
+         │                                 │    │      │       └ {}
+         │                                 │    │      └ (<function formatting_function at 0x7f7005383880>,)
+         │                                 │    └ Dataset({
+         │                                 │          features: ['question_id', 'db_id', 'question', 'gold_sql', 'schema_links'],
+         │                                 │          num_rows: 301
+         │                                 │      })
+         │                                 └ <function Dataset.map at 0x7f703083b4c0>
+         └ typing.Union
+  File "/opt/conda/envs/cse234/lib/python3.12/site-packages/datasets/arrow_dataset.py", line 3633, in map
+    for rank, done, content in Dataset._map_single(**unprocessed_kwargs):
+        │     │     │          │       │             └ {'shard': Dataset({
+        │     │     │          │       │                   features: ['question_id', 'db_id', 'question', 'gold_sql', 'schema_links'],
+        │     │     │          │       │                   num_rows: 301
+        │     │     │          │       │               }), 'fu...
+        │     │     │          │       └ <staticmethod(<function Dataset._map_single at 0x7f703083b600>)>
+        │     │     │          └ <class 'datasets.arrow_dataset.Dataset'>
+        │     │     └ 0
+        │     └ False
+        └ None
+  File "/opt/conda/envs/cse234/lib/python3.12/site-packages/datasets/arrow_dataset.py", line 3973, in _map_single
+    for i, example in iter_outputs(shard_iterable):
+                      │            └ <enumerate object at 0x7f6d11373f60>
+                      └ <function Dataset._map_single.<locals>.iter_outputs at 0x7f6d11ef28e0>
+  File "/opt/conda/envs/cse234/lib/python3.12/site-packages/datasets/arrow_dataset.py", line 3951, in iter_outputs
+    yield i, apply_function(example, i, offset=offset)
+          │  │              │        │         └ 0
+          │  │              │        └ 0
+          │  │              └ pyarrow.Table
+          │  │                question_id: int64
+          │  │                db_id: string
+          │  │                question: string
+          │  │                gold_sql: string
+          │  │                schema_links: struct<ACC_EM_Chronic_Absentee...
+          │  └ <function Dataset._map_single.<locals>.apply_function at 0x7f6d11ef2480>
+          └ 0
+  File "/opt/conda/envs/cse234/lib/python3.12/site-packages/datasets/arrow_dataset.py", line 3872, in apply_function
+    processed_inputs = function(*fn_args, *additional_args, **fn_kwargs)
+                       │         │         │                  └ {}
+                       │         │         └ ()
+                       │         └ [{'question_id': 210, 'db_id': 'SBODemoUS-Service', 'question': "What is the renewal status of the contracts with the custome...
+                       └ <function formatting_function at 0x7f7005383880>
+
+  File "/tmp/ipykernel_10855/4277868513.py", line 4, in formatting_function
+
+NameError: name 'make_messages' is not defined
+2026-05-29 18:24:12 | p2-qwen25-05b-lora-json-1epoch_3 | controller-shm | WARNING | shm_manager.py:492 | Model '1' not found in shared memory during delete
+2026-05-29 18:24:12 | p2-qwen25-05b-lora-json-1epoch_3 | controller | ERROR | controller.py:788 | Run 1 has failed: name 'make_messages' is not definedTraceback (most recent call last):
+  File "/opt/conda/envs/cse234/lib/python3.12/site-packages/rapidfireai/fit/backend/worker.py", line 676, in serve_forever
+    self.run_fit(
+  File "/opt/conda/envs/cse234/lib/python3.12/site-packages/rapidfireai/fit/backend/worker.py", line 354, in run_fit
+    trainer_instance, base_model_name = create_trainer_instance(
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/cse234/lib/python3.12/site-packages/rapidfireai/fit/ml/trainer.py", line 425, in create_trainer_instance
+    _prepare_trainer_kwargs(
+  File "/opt/conda/envs/cse234/lib/python3.12/site-packages/rapidfireai/fit/ml/trainer.py", line 662, in _prepare_trainer_kwargs
+    train_dataset = train_dataset.map(
+                    ^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/cse234/lib/python3.12/site-packages/datasets/arrow_dataset.py", line 575, in wrapper
+    out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/cse234/lib/python3.12/site-packages/datasets/arrow_dataset.py", line 3633, in map
+    for rank, done, content in Dataset._map_single(**unprocessed_kwargs):
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/cse234/lib/python3.12/site-packages/datasets/arrow_dataset.py", line 3973, in _map_single
+    for i, example in iter_outputs(shard_iterable):
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/cse234/lib/python3.12/site-packages/datasets/arrow_dataset.py", line 3951, in iter_outputs
+    yield i, apply_function(example, i, offset=offset)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/cse234/lib/python3.12/site-packages/datasets/arrow_dataset.py", line 3872, in apply_function
+    processed_inputs = function(*fn_args, *additional_args, **fn_kwargs)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_10855/4277868513.py", line 4, in formatting_function
+NameError: name 'make_messages' is not defined
+
+2026-05-29 18:24:12 | p2-qwen25-05b-lora-json-1epoch_3 | controller | DEBUG | controller.py:789 | Removed run 1 from scheduler
+2026-05-29 18:24:12 | p2-qwen25-05b-lora-json-1epoch_3 | controller | INFO | controller.py:848 | Scheduler indicates all runs have completed all chunks
+2026-05-29 18:24:12 | p2-qwen25-05b-lora-json-1epoch_3 | controller | DEBUG | controller.py:904 | Set experiment task to Idle.
+2026-05-29 18:24:12 | p2-qwen25-05b-lora-json-1epoch_3 | worker_manager | DEBUG | worker_manager.py:163 | WorkerManager shutdown initiated...
+2026-05-29 18:24:12 | p2-qwen25-05b-lora-json-1epoch_3 | worker_manager | DEBUG | worker_manager.py:167 | Signaling graceful shutdown...
+2026-05-29 18:24:12 | p2-qwen25-05b-lora-json-1epoch_3 | worker_0 | DEBUG | worker.py:712 | Worker 0 shutdown requested
+2026-05-29 18:24:12 | p2-qwen25-05b-lora-json-1epoch_3 | worker_0 | INFO | worker_manager.py:50 | Worker 0 process exiting
+2026-05-29 18:24:12 | p2-qwen25-05b-lora-json-1epoch_3 | worker_0 | DEBUG | worker.py:712 | Worker 0 shutdown requested
+2026-05-29 18:24:14 | p2-qwen25-05b-lora-json-1epoch_3 | worker_manager | DEBUG | worker_manager.py:186 | All workers shutdown gracefully
+2026-05-29 18:24:14 | p2-qwen25-05b-lora-json-1epoch_3 | worker_manager | DEBUG | worker_manager.py:163 | WorkerManager shutdown initiated...
+2026-05-29 18:24:14 | p2-qwen25-05b-lora-json-1epoch_3 | worker_manager | DEBUG | worker_manager.py:167 | Signaling graceful shutdown...
+2026-05-29 18:24:14 | p2-qwen25-05b-lora-json-1epoch_3 | worker_manager | DEBUG | worker_manager.py:186 | All workers shutdown gracefully
+2026-05-29 18:27:38 | p2-qwen25-05b-lora-json-1epoch_3 | p2-qwen25-05b-lora-json-1epoch_3 | DEBUG | experiment_utils.py:271 | Reset experiment states and set current experiment task to idle
+2026-05-29 18:27:38 | p2-qwen25-05b-lora-json-1epoch_3 | p2-qwen25-05b-lora-json-1epoch_3 | INFO | metric_rfmetric_manager.py:55 | Initialized MLflowMetricLogger: rf_mlflow
+2026-05-29 18:27:38 | p2-qwen25-05b-lora-json-1epoch_3 | p2-qwen25-05b-lora-json-1epoch_3 | INFO | metric_mlflow_manager.py:133 | No active MLflow run to clear
+2026-05-29 18:27:38 | p2-qwen25-05b-lora-json-1epoch_3 | p2-qwen25-05b-lora-json-1epoch_3 | INFO | experiment_utils.py:240 | Experiment p2-qwen25-05b-lora-json-1epoch_3 ended

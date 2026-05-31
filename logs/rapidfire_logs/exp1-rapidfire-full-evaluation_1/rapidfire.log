@@ -1,0 +1,25 @@
+2026-05-02 21:37:32 | Experiment | INFO | experiment.py:165 | [exp1-rapidfire-full-evaluation_1:Experiment] An experiment with the same name already exists. Created a new experiment 'exp1-rapidfire-full-evaluation_1' with Experiment ID: 15 at /home/obychenkov/rapidfireai/rapidfire_experiments/exp1-rapidfire-full-evaluation_1
+2026-05-02 21:37:49 | Experiment | INFO | metric_rfmetric_manager.py:55 | [exp1-rapidfire-full-evaluation_1:Experiment] Initialized MLflowMetricLogger: rf_mlflow
+2026-05-02 21:37:49 | Experiment | INFO | metric_rfmetric_manager.py:119 | [exp1-rapidfire-full-evaluation_1:Experiment] Creating MLflow experiment: exp1-rapidfire-full-evaluation_1
+2026-05-02 21:37:49 | Experiment | INFO | experiment.py:210 | [exp1-rapidfire-full-evaluation_1:Experiment] Initialized MetricLogger experiment: 5
+2026-05-02 21:37:49 | Experiment | INFO | experiment.py:226 | [exp1-rapidfire-full-evaluation_1:Experiment] Using existing dispatcher/api server at 127.0.0.1:8851.
+2026-05-02 21:38:13 | Experiment | WARNING | experiment.py:381 | [exp1-rapidfire-full-evaluation_1:Experiment] No GPUs available. Be sure to use external APIs for inference.
+2026-05-02 21:38:13 | Experiment | INFO | experiment.py:383 | [exp1-rapidfire-full-evaluation_1:Experiment] Running multi-config experiment with 4 shard(s), (0.0 GPUs per actor, 8.0 CPUs per actor, 1 actors)
+2026-05-02 21:38:13 | Experiment | INFO | experiment.py:392 | [exp1-rapidfire-full-evaluation_1:Experiment] Reset states of existing pipelines/contexts/tasks (marked as failed)
+2026-05-02 21:38:14 | Controller | INFO | controller.py:895 | [exp1-rapidfire-full-evaluation_1:Controller] Dataset sharded into 4 shard(s). Shard sizes: [12, 11, 11, 11]
+2026-05-02 21:38:14 | Controller | INFO | controller.py:900 | [exp1-rapidfire-full-evaluation_1:Controller] Received 4 pipeline configuration(s)
+2026-05-02 21:38:14 | Controller | INFO | controller.py:309 | [exp1-rapidfire-full-evaluation_1:Controller] Found 2 unique RAG context(s)
+2026-05-02 21:38:14 | Controller | INFO | controller.py:320 | [exp1-rapidfire-full-evaluation_1:Controller] Will build new context 9035a5bc...
+2026-05-02 21:38:14 | Controller | INFO | controller.py:320 | [exp1-rapidfire-full-evaluation_1:Controller] Will build new context 8011c640...
+2026-05-02 21:38:14 | Controller | INFO | controller.py:346 | [exp1-rapidfire-full-evaluation_1:Controller] Building 2 context(s) in parallel...
+2026-05-02 21:38:14 | Controller | INFO | controller.py:373 | [exp1-rapidfire-full-evaluation_1:Controller] Creating 2 DocProcessingActor(s) for parallel processing
+2026-05-02 21:38:15 | matplotlib.font_manager | INFO | font_manager.py:1639 | generated new fontManager
+2026-05-02 21:38:16 | Controller | INFO | controller.py:461 | [exp1-rapidfire-full-evaluation_1:Controller] Submitted 2 build task(s) in parallel
+2026-05-02 21:40:32 | ExperimentUtils | INFO | experiment_utils.py:180 | [exp1-rapidfire-full-evaluation_1:ExperimentUtils] Reset experiment states - marked ongoing pipelines, contexts, and tasks as failed
+2026-05-02 21:40:32 | ExperimentUtils | INFO | experiment_utils.py:188 | [exp1-rapidfire-full-evaluation_1:ExperimentUtils] Experiment marked as cancelled. Ongoing pipelines, contexts, and tasks have been marked as failed.
+2026-05-02 21:40:32 | ExperimentUtils | INFO | experiment_utils.py:154 | [exp1-rapidfire-full-evaluation_1:ExperimentUtils] Experiment exp1-rapidfire-full-evaluation_1 ended
+2026-05-02 21:40:32 | Experiment | INFO | experiment.py:165 | [exp1-rapidfire-full-evaluation_2:Experiment] The previously running experiment exp1-rapidfire-full-evaluation_1 was forcibly ended. Created a new experiment 'exp1-rapidfire-full-evaluation_2' with Experiment ID: 16 at /home/obychenkov/rapidfireai/rapidfire_experiments/exp1-rapidfire-full-evaluation_2
+2026-05-02 21:40:50 | Experiment | INFO | metric_rfmetric_manager.py:55 | [exp1-rapidfire-full-evaluation_2:Experiment] Initialized MLflowMetricLogger: rf_mlflow
+2026-05-02 21:40:50 | Experiment | INFO | metric_rfmetric_manager.py:119 | [exp1-rapidfire-full-evaluation_2:Experiment] Creating MLflow experiment: exp1-rapidfire-full-evaluation_2
+2026-05-02 21:40:50 | Experiment | INFO | experiment.py:210 | [exp1-rapidfire-full-evaluation_2:Experiment] Initialized MetricLogger experiment: 6
+2026-05-02 21:40:50 | Experiment | INFO | experiment.py:226 | [exp1-rapidfire-full-evaluation_2:Experiment] Using existing dispatcher/api server at 127.0.0.1:8851.
