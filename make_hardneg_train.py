@@ -119,9 +119,9 @@ def build_hardneg_examples(base_rows, schemas_dir, seed):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--base", default="artifacts/data/train_augmented.json")
+    parser.add_argument("--base", default="training_data/train_augmented.json")
     parser.add_argument("--schemas_dir", default="schemas")
-    parser.add_argument("--output", default="artifacts/data/train_augmented_hardneg.json")
+    parser.add_argument("--output", default="training_data/train_augmented_hardneg.json")
     parser.add_argument("--seed", type=int, default=234)
     args = parser.parse_args()
 

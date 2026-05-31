@@ -57,7 +57,7 @@ PRESETS = {
         "lora_alpha": 64,
     },
     "qwen15b_candidate40_r32_aug_3epoch": {
-        "train": "artifacts/data/train_augmented.json",
+        "train": "training_data/train_augmented.json",
         "experiment_name": "p2-qwen25-15b-lora-r32-candidate40-aug-json-3epoch",
         "output_dir": "rapidfire_outputs/qwen25_15b_lora_r32_candidate40_aug_json_3epoch",
         "model_name": "Qwen/Qwen2.5-1.5B-Instruct",
@@ -68,7 +68,7 @@ PRESETS = {
         "lora_alpha": 64,
     },
     "qwen15b_candidate40_r32_aug_fk_3epoch": {
-        "train": "artifacts/data/train_augmented.json",
+        "train": "training_data/train_augmented.json",
         "experiment_name": "p2-qwen25-15b-lora-r32-candidate40-aug-fk-json-3epoch",
         "output_dir": "rapidfire_outputs/qwen25_15b_lora_r32_candidate40_aug_fk_json_3epoch",
         "model_name": "Qwen/Qwen2.5-1.5B-Instruct",
@@ -79,7 +79,7 @@ PRESETS = {
         "lora_alpha": 64,
     },
     "qwen15b_candidate40_r32_hardneg_3epoch": {
-        "train": "artifacts/data/train_augmented_hardneg.json",
+        "train": "training_data/train_augmented_hardneg.json",
         "experiment_name": "p2-qwen25-15b-lora-r32-candidate40-hardneg-json-3epoch",
         "output_dir": "rapidfire_outputs/qwen25_15b_lora_r32_candidate40_hardneg_json_3epoch",
         "model_name": "Qwen/Qwen2.5-1.5B-Instruct",

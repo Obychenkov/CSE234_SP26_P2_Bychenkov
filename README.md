@@ -61,8 +61,20 @@ RapidFire logs and experiment artifacts are stored in:
 logs/
 ```
 
-Non-final adapters, validation predictions, per-question metrics, and generated
-augmented training files are stored in:
+Generated training data used by augmentation configs is stored in:
+
+```text
+training_data/
+```
+
+Validation predictions and per-question metrics are stored in:
+
+```text
+validation_outputs/
+```
+
+Non-final adapters and other bulky local artifacts are stored in the ignored
+local folder:
 
 ```text
 artifacts/
